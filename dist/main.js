@@ -2371,7 +2371,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../controllers/oaRunAiFetch'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _controllers_oaRunAiFetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/oaRunAiFetch */ "./src/controllers/oaRunAiFetch.js");
 
 
 function OaPage() {
@@ -2481,7 +2481,7 @@ function OaPage() {
   }, "Pizza Margherita")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button",
     id: "fetchButton",
-    onClick: Object(function webpackMissingModule() { var e = new Error("Cannot find module '../controllers/oaRunAiFetch'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()),
+    onClick: _controllers_oaRunAiFetch__WEBPACK_IMPORTED_MODULE_1__.oaRunAiFetch,
     className: "btn btn-sm btn-outline-info mt-2"
   }, "Generate")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-1"
@@ -2758,6 +2758,225 @@ function HomeGenerator() {
     className: "card-img",
     alt: "..."
   }))))));
+}
+
+/***/ }),
+
+/***/ "./src/controllers/oaRunAiFetch.js":
+/*!*****************************************!*\
+  !*** ./src/controllers/oaRunAiFetch.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   oaRunAiFetch: () => (/* binding */ oaRunAiFetch)
+/* harmony export */ });
+/* harmony import */ var _modules_oaIngredientsList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/oaIngredientsList */ "./src/modules/oaIngredientsList.js");
+/* harmony import */ var _modules_oaSaveUser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/oaSaveUser */ "./src/modules/oaSaveUser.js");
+/* harmony import */ var _modules_oaIngredientsImage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/oaIngredientsImage */ "./src/modules/oaIngredientsImage.js");
+/* harmony import */ var _modules_oaRecipeImage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/oaRecipeImage */ "./src/modules/oaRecipeImage.js");
+
+
+
+
+function getDomElements() {
+  return {
+    recipeChoice: document.getElementById("chosenRecipe"),
+    recipeIngredientsHTML: document.getElementById("recipeIngredients"),
+    recipeNameHTML: document.getElementById("recipeName"),
+    ingredientsImgHTML: document.getElementById("ingredientsAI"),
+    recipeImgHTML: document.getElementById("recipeAI"),
+    secondArrow: document.getElementById("secondArrowHTML"),
+    spinnerOneHTML: document.getElementById("spinnerOne"),
+    spinnerTwoHTML: document.getElementById("spinnerTwo")
+  };
+}
+function iconVisibility(element, isVisible) {
+  element.style.visibility = isVisible ? "visible" : "hidden";
+}
+async function updateRecipeImage(recipeChoice, recipeImgHTML, recipeNameHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, oaUserToken) {
+  const dataRecipeImage = await (0,_modules_oaRecipeImage__WEBPACK_IMPORTED_MODULE_3__.oaRecipeImage)(recipeChoice, oaUserToken);
+  recipeImgHTML.src = dataRecipeImage.data[0].url;
+  recipeNameHTML.innerHTML = recipeChoice.value;
+  recipeImgHTML.classList.add("borderImage");
+  iconVisibility(secondArrowHTML, true);
+  iconVisibility(spinnerOneHTML, false);
+  iconVisibility(spinnerTwoHTML, true);
+}
+async function updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, oaUserToken) {
+  recipeIngredientsHTML.innerHTML = ingredientsFetched;
+  const dataIngredientsImage = await (0,_modules_oaIngredientsImage__WEBPACK_IMPORTED_MODULE_2__.oaIngredientsImage)(ingredientsFetched, oaUserToken);
+  iconVisibility(spinnerTwoHTML, false);
+  ingredientsImgHTML.src = dataIngredientsImage.data[0].url;
+  ingredientsImgHTML.classList.add("borderImage");
+}
+async function oaRunAiFetch() {
+  const oaUserToken = localStorage.getItem("oaiToken");
+  const elements = getDomElements();
+  const {
+    recipeChoice,
+    recipeIngredientsHTML,
+    recipeNameHTML,
+    ingredientsImgHTML,
+    recipeImgHTML,
+    secondArrow,
+    spinnerOneHTML,
+    spinnerTwoHTML
+  } = elements;
+  (0,_modules_oaSaveUser__WEBPACK_IMPORTED_MODULE_1__.oaSaveUser)();
+  iconVisibility(spinnerOneHTML, true);
+  await updateRecipeImage(recipeChoice, recipeImgHTML, recipeNameHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, oaUserToken);
+  const ingredientsFetched = await (0,_modules_oaIngredientsList__WEBPACK_IMPORTED_MODULE_0__.oaIngredientsList)(recipeChoice, oaUserToken);
+  await updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, oaUserToken);
+}
+
+/***/ }),
+
+/***/ "./src/modules/oaIngredientsImage.js":
+/*!*******************************************!*\
+  !*** ./src/modules/oaIngredientsImage.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   oaIngredientsImage: () => (/* binding */ oaIngredientsImage)
+/* harmony export */ });
+async function oaIngredientsImage(ingredientsFetched, oaUserToken) {
+  let url = "https://api.openai.com/v1/images/generations";
+  let payload = {
+    model: "dall-e-3",
+    prompt: `Create a photorealistic image showing exactly one instance of each of the following items: ${ingredientsFetched}. Arrange these items in a top-down view against a plain black background. Place them in a horizontal line, spaced evenly and aligned symmetrically across the image. Do not repeat or duplicate any item—ensure only one unique instance of each listed ingredient is visible in the image. The image should contain no text, symbols, numbers, or additional elements. Focus only on the items provided, with realistic textures, colors, and soft, natural lighting. Ensure there are no clusters or overlapping items, and each ingredient should be clearly distinguishable and evenly spaced.`,
+    n: 1,
+    size: "1024x1024"
+  };
+  let result = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Authorization": `Bearer ${oaUserToken}`,
+      "Content-Type": "application/json"
+    }
+  });
+  let dataIngredientsImage = await result.json();
+  return dataIngredientsImage;
+}
+;
+
+/***/ }),
+
+/***/ "./src/modules/oaIngredientsList.js":
+/*!******************************************!*\
+  !*** ./src/modules/oaIngredientsList.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   oaIngredientsList: () => (/* binding */ oaIngredientsList)
+/* harmony export */ });
+async function oaIngredientsList(recipeChoice, oaUserToken) {
+  const userRecipe = recipeChoice.value;
+  const url = "https://api.openai.com/v1/chat/completions";
+  const payload = {
+    model: "gpt-3.5-turbo",
+    messages: [{
+      role: "user",
+      content: `List individual ingredients in ${userRecipe} by order of importance to the recipe`
+    }]
+  };
+  const result = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Authorization": `Bearer ${oaUserToken}`,
+      "Content-Type": "application/json"
+    }
+  });
+  const data = await result.json();
+  const ingredients = data.choices[0].message.content;
+  return ingredients;
+}
+;
+
+/***/ }),
+
+/***/ "./src/modules/oaRecipeImage.js":
+/*!**************************************!*\
+  !*** ./src/modules/oaRecipeImage.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   oaRecipeImage: () => (/* binding */ oaRecipeImage)
+/* harmony export */ });
+async function oaRecipeImage(recipeChoice, oaUserToken) {
+  const userRecipe = recipeChoice.value;
+  let url = "https://api.openai.com/v1/images/generations";
+  let payload = {
+    model: "dall-e-3",
+    prompt: `Create a photo-realistic image of the following culinary creation: ${userRecipe}. The creation should be displayed against a solid black background, with no shadows, reflections, lighting effects, gradients, or any other elements. The background should be a flat, uniform black with no variations or light sources, blending seamlessly with the page background. There should be no text, numbers, hands, or additional objects—only the culinary creation`,
+    n: 1,
+    size: "1024x1024"
+  };
+  let result = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Authorization": `Bearer ${oaUserToken}`,
+      "Content-Type": "application/json"
+    }
+  });
+  let dataRecipeImage = await result.json();
+  return dataRecipeImage;
+}
+;
+
+/***/ }),
+
+/***/ "./src/modules/oaSaveUser.js":
+/*!***********************************!*\
+  !*** ./src/modules/oaSaveUser.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   oaSaveUser: () => (/* binding */ oaSaveUser)
+/* harmony export */ });
+function getInputValues() {
+  const inputName = document.getElementById("nameInput");
+  const inputEmail = document.getElementById("emailInput");
+  const oaiUserToken = document.getElementById("openAiTokenInput");
+  return {
+    name: inputName.value,
+    email: inputEmail.value,
+    oaiToken: oaiUserToken.value
+  };
+}
+function saveToLocalStorage(name, email, oaiToken) {
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userEmail", email);
+  localStorage.setItem("oaiToken", oaiToken);
+}
+function updateUI() {
+  const userNameHandle = document.getElementById("userNameHTML");
+  const userEmailHandle = document.getElementById("userEmailHTML");
+  const userName = localStorage.getItem("userName");
+  const userEmail = localStorage.getItem("userEmail");
+  userNameHandle.innerHTML = userName;
+  userEmailHandle.innerHTML = userEmail;
+}
+function oaSaveUser() {
+  const {
+    name,
+    email,
+    oaiToken
+  } = getInputValues();
+  saveToLocalStorage(name, email, oaiToken);
+  updateUI();
 }
 
 /***/ }),
