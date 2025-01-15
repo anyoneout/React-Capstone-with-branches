@@ -32,7 +32,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="React-Capstone-with-branches/img/dallE3Logo.jpg"
+                src="/src/img/dallE3Logo.jpg"
                 alt="..."
                 style={{ width: "58%" }}
               />
