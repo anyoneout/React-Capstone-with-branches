@@ -2067,7 +2067,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module '../controllers/bfRunAiFetch'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _controllers_bfRunAiFetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/bfRunAiFetch */ "./src/controllers/bfRunAiFetch.js");
 
 
 function BfPage() {
@@ -2177,7 +2177,7 @@ function BfPage() {
   }, "Pizza Margherita")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button",
     id: "fetchButton",
-    onClick: Object(function webpackMissingModule() { var e = new Error("Cannot find module '../controllers/bfRunAiFetch'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()),
+    onClick: _controllers_bfRunAiFetch__WEBPACK_IMPORTED_MODULE_1__.bfRunAiFetch,
     className: "btn btn-sm btn-outline-info mt-2"
   }, "Generate")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-1"
@@ -2762,6 +2762,77 @@ function HomeGenerator() {
 
 /***/ }),
 
+/***/ "./src/controllers/bfRunAiFetch.js":
+/*!*****************************************!*\
+  !*** ./src/controllers/bfRunAiFetch.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   bfRunAiFetch: () => (/* binding */ bfRunAiFetch)
+/* harmony export */ });
+/* harmony import */ var _modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/bfSaveUser */ "./src/modules/bfSaveUser.js");
+/* harmony import */ var _modules_bfRecipeImage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/bfRecipeImage */ "./src/modules/bfRecipeImage.js");
+/* harmony import */ var _modules_bfIngredientsList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/bfIngredientsList */ "./src/modules/bfIngredientsList.js");
+/* harmony import */ var _modules_bfIngredientsImage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/bfIngredientsImage */ "./src/modules/bfIngredientsImage.js");
+
+
+
+
+function getDomElements() {
+  return {
+    recipeChoice: document.getElementById("chosenRecipe"),
+    recipeIngredientsHTML: document.getElementById("recipeIngredients"),
+    recipeNameHTML: document.getElementById("recipeName"),
+    ingredientsImgHTML: document.getElementById("ingredientsAI"),
+    recipeImgHTML: document.getElementById("recipeAI"),
+    secondArrow: document.getElementById("secondArrowHTML"),
+    spinnerOneHTML: document.getElementById("spinnerOne"),
+    spinnerTwoHTML: document.getElementById("spinnerTwo")
+  };
+}
+function iconVisibility(element, isVisible) {
+  element.style.visibility = isVisible ? "visible" : "hidden";
+}
+async function updateRecipeImage(recipeChoice, recipeImgHTML, recipeNameHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, hfUserToken) {
+  const dataRecipeImage = await (0,_modules_bfRecipeImage__WEBPACK_IMPORTED_MODULE_1__.bfRecipeImage)(recipeChoice, hfUserToken);
+  recipeImgHTML.src = dataRecipeImage;
+  recipeNameHTML.innerHTML = recipeChoice.value;
+  recipeImgHTML.classList.add("borderImage");
+  iconVisibility(secondArrowHTML, true);
+  iconVisibility(spinnerOneHTML, false);
+  iconVisibility(spinnerTwoHTML, true);
+}
+async function updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, hfUserToken) {
+  recipeIngredientsHTML.innerHTML = ingredientsFetched;
+  const dataIngredientsImage = await (0,_modules_bfIngredientsImage__WEBPACK_IMPORTED_MODULE_3__.bfIngredientsImage)(ingredientsFetched, hfUserToken);
+  iconVisibility(spinnerTwoHTML, false);
+  ingredientsImgHTML.src = dataIngredientsImage;
+  ingredientsImgHTML.classList.add("borderImage");
+}
+async function bfRunAiFetch() {
+  const hfUserToken = localStorage.getItem("hfToken");
+  const elements = getDomElements();
+  const {
+    recipeChoice,
+    recipeIngredientsHTML,
+    recipeNameHTML,
+    ingredientsImgHTML,
+    recipeImgHTML,
+    secondArrow,
+    spinnerOneHTML,
+    spinnerTwoHTML
+  } = elements;
+  (0,_modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_0__.bfSaveUser)();
+  iconVisibility(spinnerOneHTML, true);
+  await updateRecipeImage(recipeChoice, recipeImgHTML, recipeNameHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, hfUserToken);
+  const ingredientsFetched = await (0,_modules_bfIngredientsList__WEBPACK_IMPORTED_MODULE_2__.bfIngredientsList)(recipeChoice, hfUserToken);
+  await updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, hfUserToken);
+}
+
+/***/ }),
+
 /***/ "./src/controllers/oaRunAiFetch.js":
 /*!*****************************************!*\
   !*** ./src/controllers/oaRunAiFetch.js ***!
@@ -2829,6 +2900,159 @@ async function oaRunAiFetch() {
   await updateRecipeImage(recipeChoice, recipeImgHTML, recipeNameHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, oaUserToken);
   const ingredientsFetched = await (0,_modules_oaIngredientsList__WEBPACK_IMPORTED_MODULE_0__.oaIngredientsList)(recipeChoice, oaUserToken);
   await updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, oaUserToken);
+}
+
+/***/ }),
+
+/***/ "./src/modules/bfIngredientsImage.js":
+/*!*******************************************!*\
+  !*** ./src/modules/bfIngredientsImage.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   bfIngredientsImage: () => (/* binding */ bfIngredientsImage)
+/* harmony export */ });
+async function bfIngredientsImage(ingredientsFetched, hfUserToken) {
+  let url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev";
+  let payload = {
+    inputs: `Create a photorealistic image showing exactly one instance of each of the following items: ${ingredientsFetched}. Arrange these items in a top-down view against a plain black background. Place them in a horizontal line, spaced evenly and aligned symmetrically across the image. Do not repeat or duplicate any item—ensure only one unique instance of each listed ingredient is visible in the image. The image should contain no text, symbols, numbers, or additional elements. Focus only on the items provided, with realistic textures, colors, and soft, natural lighting. Ensure there are no clusters or overlapping items, and each ingredient should be clearly distinguishable and evenly spaced.`
+  };
+  let result = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Authorization": `Bearer ${hfUserToken}`,
+      "Content-Type": "application/json"
+    }
+  });
+  let blob = await result.blob();
+  let dataIngredientsImage = URL.createObjectURL(blob);
+  return dataIngredientsImage;
+}
+;
+
+/***/ }),
+
+/***/ "./src/modules/bfIngredientsList.js":
+/*!******************************************!*\
+  !*** ./src/modules/bfIngredientsList.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   bfIngredientsList: () => (/* binding */ bfIngredientsList)
+/* harmony export */ });
+async function bfIngredientsList(recipeChoice, hfUserToken) {
+  const userRecipe = recipeChoice.value;
+  console.log(userRecipe);
+  const url = "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1/v1/chat/completions";
+  const payload = {
+    model: "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    messages: [{
+      role: "user",
+      content: `List only the individual ingredients in ${userRecipe} by order of importance to the recipe. omit any optional ingredients and description of the ingredients. `
+    }],
+    max_tokens: 500,
+    stream: false
+  };
+  console.log("payload", payload);
+  const result = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Authorization": `Bearer ${hfUserToken}`,
+      "Content-Type": "application/json"
+    }
+  });
+  console.log("result", result);
+  console.log(result);
+  const data = await result.json();
+  console.log("data", data);
+  const ingredients = data.choices[0].message.content;
+  console.log("ingredients", ingredients);
+  return ingredients;
+}
+
+/***/ }),
+
+/***/ "./src/modules/bfRecipeImage.js":
+/*!**************************************!*\
+  !*** ./src/modules/bfRecipeImage.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   bfRecipeImage: () => (/* binding */ bfRecipeImage)
+/* harmony export */ });
+async function bfRecipeImage(recipeChoice, hfUserToken) {
+  let userRecipe = recipeChoice.value;
+  let url = "https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev";
+  let payload = {
+    inputs: `Create a photo-realistic image of the following culinary creation: ${userRecipe}. The creation should be displayed against a solid black background, with no shadows, reflections, lighting effects, gradients, or any other elements. The background should be a flat, uniform black with no variations or light sources, blending seamlessly with the page background.`
+  };
+  let result = await fetch(url, {
+    method: "POST",
+    body: JSON.stringify(payload),
+    headers: {
+      "Authorization": `Bearer ${hfUserToken}`,
+      "Content-Type": "application/json"
+    }
+  });
+  let blob = await result.blob();
+  let dataRecipeImage = URL.createObjectURL(blob);
+  return dataRecipeImage;
+}
+;
+
+/* let payload = { inputs: `Create a photo-realistic image of the following culinary creation: ${userRecipe}. The creation should be displayed against a solid black background, with no shadows, reflections, lighting effects, gradients, or any other elements. The background should be a flat, uniform black with no variations or light sources, blending seamlessly with the page background. There should be no text, numbers, hands, or additional objects—only the culinary creation` }; */
+
+/***/ }),
+
+/***/ "./src/modules/bfSaveUser.js":
+/*!***********************************!*\
+  !*** ./src/modules/bfSaveUser.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   bfSaveUser: () => (/* binding */ bfSaveUser)
+/* harmony export */ });
+function getInputValues() {
+  const inputName = document.getElementById("nameInput");
+  const inputEmail = document.getElementById("emailInput");
+  const hfUserToken = document.getElementById("hfTokenInput");
+  return {
+    name: inputName.value,
+    email: inputEmail.value,
+    hfToken: hfUserToken.value
+  };
+}
+function saveToLocalStorage(name, email, hfToken) {
+  localStorage.setItem("userName", name);
+  localStorage.setItem("userEmail", email);
+  localStorage.setItem("hfToken", hfToken);
+}
+function updateUI() {
+  const userNameHandle = document.getElementById("userNameHTML");
+  const userEmailHandle = document.getElementById("userEmailHTML");
+  const userName = localStorage.getItem("userName");
+  const userEmail = localStorage.getItem("userEmail");
+  userNameHandle.innerHTML = userName;
+  userEmailHandle.innerHTML = userEmail;
+}
+function bfSaveUser() {
+  const {
+    name,
+    email,
+    hfToken
+  } = getInputValues();
+  saveToLocalStorage(name, email, hfToken);
+  updateUI();
 }
 
 /***/ }),
