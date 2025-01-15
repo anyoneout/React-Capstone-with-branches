@@ -2616,7 +2616,7 @@ function HomeGenerator() {
       backgroundColor: "black"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "/img/bFFLogo.jpg",
+    src: "React-Capstone-with-branches/img/bFFLogo.jpg",
     alt: "...",
     style: {
       width: "140%"

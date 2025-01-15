@@ -13,7 +13,7 @@ export function HomeGenerator() {
                 <div className="card"
                   style={{ width: "100%", backgroundColor: "black" }}
                 >
-                  <img src="/img/bFFLogo.jpg"
+                  <img src="React-Capstone-with-branches/img/bFFLogo.jpg"
                     alt="..."
                     style={{ width: "140%" }}
                   />
