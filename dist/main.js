@@ -2087,7 +2087,12 @@ function BfPage() {
     style: {
       color: "#fff78a"
     }
-  }, "Black Forest Labs.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Black Forest Labs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    ClassName: "fw-bold",
+    style: {
+      color: "red"
+    }
+  }, "* Due to the unpredictability of models being active on huggingface.co, the question answering api may not return a result.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-3 justify-content-end d-flex align-items-end"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "userNameHTML"
