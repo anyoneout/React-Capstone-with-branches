@@ -14,7 +14,7 @@ export function BfPage() {
                         >
                             Black Forest Labs.
                         </div>
-                        <div ClassName="fs-4 fw-bold"
+                        <div className="fs-4 fw-bold"
                             style={{ color: "red" }}
                         >
                             * Due to the unpredictability of models being active on huggingface.co, the question answering api may not return a result.

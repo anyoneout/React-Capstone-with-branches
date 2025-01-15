@@ -2088,7 +2088,7 @@ function BfPage() {
       color: "#fff78a"
     }
   }, "Black Forest Labs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    ClassName: "fs-4 fw-bold",
+    className: "fs-4 fw-bold",
     style: {
       color: "red"
     }
