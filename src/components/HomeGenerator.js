@@ -32,7 +32,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/dallE3Logo.jpg"
+                src="React-Capstone-with-branches/img/dallE3Logo.jpg"
                 alt="..."
                 style={{ width: "58%" }}
               />
@@ -78,7 +78,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/bfbsrecipe.jpg"
+                src="React-Capstone-with-branches/img/bfbsrecipe.jpg"
                 className="card-img"
                 alt="..."
               />
@@ -88,7 +88,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/bfbsingredients.jpg"
+                src="React-Capstone-with-branches/img/bfbsingredients.jpg"
                 className="card-img"
                 alt="..."
               />
@@ -98,7 +98,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/bfcsrecipe.jpg"
+                src="React-Capstone-with-branches/img/bfcsrecipe.jpg"
                 className="card-img"
                 alt="..."
               />
@@ -108,7 +108,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/bfcsingredients.jpg"
+                src="React-Capstone-with-branches/img/bfcsingredients.jpg"
                 className="card-img"
                 alt="..."
               />
@@ -120,7 +120,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/openaibsrecipe.jpg"
+                src="React-Capstone-with-branches/img/openaibsrecipe.jpg"
                 className="card-img"
                 alt="..."
               />
@@ -130,7 +130,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/openaibsingredients.jpg"
+                src="React-Capstone-with-branches/img/openaibsingredients.jpg"
                 className="card-img"
                 alt="..."
               />
@@ -140,7 +140,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/openaicsrecipe.jpg"
+                src="React-Capstone-with-branches/img/openaicsrecipe.jpg"
                 className="card-img"
                 alt="..."
               />
@@ -150,7 +150,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="/img/openaicsingredients.jpg"
+                src="React-Capstone-with-branches/img/openaicsingredients.jpg"
                 className="card-img"
                 alt="..."
               />
