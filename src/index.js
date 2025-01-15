@@ -12,13 +12,14 @@ import { OaPage } from "./Views/OaPage";
 
 const root = createRoot(window.bodyTag);
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/React-Capstone-with-branches">
     <Nav />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/OaPage" element={<OaPage />} />
       <Route path="/BfPage" element={<BfPage />} />
       <Route path="/About" element={<About />} />
+
     </Routes>
   </BrowserRouter>
 );   
