@@ -78,7 +78,7 @@ export function HomeGenerator() {
               style={{ width: "100%", backgroundColor: "black" }}
             >
               <img
-                src="React-Capstone-with-branches/img/bfbsrecipe.jpg"
+                src="src/img/bfbsrecipe.jpg"
                 className="card-img"
                 alt="..."
               />

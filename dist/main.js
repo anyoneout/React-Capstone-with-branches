@@ -2687,7 +2687,7 @@ function HomeGenerator() {
       backgroundColor: "black"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "React-Capstone-with-branches/img/bfbsrecipe.jpg",
+    src: "src/img/bfbsrecipe.jpg",
     className: "card-img",
     alt: "..."
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
