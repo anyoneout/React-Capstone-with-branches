@@ -2088,9 +2088,9 @@ function BfPage() {
       color: "#fff78a"
     }
   }, "Black Forest Labs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "fs-4 fw-bold",
     style: {
-      color: "red"
+      color: "red",
+      fonstSize: ".85rem"
     }
   }, "* Due to the unpredictability of models being active on huggingface.co, the question answering api may not return a result.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-3 justify-content-end d-flex align-items-end"
@@ -12939,7 +12939,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
 root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, {
-  basename: "/React-Capstone-with-branches"
+  basename: "/React-Capstone-with-branches/"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Nav__WEBPACK_IMPORTED_MODULE_3__.Nav, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
