@@ -1,4 +1,14 @@
+* {
+  border: solid 1px yellow;
+}
+
 body {
   background-color: black;
   color: white;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #fff78a;
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
 }
