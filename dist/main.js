@@ -6597,11 +6597,11 @@ function HomeGenerator() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__.FluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
     src: "./src/img/bfbsrecipe.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    src: "img/bfbsingredients.jpg"
+    src: "./src/img/bfbsingredients.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    src: "img/bfcsrecipe.jpg"
+    src: "./src/img/bfcsrecipe.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    src: "img/bfcsingredients.jpg"
+    src: "./src/img/bfcsingredients.jpg"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -6615,13 +6615,13 @@ function HomeGenerator() {
       height: "100px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    src: "img/openaibsrecipe.jpg"
+    src: "./src/img/openaibsrecipe.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    src: "img/openaibsingredients.jpg"
+    src: "./src/img/openaibsingredients.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    src: "img/openaicsrecipe.jpg"
+    src: "./src/img/openaicsrecipe.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    src: "img/openaicsingredients.jpg"
+    src: "./src/img/openaicsingredients.jpg"
   })))));
 }
 
