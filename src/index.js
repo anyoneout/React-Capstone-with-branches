@@ -9,9 +9,8 @@ import { OaPage } from "./Views/OaPage";
 
 
 const bodyTag = document.getElementById("bodyTag");
-
-
 const root = createRoot(bodyTag);
+
 root.render(
   <BrowserRouter>
     <Nav />
