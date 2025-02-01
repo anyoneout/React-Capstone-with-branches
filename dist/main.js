@@ -2315,6 +2315,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Nav() {
+  const domain = window.location.hostname;
+  let rootPath = "";
+  if (domain === "anyoneout.github.io") rootPath = "/react-project";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container mt-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2325,26 +2328,26 @@ function Nav() {
     className: "col-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "d-flex justify-content-evenly align-items-end"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    to: `${rootPath}/`,
     style: {
       fontSize: "13px"
     },
     className: "link-underline-opacity-0 link-underline text-info"
-  }, "Home"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/BfPage",
+  }, "Home"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    to: `${rootPath}/BfPage`,
     style: {
       fontSize: "13px"
     },
     className: "link-underline-opacity-0 link-underline text-info"
-  }, "Black Forest"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/OaPage",
+  }, "Black Forest"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    to: `${rootPath}/OaPage`,
     style: {
       fontSize: "13px"
     },
     className: "link-underline-opacity-0 link-underline text-info"
-  }, "Dall-E-3"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/About",
+  }, "Dall-E-3"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    to: `${rootPath}/About`,
     style: {
       fontSize: "13px"
     },
@@ -12931,17 +12934,20 @@ __webpack_require__.r(__webpack_exports__);
 
 const bodyTag = document.getElementById("bodyTag");
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTag);
+const domain = window.location.hostname;
+let rootPath = "";
+if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
 root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Nav__WEBPACK_IMPORTED_MODULE_3__.Nav, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
-  path: "/",
+  path: `${rootPath}/`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
-  path: "/OaPage",
+  path: `${rootPath}/OaPage`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_OaPage__WEBPACK_IMPORTED_MODULE_6__.OaPage, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
-  path: "/BfPage",
+  path: `${rootPath}/BfPage`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_BfPage__WEBPACK_IMPORTED_MODULE_5__.BfPage, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
-  path: "/About",
+  path: `${rootPath}/About`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_4__.About, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_7__.Route, {
   path: "*",
