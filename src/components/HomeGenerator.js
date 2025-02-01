@@ -61,9 +61,9 @@ export function HomeGenerator() {
               <FluxIcon />
             </div>
             <Card src="./src/img/bfbsrecipe.jpg" />
-            <Card src="img/bfbsingredients.jpg" />
-            <Card src="img/bfcsrecipe.jpg" />
-            <Card src="img/bfcsingredients.jpg" />
+            <Card src="./src/img/bfbsingredients.jpg" />
+            <Card src="./src/img/bfcsrecipe.jpg" />
+            <Card src="./src/img/bfcsingredients.jpg" />
           </div>
 
           <div className="col-12 col-md-2">
@@ -80,10 +80,10 @@ export function HomeGenerator() {
             >
               <DalleIcon />
             </div>
-            <Card src="img/openaibsrecipe.jpg" />
-            <Card src="img/openaibsingredients.jpg" />
-            <Card src="img/openaicsrecipe.jpg" />
-            <Card src="img/openaicsingredients.jpg" />
+            <Card src="./src/img/openaibsrecipe.jpg" />
+            <Card src="./src/img/openaibsingredients.jpg" />
+            <Card src="./src/img/openaicsrecipe.jpg" />
+            <Card src="./src/img/openaicsingredients.jpg" />
           </div>
         </div>
       </div>
