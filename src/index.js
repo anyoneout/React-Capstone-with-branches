@@ -20,7 +20,6 @@ root.render(
       <Route path="/BfPage" element={<BfPage />} />
       <Route path="/About" element={<About />} />
       <Route path="*" element={<Navigate to="/" />} />
-
     </Routes>
   </BrowserRouter>
 );   
