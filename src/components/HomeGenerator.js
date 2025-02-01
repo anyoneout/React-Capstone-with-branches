@@ -60,7 +60,7 @@ export function HomeGenerator() {
             >
               <FluxIcon />
             </div>
-            <Card src="img/bfbsrecipe.jpg" />
+            <Card src="./src/img/bfbsrecipe.jpg" />
             <Card src="img/bfbsingredients.jpg" />
             <Card src="img/bfcsrecipe.jpg" />
             <Card src="img/bfcsingredients.jpg" />
