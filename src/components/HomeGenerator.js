@@ -46,7 +46,7 @@ export function HomeGenerator() {
             </div>
           </div>
 
-          <div className="col-12 col-md-2">
+          <div className="col-12 col-md-2 d-flex flex-column align-items-center">
             <div
               className="card icon"
               style={{
@@ -66,7 +66,7 @@ export function HomeGenerator() {
             <Card src="./src/img/bfcsingredients.jpg" />
           </div>
 
-          <div className="col-12 col-md-2">
+          <div className="col-12 col-md-2 d-flex flex-column align-items-center">
             <div
               className="card icon"
               style={{

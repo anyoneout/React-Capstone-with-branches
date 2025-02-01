@@ -3198,7 +3198,7 @@ function HomeGenerator() {
     to: "OaPage",
     className: "btn btn-sm btn-outline-info ms-1 fw-bold icon"
   }, "Dall-E-3")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-12 col-md-2"
+    className: "col-12 col-md-2 d-flex flex-column align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "card icon",
     style: {
@@ -3218,7 +3218,7 @@ function HomeGenerator() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
     src: "./src/img/bfcsingredients.jpg"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-12 col-md-2"
+    className: "col-12 col-md-2 d-flex flex-column align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "card icon",
     style: {
