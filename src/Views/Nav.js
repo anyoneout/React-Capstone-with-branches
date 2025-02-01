@@ -6,7 +6,7 @@ export function Nav() {
   let rootPath = "";
   if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
   return (
-    <nav className="nav nav-pills fixed=top">
+    <nav className="nav nav-pills fixed=top mt-2">
       <div className="container">
 
         <div className="d-flex justify-content-center" >
