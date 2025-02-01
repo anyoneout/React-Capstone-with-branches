@@ -14,6 +14,9 @@ export function BfPage() {
                         >
                             Black Forest Labs.
                         </div>
+                        <div style={{ color: "red", fonstSize: ".85rem" }}>
+                            * Due to the unpredictability of models being active on huggingface.co, the question answering api may not return a result.
+                        </div>
                     </div>
                     <div className="col-3 justify-content-end d-flex align-items-end">
                         <div id="userNameHTML"></div>
@@ -170,7 +173,7 @@ export function BfPage() {
                 <div className="row" style={{ minHeight: "20vh" }}>
                     <div className="col-3 align-items-start d-flex">
                         <img
-                            src="img/bFFLogo.jpg"
+                            src="src/img/bFFLogo.jpg"
                             id="blackForestImage"
                             className="ps-2"
                             style={{ width: "100px" }}
