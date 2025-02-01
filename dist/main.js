@@ -2851,17 +2851,11 @@ function Nav() {
   let rootPath = "";
   if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "nav nav-pills"
+    className: "nav nav-pills fixed=top"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mt-3"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-4"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "d-flex justify-content-evenly align-items-end"
+    className: "d-flex justify-content-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/`,
     style: {
@@ -2886,9 +2880,7 @@ function Nav() {
       fontSize: "13px"
     },
     className: "nav-link text-info"
-  }, "About"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-4"
-  }))));
+  }, "About"))));
 }
 
 /***/ }),
@@ -3127,7 +3119,7 @@ function Card(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "card",
     style: {
-      width: "100%",
+      width: "90%",
       height: "auto",
       backgroundColor: "black"
     }

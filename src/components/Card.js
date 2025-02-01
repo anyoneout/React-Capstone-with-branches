@@ -4,7 +4,7 @@ export default function Card(props) {
   return (
     <div
       className="card"
-      style={{ width: "100%", height: "auto", backgroundColor: "black" }}
+      style={{ width: "90%", height: "auto", backgroundColor: "black" }}
     >
       <img
         src={props.src}
