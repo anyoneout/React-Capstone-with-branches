@@ -2576,6 +2576,36 @@ function OaPage() {
 
 /***/ }),
 
+/***/ "./src/components/Card.js":
+/*!********************************!*\
+  !*** ./src/components/Card.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Card)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function Card(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "card",
+    style: {
+      width: "100%",
+      height: "auto",
+      backgroundColor: "black"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: props.src,
+    className: "card-img img-fluid home-image",
+    alt: "..."
+  }));
+}
+
+/***/ }),
+
 /***/ "./src/components/HomeGenerator.js":
 /*!*****************************************!*\
   !*** ./src/components/HomeGenerator.js ***!
@@ -2588,7 +2618,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-K6AXKMTT.mjs");
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/development/chunk-K6AXKMTT.mjs");
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card */ "./src/components/Card.js");
+/* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
+
+
+
 
 
 function HomeGenerator() {
@@ -2597,61 +2632,18 @@ function HomeGenerator() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-2 d-flex align-items-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/bFFLogo.jpg",
-    alt: "...",
-    style: {
-      width: "140%"
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-9 d-flex align-items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      color: "white",
-      fontSize: "125%"
-    }
-  }, "BLACK FOREST")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-2 d-flex align-items-end"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/dallE3Logo.jpg",
-    alt: "...",
-    style: {
-      width: "58%"
-    }
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-8"
+    className: "ps-5 col-12 mt-5 col-md-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-5"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "display-4 fw-bold",
+    className: "display-4 fw-bold mt-5",
     style: {
       color: "#fff78a"
     }
   }, "Recipe Deconstructor")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5"
+    className: "row mt-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: "display-3",
     style: {
@@ -2660,104 +2652,58 @@ function HomeGenerator() {
   }, "Separate dishes into their ingredients")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-4 d-flex justify-content-end ms-3"
+    className: "col-12 d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-center justify-content-md-start p-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
     style: {
       color: "rgba(204, 98, 98, 0.925)"
     }
-  }, "Try here!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, "Try here!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "BfPage",
-    className: "btn btn-sm btn-outline-info fw-bold"
-  }, "Black Forest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon"
+  }, "Black Forest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "OaPage",
-    className: "btn btn-sm btn-outline-info fw-bold"
+    className: "btn btn-sm btn-outline-info ms-1 fw-bold icon"
   }, "Dall-E-3")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-2"
+    className: "col-12 col-md-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
+    className: "card icon",
     style: {
-      width: "100%",
-      backgroundColor: "black"
+      backgroundColor: "black",
+      color: "white",
+      justifyContent: "center",
+      display: "flex",
+      alignItems: "center",
+      height: "100px"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/bfbsrecipe.jpg",
-    className: "card-img",
-    alt: "..."
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__.FluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/bfbsrecipe.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/bfbsingredients.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/bfcsrecipe.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/bfcsingredients.jpg"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/bfbsingredients.jpg",
-    className: "card-img",
-    alt: "..."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/bfcsrecipe.jpg",
-    className: "card-img",
-    alt: "..."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/bfcsingredients.jpg",
-    className: "card-img",
-    alt: "..."
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-2"
+    className: "col-12 col-md-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
+    className: "card icon",
     style: {
-      width: "100%",
-      backgroundColor: "black"
+      backgroundColor: "black",
+      color: "white",
+      justifyContent: "center",
+      display: "flex",
+      alignItems: "center",
+      height: "100px"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/openaibsrecipe.jpg",
-    className: "card-img",
-    alt: "..."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/openaibsingredients.jpg",
-    className: "card-img",
-    alt: "..."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/openaicsrecipe.jpg",
-    className: "card-img",
-    alt: "..."
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card",
-    style: {
-      width: "100%",
-      backgroundColor: "black"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: "src/img/openaicsingredients.jpg",
-    className: "card-img",
-    alt: "..."
-  }))))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/openaibsrecipe.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/openaibsingredients.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/openaicsrecipe.jpg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    src: "img/openaicsingredients.jpg"
+  })))));
 }
 
 /***/ }),
@@ -3053,6 +2999,36 @@ function bfSaveUser() {
   } = getInputValues();
   saveToLocalStorage(name, email, hfToken);
   updateUI();
+}
+
+/***/ }),
+
+/***/ "./src/modules/icons.js":
+/*!******************************!*\
+  !*** ./src/modules/icons.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   FluxIcon: () => (/* binding */ FluxIcon),
+/* harmony export */   "default": () => (/* binding */ DalleIcon)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '@lobehub/icons'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+
+function DalleIcon() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module '@lobehub/icons'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).Combine, {
+    size: 35
+  });
+}
+function FluxIcon() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Object(function webpackMissingModule() { var e = new Error("Cannot find module '@lobehub/icons'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()).Combine, {
+    size: 35
+  });
 }
 
 /***/ }),
