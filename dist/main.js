@@ -2317,7 +2317,7 @@ __webpack_require__.r(__webpack_exports__);
 function Nav() {
   const domain = window.location.hostname;
   let rootPath = "";
-  if (domain === "anyoneout.github.io") rootPath = "/react-project";
+  if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container mt-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2333,25 +2333,25 @@ function Nav() {
     style: {
       fontSize: "13px"
     },
-    className: "link-underline-opacity-0 link-underline text-info"
+    className: "nav nav-link link-underline-opacity-0 link-underline text-info"
   }, "Home"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/BfPage`,
     style: {
       fontSize: "13px"
     },
-    className: "link-underline-opacity-0 link-underline text-info"
+    className: "nav nav-link link-underline-opacity-0 link-underline text-info"
   }, "Black Forest"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/OaPage`,
     style: {
       fontSize: "13px"
     },
-    className: "link-underline-opacity-0 link-underline text-info"
+    className: "nav nav-link link-underline-opacity-0 link-underline text-info"
   }, "Dall-E-3"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/About`,
     style: {
       fontSize: "13px"
     },
-    className: "link-underline-opacity-0 link-underline text-info"
+    className: "nav nav-link link-underline-opacity-0 link-underline text-info"
   }, "About"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-4"
   }))));
