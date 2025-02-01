@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 export function Nav() {
+  const domain = window.location.hostname;
+  let rootPath = "";
+  if (domain === "anyoneout.github.io") rootPath = "/react-project";
   return (
     <>
       <div className="container mt-3">
@@ -9,21 +12,21 @@ export function Nav() {
           <div className="col-4"></div>
           <div className="col-4">
             <div className="d-flex justify-content-evenly align-items-end" >
-              <Link to="/" style={{ fontSize: "13px" }}
+              <NavLink to={`${rootPath}/`} style={{ fontSize: "13px" }}
                 className="link-underline-opacity-0 link-underline text-info">
                 Home
-              </Link>|
-              <Link to="/BfPage" style={{ fontSize: "13px" }}
+              </NavLink>|
+              <NavLink to={`${rootPath}/BfPage`} style={{ fontSize: "13px" }}
                 className="link-underline-opacity-0 link-underline text-info">Black Forest
-              </Link>|
-              <Link to="/OaPage"
+              </NavLink>|
+              <NavLink to={`${rootPath}/OaPage`}
                 style={{ fontSize: "13px" }}
                 className="link-underline-opacity-0 link-underline text-info">Dall-E-3
-              </Link>|
-              <Link to="/About" style={{ fontSize: "13px" }}
+              </NavLink>|
+              <NavLink to={`${rootPath}/About`} style={{ fontSize: "13px" }}
                 className="link-underline-opacity-0 link-underline text-info">
                 About
-              </Link>
+              </NavLink>
             </div>
           </div>
           <div className="col-4"></div>
