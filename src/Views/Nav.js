@@ -10,7 +10,7 @@ export function Nav() {
       <div className="container">
 
         <div className="d-flex justify-content-center" >
-          <NavLink to={`${rootPath}/`} style={{ fontSize: "13px" }}
+          <NavLink to={`${rootPath}/`} end style={{ fontSize: "13px" }}
             className="nav-link text-info">
             Home
           </NavLink>
