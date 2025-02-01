@@ -2858,6 +2858,7 @@ function Nav() {
     className: "d-flex justify-content-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/`,
+    end: true,
     style: {
       fontSize: "13px"
     },
