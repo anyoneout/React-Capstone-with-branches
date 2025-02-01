@@ -2867,25 +2867,25 @@ function Nav() {
     style: {
       fontSize: "13px"
     },
-    className: "nav-link link-underline-opacity-0 link-underline text-info"
-  }, "Home"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    className: "nav-link text-info"
+  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/BfPage`,
     style: {
       fontSize: "13px"
     },
-    className: "nav-link link-underline-opacity-0 link-underline text-info"
-  }, "Black Forest"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    className: "nav-link text-info"
+  }, "Black Forest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/OaPage`,
     style: {
       fontSize: "13px"
     },
-    className: "nav-link link-underline-opacity-0 link-underline text-info"
-  }, "Dall-E-3"), "|", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
+    className: "nav-link text-info"
+  }, "Dall-E-3"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_1__.NavLink, {
     to: `${rootPath}/About`,
     style: {
       fontSize: "13px"
     },
-    className: "nav-link link-underline-opacity-0 link-underline text-info"
+    className: "nav-link text-info"
   }, "About"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-4"
   }))));

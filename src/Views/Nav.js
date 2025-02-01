@@ -13,18 +13,18 @@ export function Nav() {
           <div className="col-4">
             <div className="d-flex justify-content-evenly align-items-end" >
               <NavLink to={`${rootPath}/`} style={{ fontSize: "13px" }}
-                className="nav-link link-underline-opacity-0 link-underline text-info">
+                className="nav-link text-info">
                 Home
-              </NavLink>|
+              </NavLink>
               <NavLink to={`${rootPath}/BfPage`} style={{ fontSize: "13px" }}
-                className="nav-link link-underline-opacity-0 link-underline text-info">Black Forest
-              </NavLink>|
+                className="nav-link text-info">Black Forest
+              </NavLink>
               <NavLink to={`${rootPath}/OaPage`}
                 style={{ fontSize: "13px" }}
-                className="nav-link link-underline-opacity-0 link-underline text-info">Dall-E-3
-              </NavLink>|
+                className="nav-link text-info">Dall-E-3
+              </NavLink>
               <NavLink to={`${rootPath}/About`} style={{ fontSize: "13px" }}
-                className="nav-link link-underline-opacity-0 link-underline text-info">
+                className="nav-link text-info">
                 About
               </NavLink>
             </div>
