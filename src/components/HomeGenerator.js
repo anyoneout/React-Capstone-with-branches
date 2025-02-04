@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router";
 import Card from "./Card";
-import { FluxIcon } from "../modules/icons";
-import DalleIcon from "../modules/icons";
+import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
+
+
 
 
 
@@ -58,7 +59,7 @@ export function HomeGenerator() {
                 height: "100px",
               }}
             >
-              <FluxIcon />
+              <HomeFluxIcon />
             </div>
             <Card src="./src/img/bfbsrecipe.jpg" />
             <Card src="./src/img/bfbsingredients.jpg" />
@@ -78,7 +79,7 @@ export function HomeGenerator() {
                 height: "100px",
               }}
             >
-              <DalleIcon />
+              <HomeDalleIcon />
             </div>
             <Card src="./src/img/openaibsrecipe.jpg" />
             <Card src="./src/img/openaibsingredients.jpg" />

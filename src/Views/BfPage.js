@@ -1,20 +1,21 @@
 import React from "react";
 import { bfRunAiFetch } from "../controllers/bfRunAiFetch";
+import { ApiFluxIcon } from "../modules/icons";
 
 export function BfPage() {
     return (
         <>
             <div className="container" style={{ minHeight: "15vh" }}>
-                <div className="row mt-5"></div>
-                <div className="row mt-4 mb-5">
+                <div className="row"></div>
+                <div className="row mt-4">
                     <div className="col-7">
                         <div
-                            className="display-4 fw-bold"
-                            style={{ color: "#fff78a" }}
+                            className="display-4 fw-bold d-flex align-items-end"
+                            style={{ minHeight: "10vh", color: "#fff78a" }}
                         >
                             Black Forest Labs.
                         </div>
-                        <div style={{ color: "red", fonstSize: ".85rem" }}>
+                        <div style={{ minHeight: "5vh", color: "red", fontSize: ".85rem" }}>
                             * Due to the unpredictability of models being active on huggingface.co, the question answering api may not return a result.
                         </div>
                     </div>
@@ -27,8 +28,8 @@ export function BfPage() {
                 </div>
             </div>
             <div className="container" style={{ minHeight: "45vh" }}>
-                <div className="row mt-5">
-                    <div className="col-2">
+                <div className="row mt-5 d-flex">
+                    <div className="col-12 col-md-2">
                         <form>
                             <div className="input-group">
                                 <label htmlFor="nameInput" className="form-label">
@@ -129,7 +130,7 @@ export function BfPage() {
                         </form>
                     </div>
                     <div className="col-1"></div>
-                    <div className="col-4 d-flex align-items-center justify-content-center">
+                    <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
                         <div
                             className="spinner-border text-info"
                             role="status"
@@ -155,7 +156,7 @@ export function BfPage() {
                             }}
                         ></i>
                     </div>
-                    <div className="col-4 d-flex align-items-center justify-content-center">
+                    <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
                         <div
                             className="spinner-border text-info"
                             role="status"
@@ -168,17 +169,11 @@ export function BfPage() {
                     </div>
                 </div>
             </div>
-            <div className="container" style={{ minHeight: "25vh" }}>
+            <div className="container" style={{ minHeight: "20vh" }}>
                 <div className="row" style={{ minHeight: "5vh" }}></div>
-                <div className="row" style={{ minHeight: "20vh" }}>
+                <div className="row" style={{ minHeight: "15vh" }}>
                     <div className="col-3 align-items-start d-flex">
-                        <img
-                            src="src/img/bFFLogo.jpg"
-                            id="blackForestImage"
-                            className="ps-2"
-                            style={{ width: "100px" }}
-                            alt=""
-                        />
+                        <ApiFluxIcon />
                     </div>
                     <div className="col-4 d-flex align-items-start justify-content-center">
                         <p

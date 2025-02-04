@@ -15,11 +15,13 @@ export function Nav() {
             Home
           </NavLink>
           <NavLink to={`${rootPath}/BfPage`} style={{ fontSize: "13px" }}
-            className="nav-link text-info">Black Forest
+            className="nav-link text-info">
+            Black Forest
           </NavLink>
           <NavLink to={`${rootPath}/OaPage`}
             style={{ fontSize: "13px" }}
-            className="nav-link text-info">Dall-E-3
+            className="nav-link text-info">
+            Dall-E-3
           </NavLink>
           <NavLink to={`${rootPath}/About`} style={{ fontSize: "13px" }}
             className="nav-link text-info">

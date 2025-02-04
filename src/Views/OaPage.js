@@ -1,18 +1,21 @@
 import React from "react";
 import { oaRunAiFetch } from "../controllers/oaRunAiFetch";
+import { ApiDalleIcon } from "../modules/icons";
 
 export function OaPage() {
     return (
         <>
             <div className="container" style={{ minHeight: "15vh" }}>
-                <div className="row mt-5"></div>
-                <div className="row mt-4 mb-5">
+                <div className="row"></div>
+                <div className="row mt-4">
                     <div className="col-7">
                         <div
-                            className="display-4 fw-bold"
-                            style={{ color: "#fff78a" }}
+                            className="display-4 fw-bold d-flex align-items-end"
+                            style={{ minHeight: "10vh", color: "#fff78a" }}
                         >
                             OpenAI
+                        </div>
+                        <div style={{ minHeight: "5vh" }}>
                         </div>
                     </div>
                     <div className="col-3 justify-content-end d-flex align-items-end">
@@ -24,8 +27,8 @@ export function OaPage() {
                 </div>
             </div>
             <div className="container" style={{ minHeight: "45vh" }}>
-                <div className="row mt-5">
-                    <div className="col-2">
+                <div className="row mt-5 d-flex">
+                    <div className="col-12 col-md-2">
                         <form>
                             <div className="input-group">
                                 <label htmlFor="nameInput" className="form-label">
@@ -126,7 +129,7 @@ export function OaPage() {
                         </form>
                     </div>
                     <div className="col-1"></div>
-                    <div className="col-4 d-flex align-items-center justify-content-center">
+                    <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
                         <div
                             className="spinner-border text-info"
                             role="status"
@@ -152,7 +155,7 @@ export function OaPage() {
                             }}
                         ></i>
                     </div>
-                    <div className="col-4 d-flex align-items-center justify-content-center">
+                    <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
                         <div
                             className="spinner-border text-info"
                             role="status"
@@ -165,16 +168,11 @@ export function OaPage() {
                     </div>
                 </div>
             </div>
-            <div className="container" style={{ minHeight: "25vh" }}>
+            <div className="container" style={{ minHeight: "20vh" }}>
                 <div className="row" style={{ minHeight: "5vh" }}></div>
-                <div className="row" style={{ minHeight: "20vh" }}>
+                <div className="row" style={{ minHeight: "15vh" }}>
                     <div className="col-3 align-items-start d-flex">
-                        <img
-                            src="src/img/dallE3Logo.jpg"
-                            id="dallEImage"
-                            style={{ width: "250px" }}
-                            alt=""
-                        />
+                        <ApiDalleIcon />
                     </div>
                     <div className="col-4 d-flex align-items-start justify-content-center">
                         <p
