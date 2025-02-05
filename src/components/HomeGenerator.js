@@ -17,7 +17,7 @@ export function HomeGenerator() {
         <div className="row mt-4">
           <div className="ps-5 col-12 mt-5 col-md-8">
             <div className="row mt-5"></div>
-            <div className="row mt-5">
+            <div className="row mt-5 mb-3">
               <p className="display-4 fw-bold mt-5" style={{ color: "#fff78a" }}>
                 Recipe Deconstructor
               </p>

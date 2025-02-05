@@ -2584,6 +2584,9 @@ function About() {
     }
   }));
 }
+function componentDidMount() {
+  document.title = "About";
+}
 
 /***/ }),
 
@@ -2846,8 +2849,10 @@ function Nav() {
   const domain = window.location.hostname;
   let rootPath = "";
   if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "nav nav-pills fixed=top mt-2"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container mb-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+    className: "nav nav-pills mt-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2877,7 +2882,7 @@ function Nav() {
       fontSize: "13px"
     },
     className: "nav-link text-info"
-  }, "About"))));
+  }, "About"))))));
 }
 
 /***/ }),
@@ -3158,7 +3163,7 @@ function HomeGenerator() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-5"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5"
+    className: "row mt-5 mb-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "display-4 fw-bold mt-5",
     style: {
