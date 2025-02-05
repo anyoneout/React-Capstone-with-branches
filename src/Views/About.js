@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 
 export function About() {
+
+  const [didMount, setDidMount] = useState(false);
+
+  useEffect(componentDidMount, []);
+  useEffect(componentDidUpdate, [didMount]);
+  useEffect(componentDidUnmount, []);
+
   return (
     <>
       <div className="container" style={{ minHeight: "15vh" }}></div>
@@ -31,4 +38,24 @@ export function About() {
       </div>
     </>
   )
+
+  function componentDidMount() {
+    setDidMount(true);
+    console.log("The About page component has mounted");
+    document.title = "Recipe Deconstructor - About";
+  }
+
+  function componentDidUpdate() {
+    if (didMount) console.log("component had updated");
+  }
+
+  function componentDidUnmount() {
+    // I added this function to delay the unmount phase until the page changes. Without it,it was unmounting immediately so I replaced the greeting message from the lesson with the console.log to delay it.
+    function delayedUnmount() {
+      console.log("component has unmounted")
+    }
+    return delayedUnmount;
+  }
+
+
 }
