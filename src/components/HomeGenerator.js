@@ -3,13 +3,6 @@ import { Link } from "react-router";
 import Card from "./Card";
 import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
 
-
-
-
-
-
-
-
 export function HomeGenerator() {
   return (
     <>
@@ -88,8 +81,6 @@ export function HomeGenerator() {
           </div>
         </div>
       </div>
-
-
     </>
   );
 }
