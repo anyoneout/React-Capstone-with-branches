@@ -56,6 +56,4 @@ export function About() {
     }
     return delayedUnmount;
   }
-
-
 }
