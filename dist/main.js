@@ -3173,7 +3173,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function HomeGenerator() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-4"
@@ -3249,7 +3249,7 @@ function HomeGenerator() {
     src: "./src/img/openaicsrecipe.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Card__WEBPACK_IMPORTED_MODULE_1__["default"], {
     src: "./src/img/openaicsingredients.jpg"
-  })))));
+  }))));
 }
 
 /***/ }),
