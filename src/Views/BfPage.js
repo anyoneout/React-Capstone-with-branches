@@ -201,6 +201,7 @@ export function BfPage() {
             </div>
         </>
     );
+
     function componentDidMount() {
         setDidMount(true);
         console.log("The BfPage page component has mounted");
