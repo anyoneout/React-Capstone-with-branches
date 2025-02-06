@@ -37,13 +37,6 @@ body {
   font-weight: bold;
 }
 
-.responsiveAboutImage {
-  width: 100%;
-  max-width: 300px;
-  min-width: 300px;
-  height: auto;
-  object-fit: cover;
-}
-* {
+/* * {
   border: solid 1px yellow;
-}
+} */
