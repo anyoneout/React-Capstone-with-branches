@@ -10,14 +10,13 @@ export function About() {
   useEffect(componentDidUnmount, []);
 
   return (
-    <>
-      <div className="container" style={{ minHeight: "15vh" }}></div>
-      <div className="container mt-5" style={{ minHeight: "45vh" }}>
-        <div className="row d-flex justify-content-center">
-          <div className="card"
-            style={{ width: "17rem", backgroundColor: "black" }}>
+    <div className="container mt-5 pt-5">
+      <div className="row justify-content-center spacing">
+        <div className="col-8 col-md-6 col-lg-5 col-xl-3">
+          <div className="card text-center" style={{ backgroundColor: "black" }}>
             <img src="src/img/aboutImage.jpg"
-              className="rounded-circle card-img-top pt-3" alt="" />
+              className="rounded-circle card-img-top  pt-3 "
+              alt="" />
             <div className="card-body">
               <div
                 className="card-title display-6 d-flex justify-content-center text-light">
@@ -34,9 +33,7 @@ export function About() {
           </div>
         </div>
       </div>
-      <div className="container mt-4" style={{ minHeight: "25vh" }}>
-      </div>
-    </>
+    </div>
   )
 
   function componentDidMount() {
