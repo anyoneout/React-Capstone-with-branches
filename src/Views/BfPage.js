@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { bfRunAiFetch } from "../controllers/bfRunAiFetch";
 import { ApiFluxIcon } from "../modules/icons";
 
 export function BfPage() {
+
+    const [didMount, setDidMount] = useState(false);
+
+    useEffect(componentDidMount, []);
+    useEffect(componentDidUpdate, [didMount]);
+    useEffect(componentDidUnmount, []);
+
     return (
         <>
             <div className="container" style={{ minHeight: "15vh" }}>
@@ -194,4 +201,22 @@ export function BfPage() {
             </div>
         </>
     );
+    function componentDidMount() {
+        setDidMount(true);
+        console.log("The BfPage page component has mounted");
+        document.title = "Recipe Deconstructor - Black Forest Flux";
+        return componentDidUnmount;
+    }
+
+    function componentDidUpdate() {
+        if (didMount) console.log("component has updated");
+    }
+
+    function componentDidUnmount() {
+        // I added this function to delay the unmount phase until the page changes. Without it,it was unmounting immediately so I replaced the greeting message from the lesson with the console.log to delay it.
+        function delayedUnmount() {
+            console.log("component has unmounted")
+        }
+        return delayedUnmount;
+    }
 }
