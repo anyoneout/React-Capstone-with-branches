@@ -14,7 +14,7 @@ export function Home() {
 
   function componentDidMount() {
     setDidMount(true);
-    console.log("The component has mounted");
+    console.log("The Home page component has mounted");
     document.title = "Recipe Deconstructor - Home";
     return componentDidUnmount;
   }
@@ -24,6 +24,7 @@ export function Home() {
   }
 
   function componentDidUnmount() {
+    // I added this function to delay the unmount phase until the page changes. Without it,it was unmounting immediately so I replaced the greeting message from the lesson with the console.log to delay it.
     function delayedUnmount() {
       console.log("The component has unmounted");
     }
