@@ -11,7 +11,6 @@ export function ApiDalleIcon() {
   return <Dalle.Combine size={80} />;
 }
 
-
 export function HomeFluxIcon() {
   return <Flux.Combine size={35} />;
 }

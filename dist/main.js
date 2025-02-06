@@ -3273,7 +3273,7 @@ function Nav() {
   const domain = window.location.hostname;
   let rootPath = "";
   if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container mb-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "nav nav-pills mt-2"
@@ -3306,7 +3306,7 @@ function Nav() {
       fontSize: "13px"
     },
     className: "nav-link text-info"
-  }, "About"))))));
+  }, "About")))));
 }
 
 /***/ }),
