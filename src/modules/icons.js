@@ -4,14 +4,11 @@ import { Dalle } from '@lobehub/icons';
 
 
 export function HomeDalleIcon() {
-  return (
-    <Dalle.Combine size={35} />
-  );
+  return <Dalle.Combine size={35} />;
 }
 
 export function ApiDalleIcon() {
-  return (
-    <Dalle.Combine size={80} />);
+  return <Dalle.Combine size={80} />;
 }
 
 
