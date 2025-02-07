@@ -5,9 +5,8 @@ import { Home } from "./Views/Home";
 import { About } from "./Views/About";
 import { BfPage } from "./Views/BfPage";
 import { OaPage } from "./Views/OaPage";
-import { Nav } from "./components/Nav";
-import "../style.scss";
 import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
+import "../style.scss";
 
 
 const bodyTag = document.getElementById("bodyTag");
@@ -23,7 +22,6 @@ root.render(
       <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
       <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
       <Route path={`${rootPath}/About`} element={<About />} />
-      <Route path={`${rootPath}/ColNav`} element={<CollapsibleNavbar />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   </BrowserRouter>
