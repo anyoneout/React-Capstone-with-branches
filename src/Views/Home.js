@@ -16,7 +16,9 @@ export function Home() {
   return (
     <div className="container">
       <div className="row mt-md-5">
-        <div className="ps-md-3 col-12 mt-3 mt-md-5 col-md-8">
+
+        <div className="ps-md-3 col-12  mt-md-5 col-md-8">
+          <div className="row mt-md-5"></div>
           <div className="row mt-3 mt-md-5 mb-3">
             <p className="display-4 fw-bold mt-5" style={{ color: "#fff78a" }}>
               Recipe Deconstructor

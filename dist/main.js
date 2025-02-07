@@ -7952,8 +7952,10 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-md-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "ps-md-3 col-12 mt-3 mt-md-5 col-md-8"
+    className: "ps-md-3 col-12  mt-md-5 col-md-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row mt-md-5"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-3 mt-md-5 mb-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: "display-4 fw-bold mt-5",
@@ -8400,7 +8402,7 @@ function CollapsibleNavbar() {
   let rootPath = "";
   if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
-    className: "navbar navbar-expand-lg navbar-light bg-black mb-5"
+    className: "navbar navbar-expand-lg navbar-light bg-black mb-5 py-0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
