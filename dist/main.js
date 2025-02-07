@@ -7991,22 +7991,22 @@ function Home() {
       alignItems: "center",
       height: "100px"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/bfbsrecipe.jpg",
     id: "bfBsR",
     tooltipTitle: "<b>Banana Split</b><br><i>recipe</i>",
     tooltipPlacement: "left"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/bfbsingredients.jpg",
     id: "bfBsI",
     tooltipTitle: "<b>Banana Split</b><br><i>ingredients</i>",
     tooltipPlacement: "left"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/bfcsrecipe.jpg",
     id: "bfCsR",
     tooltipTitle: "<b>Caesar Salad</b><br><i>recipe</i>",
     tooltipPlacement: "left"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/bfcsingredients.jpg",
     id: "bfCsI",
     tooltipTitle: "<b>Caesar Salad</b><br><i>ingredients</i>",
@@ -8023,22 +8023,22 @@ function Home() {
       alignItems: "center",
       height: "100px"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/openaibsrecipe.jpg",
     id: "oaBsR",
     tooltipTitle: "<b>Banana Split</b><br><i>Recipe</i>",
     tooltipPlacement: "right"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/openaibsingredients.jpg",
     id: "oaBsI",
     tooltipTitle: "<b>Banana Split</b><br><i>ingredients</i>",
     tooltipPlacement: "right"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/openaicsrecipe.jpg",
     id: "oaCsR",
     tooltipTitle: "<b>Caesar Salad</b><br><i>Recipe</i>",
     tooltipPlacement: "right"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__.Card, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/openaicsingredients.jpg",
     id: "oaCsI",
     tooltipTitle: "<b>Caesar Salad</b><br><i>ingredients</i>",
@@ -8349,7 +8349,7 @@ function OaPage() {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Card: () => (/* binding */ Card)
+/* harmony export */   "default": () => (/* binding */ Card)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
