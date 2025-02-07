@@ -1,0 +1,20 @@
+/* Navbar */
+.navbar {
+  background-color: rgba(204, 98, 98, 0.925) !important;
+}
+
+.navbar-nav {
+  .nav-link {
+    color: #ffffff !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 500;
+    letter-spacing: -0.01em !important;
+    padding: 0.5rem 0.8rem !important;
+  }
+}
+
+.navbar-nav {
+  .nav-link:hover {
+    color: #fff78a !important;
+  }
+}

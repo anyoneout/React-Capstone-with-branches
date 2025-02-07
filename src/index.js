@@ -7,6 +7,7 @@ import { BfPage } from "./Views/BfPage";
 import { OaPage } from "./Views/OaPage";
 import { Nav } from "./components/Nav";
 import "../style.scss";
+import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 
 
 const bodyTag = document.getElementById("bodyTag");
@@ -16,12 +17,13 @@ let rootPath = "";
 if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
 root.render(
   <BrowserRouter>
-    <Nav />
+    <CollapsibleNavbar />
     <Routes>
       <Route path={`${rootPath}/`} element={<Home />} />
       <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
       <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
       <Route path={`${rootPath}/About`} element={<About />} />
+      <Route path={`${rootPath}/ColNav`} element={<CollapsibleNavbar />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   </BrowserRouter>
