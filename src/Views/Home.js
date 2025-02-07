@@ -4,7 +4,6 @@ import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
 import { Card } from "../components/Card";
 
 
-
 export function Home() {
 
   const [didMount, setDidMount] = useState(false);
@@ -16,9 +15,8 @@ export function Home() {
   return (
     <div className="container">
       <div className="row mt-4">
-        <div className="ps-5 col-12 mt-5 col-md-8">
-          <div className="row mt-5"></div>
-          <div className="row mt-5 mb-3">
+        <div className="ps-md-5 col-12 mt-3 mt-md-5 col-md-8">
+          <div className="row mt-3 mt-md-5 mb-3">
             <p className="display-4 fw-bold mt-5" style={{ color: "#fff78a" }}>
               Recipe Deconstructor
             </p>
@@ -60,10 +58,30 @@ export function Home() {
           >
             <HomeFluxIcon />
           </div>
-          <Card src="./src/img/bfbsrecipe.jpg" />
-          <Card src="./src/img/bfbsingredients.jpg" />
-          <Card src="./src/img/bfcsrecipe.jpg" />
-          <Card src="./src/img/bfcsingredients.jpg" />
+          <Card
+            src="./src/img/bfbsrecipe.jpg"
+            id="bfBsR"
+            tooltipTitle={"<b>Banana Split</b><br><i>recipe</i>"}
+            tooltipPlacement="left"
+          />
+          <Card
+            src="./src/img/bfbsingredients.jpg"
+            id="bfBsI"
+            tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"}
+            tooltipPlacement="left"
+          />
+          <Card
+            src="./src/img/bfcsrecipe.jpg"
+            id="bfCsR"
+            tooltipTitle={"<b>Caesar Salad</b><br><i>recipe</i>"}
+            tooltipPlacement="left"
+          />
+          <Card
+            src="./src/img/bfcsingredients.jpg"
+            id="bfCsI"
+            tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"}
+            tooltipPlacement="left"
+          />
         </div>
 
         <div className="col-12 col-md-2 d-flex flex-column align-items-center">
@@ -80,19 +98,54 @@ export function Home() {
           >
             <HomeDalleIcon />
           </div>
-          <Card src="./src/img/openaibsrecipe.jpg" />
-          <Card src="./src/img/openaibsingredients.jpg" />
-          <Card src="./src/img/openaicsrecipe.jpg" />
-          <Card src="./src/img/openaicsingredients.jpg" />
+          <Card src="./src/img/openaibsrecipe.jpg"
+            id="oaBsR"
+            tooltipTitle={"<b>Banana Split</b><br><i>Recipe</i>"}
+            tooltipPlacement="right"
+          />
+          <Card src="./src/img/openaibsingredients.jpg"
+            id="oaBsI"
+            tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"}
+            tooltipPlacement="right"
+          />
+          <Card src="./src/img/openaicsrecipe.jpg"
+            id="oaCsR"
+            tooltipTitle={"<b>Caesar Salad</b><br><i>Recipe</i>"}
+            tooltipPlacement="right"
+          />
+          <Card src="./src/img/openaicsingredients.jpg"
+            id="oaCsI"
+            tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"}
+            tooltipPlacement="right"
+          />
         </div>
       </div>
     </div>
   );
 
   function componentDidMount() {
+
     setDidMount(true);
     console.log("The Home page component has mounted");
     document.title = "Recipe Deconstructor - Home";
+
+    const bfBsR = document.getElementById("bfBsR");
+    new bootstrap.Tooltip(bfBsR, { html: true, sanitize: false });
+    const bfBsI = document.getElementById("bfBsI");
+    new bootstrap.Tooltip(bfBsI, { html: true, sanitize: false });
+    const bfCsR = document.getElementById("bfCsR");
+    new bootstrap.Tooltip(bfCsR, { html: true, sanitize: false });
+    const bfCsI = document.getElementById("bfCsI");
+    new bootstrap.Tooltip(bfCsI, { html: true, sanitize: false });
+    const oaBsR = document.getElementById("oaBsR");
+    new bootstrap.Tooltip(oaBsR, { html: true, sanitize: false });
+    const oaBsI = document.getElementById("oaBsI");
+    new bootstrap.Tooltip(oaBsI, { html: true, sanitize: false });
+    const oaCsR = document.getElementById("oaCsR");
+    new bootstrap.Tooltip(oaCsR, { html: true, sanitize: false });
+    const oaCsI = document.getElementById("oaCsI");
+    new bootstrap.Tooltip(oaCsI, { html: true, sanitize: false });
+
     return componentDidUnmount;
   }
 
