@@ -1,8 +1,6 @@
-
-import "./CollapsibleNavbar.scss";
-
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./CollapsibleNavbar.scss";
 
 export function CollapsibleNavbar() {
   const domain = window.location.hostname;
