@@ -21,7 +21,7 @@ export function CollapsibleNavbar() {
         </button>
 
 
-        <div className="collapse navbar-collapse justify-content-start" id="navbarNav">
+        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
               <NavLink
@@ -48,9 +48,23 @@ export function CollapsibleNavbar() {
             </li>
             <li className="nav-item">
               <NavLink
+                to={`${rootPath}/Examples`}
+                className="nav-link">
+                <i className="bi bi-images me-2"></i>Examples
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
                 to={`${rootPath}/About`}
                 className="nav-link">
                 <i className="bi-file-person me-2"></i>About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to={`${rootPath}/SignIn`}
+                className="nav-link">
+                <i className="bi-door-open me-2"></i>Sign In
               </NavLink>
             </li>
           </ul>

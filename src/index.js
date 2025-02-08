@@ -1,12 +1,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
 import { Home } from "./Views/Home";
 import { About } from "./Views/About";
 import { BfPage } from "./Views/BfPage";
 import { OaPage } from "./Views/OaPage";
 import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 import "../style.scss";
+
 
 
 const bodyTag = document.getElementById("bodyTag");
