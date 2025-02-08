@@ -8166,26 +8166,26 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row text-start mt-md-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-12"
+    className: "col-12 mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "display-3 fw-bold",
+    className: "display-3 fw-bold ",
     style: {
       color: "#fff78a"
     }
   }, "Recipe Deconstructor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "display-4",
+    className: "display-3 ",
     style: {
       color: "rgb(238, 238, 238)"
     }
   }, "Separate dishes into their ingredients")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-12 mt-4 d-flex justify-content-start align-items-center try-section"
+    className: "col-12 mt-4 try-section"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h4", {
     style: {
       color: "rgba(204, 98, 98, 0.925)"
     }
   }, "Try here!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "BfPage",
-    className: "btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon"
+    className: "btn btn-sm btn-info ms-3 fw-bold me-2 icon"
   }, "Black Forest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "OaPage",
     className: "btn btn-sm btn-outline-info ms-1 fw-bold icon"
@@ -8194,12 +8194,9 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex flex-column align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card icon bg-black text-white d-flex align-items-center justify-content-center",
-    style: {
-      height: "75px"
-    }
+    className: "card icon bg-black d-flex text-white align-items-center justify-content-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "image-border mt-3"
+    className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/bfbsrecipe.jpg",
     id: "bfBsR",
@@ -8211,7 +8208,7 @@ function Home() {
     tooltipTitle: "<b>Banana Split</b><br><i>ingredients</i>",
     tooltipPlacement: "left"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "image-border mt-3"
+    className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/bfcsrecipe.jpg",
     id: "bfCsR",
@@ -8225,12 +8222,9 @@ function Home() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex flex-column align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card icon bg-black text-white d-flex align-items-center justify-content-center",
-    style: {
-      height: "75px"
-    }
+    className: "card icon bg-black text-white d-flex align-items-center justify-content-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "image-border mt-3"
+    className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/openaibsrecipe.jpg",
     id: "oaBsR",
@@ -8242,7 +8236,7 @@ function Home() {
     tooltipTitle: "<b>Banana Split</b><br><i>ingredients</i>",
     tooltipPlacement: "right"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "image-border mt-3"
+    className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
     src: "./src/img/openaicsrecipe.jpg",
     id: "oaCsR",
@@ -8994,7 +8988,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function HomeDalleIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_1__["default"].Combine, {
-    size: 35
+    size: 50
   });
 }
 function ApiDalleIcon() {
@@ -9004,7 +8998,7 @@ function ApiDalleIcon() {
 }
 function HomeFluxIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_2__["default"].Combine, {
-    size: 35
+    size: 50
   });
 }
 function ApiFluxIcon() {
@@ -9278,7 +9272,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   border: 2px solid #62cccc;
   border-radius: 10px;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9306,6 +9300,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
+  margin-bottom: 2rem;
+}
+.try-section h4 {
+  margin-bottom: 0;
 }
 
 .navbar-width {
@@ -9315,7 +9313,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 
 /* * {
   border: solid 1px yellow;
-} */`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EACE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,gBAAA;EACA,cAAA;AAAF;;AAGA;;GAAA","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n}\r\n\r\n.spacing {\r\n  margin-top: 50px;\r\n}\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n// I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 500px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 844px;\r\n  margin: 0 auto;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n"],"sourceRoot":""}]);
+} */`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;EACA,cAAA;AAAF;;AAGA;;GAAA","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n}\r\n\r\n.spacing {\r\n  margin-top: 50px;\r\n}\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 844px;\r\n  margin: 0 auto;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

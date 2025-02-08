@@ -14,18 +14,18 @@ body {
   --bs-tooltip-border-radius: 20px;
 }
 
-// I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!
 .image-border {
   border: 2px solid #62cccc;
   border-radius: 10px;
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   overflow: hidden;
   .card {
+    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!
     display: block !important;
     width: fit-content !important;
     min-width: unset !important;
@@ -47,6 +47,10 @@ body {
   flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
+  margin-bottom: 2rem;
+  h4 {
+    margin-bottom: 0;
+  }
 }
 
 .navbar-width {
