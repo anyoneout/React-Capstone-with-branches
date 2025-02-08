@@ -6,7 +6,7 @@ import { OpenAI } from "@lobehub/icons";
 
 
 export function HomeDalleIcon() {
-  return <Dalle.Combine size={35} />;
+  return <Dalle.Combine size={50} />;
 }
 
 export function ApiDalleIcon() {
@@ -14,7 +14,7 @@ export function ApiDalleIcon() {
 }
 
 export function HomeFluxIcon() {
-  return <Flux.Combine size={35} />;
+  return <Flux.Combine size={50} />;
 }
 
 export function ApiFluxIcon() {
