@@ -14,117 +14,62 @@ export function Home() {
   useEffect(componentDidUnmount, []);
 
   return (
-    <div className="container">
-      <div className="row mt-md-5">
+    <div className="container navbar-width">
 
-        <div className="ps-md-3 col-12  mt-md-5 col-md-8">
-          <div className="row mt-md-5"></div>
-          <div className="row mt-3 mt-md-5 mb-3">
-            <p className="display-4 fw-bold mt-5" style={{ color: "#fff78a" }}>
-              Recipe Deconstructor
-            </p>
-          </div>
-          <div className="row mt-3">
-            <h1 className="display-3" style={{ color: "rgb(238, 238, 238)" }}>
-              Separate dishes into their ingredients
-            </h1>
-          </div>
-          <div className="row mt-4">
-            <div className="col-12 d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-center justify-content-md-start p-2">
-              <h4 style={{ color: "rgba(204, 98, 98, 0.925)" }}>Try here!</h4>
-              <Link
-                to="BfPage"
-                className="btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon"
-              >
-                Black Forest
-              </Link>
-              <Link
-                to="OaPage"
-                className="btn btn-sm btn-outline-info ms-1 fw-bold icon"
-              >
-                Dall-E-3
-              </Link>
-            </div>
-          </div>
+      <div className="row text-start mt-md-5">
+        <div className="col-12">
+          <p className="display-3 fw-bold" style={{ color: "#fff78a" }}>
+            Recipe Deconstructor
+          </p>
+          <h1 className="display-4" style={{ color: "rgb(238, 238, 238)" }}>
+            Separate dishes into their ingredients
+          </h1>
         </div>
-        <div className="col-12 col-md-2 d-flex flex-column align-items-center">
-          <div
-            className="card icon"
-            style={{
-              backgroundColor: "black",
-              color: "white",
-              justifyContent: "center",
-              display: "flex",
-              alignItems: "center",
-              height: "100px",
-            }}
-          >
+        <div className="col-12 mt-4 d-flex justify-content-start align-items-center try-section">
+          <h4 style={{ color: "rgba(204, 98, 98, 0.925)" }}>Try here!</h4>
+          <Link to="BfPage" className="btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon">
+            Black Forest
+          </Link>
+          <Link to="OaPage" className="btn btn-sm btn-outline-info ms-1 fw-bold icon">
+            Dall-E-3
+          </Link>
+        </div>
+      </div>
+
+
+      <div className="row mt-5">
+        <div className="col-12 col-md-6 d-flex flex-column align-items-center">
+          <div className="card icon bg-black text-white d-flex align-items-center justify-content-center" style={{ height: "75px" }}>
             <HomeFluxIcon />
           </div>
-          <Card
-            src="./src/img/bfbsrecipe.jpg"
-            id="bfBsR"
-            tooltipTitle={"<b>Banana Split</b><br><i>recipe</i>"}
-            tooltipPlacement="left"
-          />
-          <Card
-            src="./src/img/bfbsingredients.jpg"
-            id="bfBsI"
-            tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"}
-            tooltipPlacement="left"
-          />
-          <Card
-            src="./src/img/bfcsrecipe.jpg"
-            id="bfCsR"
-            tooltipTitle={"<b>Caesar Salad</b><br><i>recipe</i>"}
-            tooltipPlacement="left"
-          />
-          <Card
-            src="./src/img/bfcsingredients.jpg"
-            id="bfCsI"
-            tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"}
-            tooltipPlacement="left"
-          />
+          <div className="image-border mt-3">
+            <Card src="./src/img/bfbsrecipe.jpg" id="bfBsR" tooltipTitle={"<b>Banana Split</b><br><i>recipe</i>"} tooltipPlacement="left" />
+            <Card src="./src/img/bfbsingredients.jpg" id="bfBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="left" />
+          </div>
+          <div className="image-border mt-3">
+            <Card src="./src/img/bfcsrecipe.jpg" id="bfCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>recipe</i>"} tooltipPlacement="left" />
+            <Card src="./src/img/bfcsingredients.jpg" id="bfCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="left" />
+          </div>
         </div>
 
-        <div className="col-12 col-md-2 d-flex flex-column align-items-center">
-          <div
-            className="card icon"
-            style={{
-              backgroundColor: "black",
-              color: "white",
-              justifyContent: "center",
-              display: "flex",
-              alignItems: "center",
-              height: "100px",
-            }}
-          >
+        <div className="col-12 col-md-6 d-flex flex-column align-items-center">
+          <div className="card icon bg-black text-white d-flex align-items-center justify-content-center" style={{ height: "75px" }}>
             <HomeDalleIcon />
           </div>
-          <Card src="./src/img/openaibsrecipe.jpg"
-            id="oaBsR"
-            tooltipTitle={"<b>Banana Split</b><br><i>Recipe</i>"}
-            tooltipPlacement="right"
-          />
-          <Card src="./src/img/openaibsingredients.jpg"
-            id="oaBsI"
-            tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"}
-            tooltipPlacement="right"
-          />
-          <Card src="./src/img/openaicsrecipe.jpg"
-            id="oaCsR"
-            tooltipTitle={"<b>Caesar Salad</b><br><i>Recipe</i>"}
-            tooltipPlacement="right"
-          />
-          <Card src="./src/img/openaicsingredients.jpg"
-            id="oaCsI"
-            tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"}
-            tooltipPlacement="right"
-          />
+          <div className="image-border mt-3">
+            <Card src="./src/img/openaibsrecipe.jpg" id="oaBsR" tooltipTitle={"<b>Banana Split</b><br><i>Recipe</i>"} tooltipPlacement="right" />
+            <Card src="./src/img/openaibsingredients.jpg" id="oaBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="right" />
+          </div>
+          <div className="image-border mt-3">
+            <Card src="./src/img/openaicsrecipe.jpg" id="oaCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>Recipe</i>"} tooltipPlacement="right" />
+            <Card src="./src/img/openaicsingredients.jpg" id="oaCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="right" />
+          </div>
         </div>
       </div>
     </div>
   );
+
+
 
   function componentDidMount() {
 

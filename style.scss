@@ -7,43 +7,53 @@ body {
   margin-top: 50px;
 }
 
-.col-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#homeContainer {
-  overflow: hidden;
-  padding: 20px;
-  /*   border: 1px solid yellow; */
-}
-
-.home-image {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
-}
-
-.col {
-  border: 2px solid blue;
-}
-
-.nav-pills {
-  .nav-link.active {
-    background-color: #fff78a;
-    color: rgb(0, 0, 0) !important;
-    font-weight: bold;
-  }
-}
-/* * {
-  border: solid 1px yellow;
-} */
-
 .custom-tooltip {
   max-width: 120px;
   --bs-tooltip-bg: #fff78a;
   --bs-tooltip-color: black;
   --bs-tooltip-border-radius: 20px;
 }
+
+// I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!
+.image-border {
+  border: 2px solid #62cccc;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  overflow: hidden;
+  .card {
+    display: block !important;
+    width: fit-content !important;
+    min-width: unset !important;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+.try-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar-width {
+  max-width: 844px;
+  margin: 0 auto;
+}
+
+/* * {
+  border: solid 1px yellow;
+} */
