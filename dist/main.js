@@ -8738,7 +8738,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function CarouselBlackForest() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "BlackForestCarousel",
+    id: "blackForestCarousel",
     className: "carousel slide",
     "data-bs-ride": "carousel"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -8806,14 +8806,14 @@ function CarouselBlackForest() {
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "carousel-control-prev",
     type: "button",
-    "data-bs-target": "#BlackForestCarousel",
+    "data-bs-target": "#blackForestCarousel",
     "data-bs-slide": "prev"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "carousel-control-prev-icon"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "carousel-control-next",
     type: "button",
-    "data-bs-target": "#BlackForestCarousel",
+    "data-bs-target": "#blackForestCarousel",
     "data-bs-slide": "next"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "carousel-control-next-icon"
@@ -8865,7 +8865,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function CarouselOpenAi() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "OpenAiCarousel",
+    id: "openAiCarousel",
     className: "carousel slide",
     "data-bs-ride": "carousel"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -8933,14 +8933,14 @@ function CarouselOpenAi() {
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "carousel-control-prev",
     type: "button",
-    "data-bs-target": "#OpenAiCarousel",
+    "data-bs-target": "#openAiCarousel",
     "data-bs-slide": "prev"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "carousel-control-prev-icon"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "carousel-control-next",
     type: "button",
-    "data-bs-target": "#OpenAiCarousel",
+    "data-bs-target": "#openAiCarousel",
     "data-bs-slide": "next"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "carousel-control-next-icon"
