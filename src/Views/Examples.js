@@ -1,12 +1,13 @@
 import React from "react";
-import Carousel, { CarouselOpenAi } from "../components/Carousel";
+import { CarouselOpenAi } from "../components/CarouselOpenAi";
+import { CarouselBlackForest } from "../components/CarouselBlackForest";
 
 export default function Examples() {
   return (
-    <div className="carousel-images">
+    <div className="container navbar-width">
 
-
-      <Carousel />
+      <CarouselOpenAi />
+      <CarouselBlackForest />
 
     </div>
   )

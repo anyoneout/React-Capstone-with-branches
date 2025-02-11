@@ -63,9 +63,9 @@ body {
 
 .carousel-images {
   display: block;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 40vw;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .carousel-container {
@@ -74,4 +74,10 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
+}
+
+.carousel-item .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
