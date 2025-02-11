@@ -18,7 +18,7 @@ import bfEggsBenedictI from "../img/BlackForestImages/bfEggsBenedictI.jpg";
 export function CarouselBlackForest() {
   return (
     <>
-      <div id="BlackForestCarousel" className="carousel slide" data-bs-ride="carousel">
+      <div id="blackForestCarousel" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="d-flex justify-content-center">
@@ -52,11 +52,10 @@ export function CarouselBlackForest() {
           </div>
         </div>
 
-        {/* Controls */}
-        <button className="carousel-control-prev" type="button" data-bs-target="#BlackForestCarousel" data-bs-slide="prev">
+        <button className="carousel-control-prev" type="button" data-bs-target="#blackForestCarousel" data-bs-slide="prev">
           <span className="carousel-control-prev-icon"></span>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#BlackForestCarousel" data-bs-slide="next">
+        <button className="carousel-control-next" type="button" data-bs-target="#blackForestCarousel" data-bs-slide="next">
           <span className="carousel-control-next-icon"></span>
         </button>
       </div>
