@@ -17,7 +17,7 @@ import oaBakedAlaskaI from "../img/OpenAiImages/oaBakedAlaskaI.png";
 export function CarouselOpenAi() {
   return (
     <>
-      <div id="openAiCarousel" className="carousel slide" data-bs-ride="carousel">
+      <div id="openAiCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="d-flex justify-content-center">
