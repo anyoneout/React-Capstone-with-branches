@@ -57,6 +57,21 @@ body {
   max-width: 844px;
 }
 
-/* * {
+* {
   border: solid 1px yellow;
-} */
+}
+
+.carousel-images {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}

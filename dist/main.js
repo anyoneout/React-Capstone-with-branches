@@ -8137,6 +8137,29 @@ function BfPage() {
 
 /***/ }),
 
+/***/ "./src/Views/Examples.js":
+/*!*******************************!*\
+  !*** ./src/Views/Examples.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Examples)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Carousel */ "./src/components/Carousel.js");
+
+
+function Examples() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-images"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+}
+
+/***/ }),
+
 /***/ "./src/Views/Home.js":
 /*!***************************!*\
   !*** ./src/Views/Home.js ***!
@@ -8198,24 +8221,24 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/bfbsrecipe.jpg",
+    src: "./src/img/BlackForestImages/bfBananaSplitR.jpg",
     id: "bfBsR",
     tooltipTitle: "<b>Banana Split</b><br><i>recipe</i>",
     tooltipPlacement: "left"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/bfbsingredients.jpg",
+    src: "./src/img/BlackForestImages/bfBananaSplitI.jpg",
     id: "bfBsI",
     tooltipTitle: "<b>Banana Split</b><br><i>ingredients</i>",
     tooltipPlacement: "left"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/bfcsrecipe.jpg",
+    src: "./src/img/BlackForestImages/bfCapreseSaladR.jpg",
     id: "bfCsR",
     tooltipTitle: "<b>Caesar Salad</b><br><i>recipe</i>",
     tooltipPlacement: "left"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/bfcsingredients.jpg",
+    src: "./src/img/BlackForestImages/bfCapreseSaladI.jpg",
     id: "bfCsI",
     tooltipTitle: "<b>Caesar Salad</b><br><i>ingredients</i>",
     tooltipPlacement: "left"
@@ -8226,24 +8249,24 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/openaibsrecipe.jpg",
+    src: "./src/img/OpenAiImages/oaBananaSplitR.jpg",
     id: "oaBsR",
     tooltipTitle: "<b>Banana Split</b><br><i>Recipe</i>",
     tooltipPlacement: "right"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/openaibsingredients.jpg",
+    src: "./src/img/OpenAiImages/oaBananaSplitI.jpg",
     id: "oaBsI",
     tooltipTitle: "<b>Banana Split</b><br><i>ingredients</i>",
     tooltipPlacement: "right"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/openaicsrecipe.jpg",
+    src: "./src/img/OpenAiImages/oaCapreseSaladR.jpg",
     id: "oaCsR",
     tooltipTitle: "<b>Caesar Salad</b><br><i>Recipe</i>",
     tooltipPlacement: "right"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: "./src/img/openaicsingredients.jpg",
+    src: "./src/img/OpenAiImages/oaCapreseSaladI.jpg",
     id: "oaCsI",
     tooltipTitle: "<b>Caesar Salad</b><br><i>ingredients</i>",
     tooltipPlacement: "right"
@@ -8674,6 +8697,206 @@ function Card(props) {
     className: "card-img img-fluid home-image",
     alt: "..."
   }));
+}
+
+/***/ }),
+
+/***/ "./src/components/Carousel.js":
+/*!************************************!*\
+  !*** ./src/components/Carousel.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   CarouselBlackForest: () => (/* binding */ CarouselBlackForest),
+/* harmony export */   CarouselOpenAi: () => (/* binding */ CarouselOpenAi),
+/* harmony export */   "default": () => (/* binding */ Carousel)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_OpenAiImages_oaBananaSplitR_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/OpenAiImages/oaBananaSplitR.jpg */ "./src/img/OpenAiImages/oaBananaSplitR.jpg");
+/* harmony import */ var _img_OpenAiImages_oaBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/OpenAiImages/oaBananaSplitI.jpg */ "./src/img/OpenAiImages/oaBananaSplitI.jpg");
+/* harmony import */ var _img_OpenAiImages_oaCapreseSaladR_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/OpenAiImages/oaCapreseSaladR.jpg */ "./src/img/OpenAiImages/oaCapreseSaladR.jpg");
+/* harmony import */ var _img_OpenAiImages_oaCapreseSaladI_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/OpenAiImages/oaCapreseSaladI.jpg */ "./src/img/OpenAiImages/oaCapreseSaladI.jpg");
+/* harmony import */ var _img_OpenAiImages_oaCaesarSaladR_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/OpenAiImages/oaCaesarSaladR.png */ "./src/img/OpenAiImages/oaCaesarSaladR.png");
+/* harmony import */ var _img_OpenAiImages_oaCaesarSaladI_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/OpenAiImages/oaCaesarSaladI.png */ "./src/img/OpenAiImages/oaCaesarSaladI.png");
+/* harmony import */ var _img_OpenAiImages_oaBakedAlaskaR_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/OpenAiImages/oaBakedAlaskaR.png */ "./src/img/OpenAiImages/oaBakedAlaskaR.png");
+/* harmony import */ var _img_OpenAiImages_oaBakedAlaskaI_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/OpenAiImages/oaBakedAlaskaI.png */ "./src/img/OpenAiImages/oaBakedAlaskaI.png");
+/* harmony import */ var _img_BlackForestImages_bfBananaSplitR_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/BlackForestImages/bfBananaSplitR.jpg */ "./src/img/BlackForestImages/bfBananaSplitR.jpg");
+/* harmony import */ var _img_BlackForestImages_bfBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/BlackForestImages/bfBananaSplitI.jpg */ "./src/img/BlackForestImages/bfBananaSplitI.jpg");
+/* harmony import */ var _img_BlackForestImages_bfCapreseSaladR_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/BlackForestImages/bfCapreseSaladR.jpg */ "./src/img/BlackForestImages/bfCapreseSaladR.jpg");
+/* harmony import */ var _img_BlackForestImages_bfCapreseSaladI_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/BlackForestImages/bfCapreseSaladI.jpg */ "./src/img/BlackForestImages/bfCapreseSaladI.jpg");
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Carousel() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(CarouselOpenAi, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(CarouselBlackForest, null));
+}
+function CarouselOpenAi() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "carouselRecipes",
+    className: "carousel slide",
+    "data-bs-ride": "carousel",
+    "data-bs-interval": "2000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaBananaSplitR_jpg__WEBPACK_IMPORTED_MODULE_1__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaCapreseSaladR_jpg__WEBPACK_IMPORTED_MODULE_3__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaCaesarSaladR_png__WEBPACK_IMPORTED_MODULE_5__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaBakedAlaskaR_png__WEBPACK_IMPORTED_MODULE_7__,
+    className: "carousel-images",
+    alt: "..."
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "carouselIngredients",
+    className: "carousel slide",
+    "data-bs-ride": "carousel",
+    "data-bs-interval": "2000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_2__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaCapreseSaladI_jpg__WEBPACK_IMPORTED_MODULE_4__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaCaesarSaladI_png__WEBPACK_IMPORTED_MODULE_6__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaBakedAlaskaI_png__WEBPACK_IMPORTED_MODULE_8__,
+    className: "carousel-images",
+    alt: "..."
+  })))))))
+
+  /*   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Previous</span>
+    </button>
+    <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+      <span className="visually-hidden">Next</span>
+    </button> */;
+}
+function CarouselBlackForest() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "carouselBfRecipes",
+    className: "carousel slide",
+    "data-bs-ride": "carousel",
+    "data-bs-interval": "2000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_BlackForestImages_bfBananaSplitR_jpg__WEBPACK_IMPORTED_MODULE_9__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_BlackForestImages_bfCapreseSaladR_jpg__WEBPACK_IMPORTED_MODULE_11__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaCaesarSaladR_png__WEBPACK_IMPORTED_MODULE_5__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaBakedAlaskaR_png__WEBPACK_IMPORTED_MODULE_7__,
+    className: "carousel-images",
+    alt: "..."
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "carouselIngredients",
+    className: "carousel slide",
+    "data-bs-ride": "carousel",
+    "data-bs-interval": "2000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-inner"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item active"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_BlackForestImages_bfBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_10__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_BlackForestImages_bfCapreseSaladI_jpg__WEBPACK_IMPORTED_MODULE_12__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaCaesarSaladI_png__WEBPACK_IMPORTED_MODULE_6__,
+    className: "carousel-images",
+    alt: "..."
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "carousel-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: _img_OpenAiImages_oaBakedAlaskaI_png__WEBPACK_IMPORTED_MODULE_8__,
+    className: "carousel-images",
+    alt: "..."
+  })))))));
 }
 
 /***/ }),
@@ -9433,9 +9656,24 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   max-width: 844px;
 }
 
-/* * {
+* {
   border: solid 1px yellow;
-} */`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;AAAF;;AAGA;;GAAA","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n}\r\n\r\n.spacing {\r\n  margin-top: 50px;\r\n}\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 844px;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n"],"sourceRoot":""}]);
+}
+
+.carousel-images {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;AAAF;;AAGA;EACE,wBAAA;AAAF;;AAGA;EACE,cAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;EACA,WAAA;AAAF","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n}\r\n\r\n.spacing {\r\n  margin-top: 50px;\r\n}\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 844px;\r\n}\r\n\r\n* {\r\n  border: solid 1px yellow;\r\n}\r\n\r\n.carousel-images {\r\n  display: block;\r\n  width: 70%;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.carousel-container {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  height: 100vh;\r\n  width: 100%;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -48058,6 +48296,126 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/img/BlackForestImages/bfBananaSplitI.jpg":
+/*!******************************************************!*\
+  !*** ./src/img/BlackForestImages/bfBananaSplitI.jpg ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "1f85cf2cb3cb5a9cf859.jpg";
+
+/***/ }),
+
+/***/ "./src/img/BlackForestImages/bfBananaSplitR.jpg":
+/*!******************************************************!*\
+  !*** ./src/img/BlackForestImages/bfBananaSplitR.jpg ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "c4126a99fad16142e38b.jpg";
+
+/***/ }),
+
+/***/ "./src/img/BlackForestImages/bfCapreseSaladI.jpg":
+/*!*******************************************************!*\
+  !*** ./src/img/BlackForestImages/bfCapreseSaladI.jpg ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "4dd29b959c2681c5f2e0.jpg";
+
+/***/ }),
+
+/***/ "./src/img/BlackForestImages/bfCapreseSaladR.jpg":
+/*!*******************************************************!*\
+  !*** ./src/img/BlackForestImages/bfCapreseSaladR.jpg ***!
+  \*******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "da44a07204aabc14ee5e.jpg";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaBakedAlaskaI.png":
+/*!*************************************************!*\
+  !*** ./src/img/OpenAiImages/oaBakedAlaskaI.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "5e845996bb1aa1f0d677.png";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaBakedAlaskaR.png":
+/*!*************************************************!*\
+  !*** ./src/img/OpenAiImages/oaBakedAlaskaR.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "5ecb3d156f903e463371.png";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaBananaSplitI.jpg":
+/*!*************************************************!*\
+  !*** ./src/img/OpenAiImages/oaBananaSplitI.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "b12b0d7cd1cb48e9abf1.jpg";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaBananaSplitR.jpg":
+/*!*************************************************!*\
+  !*** ./src/img/OpenAiImages/oaBananaSplitR.jpg ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "d92ad5967443a3bac091.jpg";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaCaesarSaladI.png":
+/*!*************************************************!*\
+  !*** ./src/img/OpenAiImages/oaCaesarSaladI.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "d708d7a78a53b1043417.png";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaCaesarSaladR.png":
+/*!*************************************************!*\
+  !*** ./src/img/OpenAiImages/oaCaesarSaladR.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "cb8b6adce762aa2ab70a.png";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaCapreseSaladI.jpg":
+/*!**************************************************!*\
+  !*** ./src/img/OpenAiImages/oaCapreseSaladI.jpg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "b65af344f5020bec404a.jpg";
+
+/***/ }),
+
+/***/ "./src/img/OpenAiImages/oaCapreseSaladR.jpg":
+/*!**************************************************!*\
+  !*** ./src/img/OpenAiImages/oaCapreseSaladR.jpg ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "3665f26526a65958dcba.jpg";
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
@@ -49344,6 +49702,18 @@ function combine (array, callback) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -49369,6 +49739,29 @@ function combine (array, callback) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -49385,15 +49778,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
 /* harmony import */ var _Views_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/About */ "./src/Views/About.js");
 /* harmony import */ var _Views_BfPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/BfPage */ "./src/Views/BfPage.js");
 /* harmony import */ var _Views_OaPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Views/OaPage */ "./src/Views/OaPage.js");
 /* harmony import */ var _components_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/CollapsibleNavbar */ "./src/components/CollapsibleNavbar.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../style.scss */ "./style.scss");
-/* harmony import */ var _Views_SignInForm__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Views/SignInForm */ "./src/Views/SignInForm.js");
+/* harmony import */ var _Views_SignInForm__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Views/SignInForm */ "./src/Views/SignInForm.js");
+/* harmony import */ var _Views_Examples__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Views/Examples */ "./src/Views/Examples.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../style.scss */ "./style.scss");
+
 
 
 
@@ -49409,24 +49804,27 @@ const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTa
 const domain = window.location.hostname;
 let rootPath = "";
 if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_6__.CollapsibleNavbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_6__.CollapsibleNavbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/OaPage`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_OaPage__WEBPACK_IMPORTED_MODULE_5__.OaPage, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/BfPage`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_BfPage__WEBPACK_IMPORTED_MODULE_4__.BfPage, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  path: `${rootPath}/Examples`,
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Examples__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/About`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_3__.About, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/SignInForm`,
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_SignInForm__WEBPACK_IMPORTED_MODULE_8__["default"], null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Route, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_SignInForm__WEBPACK_IMPORTED_MODULE_7__["default"], null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: "*",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Navigate, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Navigate, {
     to: "/"
   })
 }))));
