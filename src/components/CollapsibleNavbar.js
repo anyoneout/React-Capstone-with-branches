@@ -62,7 +62,7 @@ export function CollapsibleNavbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to={`${rootPath}/SignIn`}
+                to={`${rootPath}/SignInForm`}
                 className="nav-link">
                 <i className="bi-door-open me-2"></i>Sign In
               </NavLink>

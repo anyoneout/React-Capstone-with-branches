@@ -8,6 +8,7 @@ import { BfPage } from "./Views/BfPage";
 import { OaPage } from "./Views/OaPage";
 import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 import "../style.scss";
+import SignInForm from "./Views/SignInForm";
 
 
 
@@ -24,6 +25,7 @@ root.render(
       <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
       <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
       <Route path={`${rootPath}/About`} element={<About />} />
+      <Route path={`${rootPath}/SignInForm`} element={<SignInForm />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   </BrowserRouter>
