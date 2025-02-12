@@ -60,3 +60,26 @@ body {
 * {
   border: solid 1px yellow;
 }
+.carousel-item {
+  border-top: 2px solid #ffffff42;
+  border-bottom: 2px solid #ffffff42;
+}
+.carousel-images {
+  display: block;
+  width: 40vw;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.carousel-icons {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
