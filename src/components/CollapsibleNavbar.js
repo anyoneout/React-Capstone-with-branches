@@ -26,6 +26,7 @@ export function CollapsibleNavbar() {
             <li className="nav-item">
               <NavLink
                 to={`${rootPath}/`}
+                end
                 className="nav-link">
                 <i className="bi-house-door-fill me-2"></i>Home
               </NavLink>
@@ -35,7 +36,6 @@ export function CollapsibleNavbar() {
                 to={`${rootPath}/BfPage`}
                 className="nav-link">
                 <span className="me-2"><NavFluxIcon /></span>Black Forest
-
               </NavLink>
             </li>
             <li className="nav-item">
