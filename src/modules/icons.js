@@ -28,3 +28,11 @@ export function NavDalleIcon() {
 export function NavFluxIcon() {
   return <Flux size={18} />;
 }
+
+export function CarouselDalleIcon() {
+  return <OpenAI size={50} />;
+}
+
+export function CarouselFluxIcon() {
+  return <Flux size={50} />;
+}

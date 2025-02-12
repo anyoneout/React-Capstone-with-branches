@@ -8151,13 +8151,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_CarouselOpenAi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/CarouselOpenAi */ "./src/components/CarouselOpenAi.js");
 /* harmony import */ var _components_CarouselBlackForest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/CarouselBlackForest */ "./src/components/CarouselBlackForest.js");
+/* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
+
 
 
 
 function Examples() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container navbar-width"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CarouselOpenAi__WEBPACK_IMPORTED_MODULE_1__.CarouselOpenAi, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CarouselBlackForest__WEBPACK_IMPORTED_MODULE_2__.CarouselBlackForest, null));
+    className: "container navbar-width carousel-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row mt-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-1 carousel-icons"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_3__.CarouselDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-11"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CarouselOpenAi__WEBPACK_IMPORTED_MODULE_1__.CarouselOpenAi, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row mt-2"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-1 carousel-icons"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_3__.CarouselFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-11"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CarouselBlackForest__WEBPACK_IMPORTED_MODULE_2__.CarouselBlackForest, null))));
 }
 
 /***/ }),
@@ -9368,6 +9382,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ApiDalleIcon: () => (/* binding */ ApiDalleIcon),
 /* harmony export */   ApiFluxIcon: () => (/* binding */ ApiFluxIcon),
+/* harmony export */   CarouselDalleIcon: () => (/* binding */ CarouselDalleIcon),
+/* harmony export */   CarouselFluxIcon: () => (/* binding */ CarouselFluxIcon),
 /* harmony export */   HomeDalleIcon: () => (/* binding */ HomeDalleIcon),
 /* harmony export */   HomeFluxIcon: () => (/* binding */ HomeFluxIcon),
 /* harmony export */   NavDalleIcon: () => (/* binding */ NavDalleIcon),
@@ -9410,6 +9426,16 @@ function NavDalleIcon() {
 function NavFluxIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_2__["default"], {
     size: 18
+  });
+}
+function CarouselDalleIcon() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    size: 50
+  });
+}
+function CarouselFluxIcon() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    size: 50
   });
 }
 
@@ -9709,6 +9735,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 /* * {
   border: solid 1px yellow;
 } */
+.carousel-item {
+  border-top: 2px solid rgba(255, 255, 255, 0.2588235294);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2588235294);
+}
+
 .carousel-images {
   display: block;
   width: 40vw;
@@ -9716,19 +9747,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   margin: 0 auto;
 }
 
-.carousel-container {
+.carousel-icons {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
 }
 
-.carousel-item .row {
+.carousel-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;AAAF;;AAGA;;GAAA;AAIA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AADF;;AAIA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;EACA,WAAA;AADF;;AAIA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AADF","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n}\r\n\r\n.spacing {\r\n  margin-top: 50px;\r\n}\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 844px;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n\r\n.carousel-images {\r\n  display: block;\r\n  width: 40vw;\r\n  max-width: 350px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.carousel-container {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  height: 100vh;\r\n  width: 100%;\r\n}\r\n\r\n.carousel-item .row {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;AAAF;;AAGA;;GAAA;AAIA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n}\r\n\r\n.spacing {\r\n  margin-top: 50px;\r\n}\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 844px;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n\r\n.carousel-item {\r\n  border-top: 2px solid #ffffff42;\r\n  border-bottom: 2px solid #ffffff42;\r\n}\r\n.carousel-images {\r\n  display: block;\r\n  width: 40vw;\r\n  max-width: 350px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.carousel-icons {\r\n  color: white;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.carousel-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
