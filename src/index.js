@@ -1,20 +1,15 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-
 import { Home } from "./Views/Home";
 import { About } from "./Views/About";
 import { BfPage } from "./Views/BfPage";
 import { OaPage } from "./Views/OaPage";
 import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
-import "../style.scss";
 import SignInForm from "./Views/SignInForm";
+import Examples from "./Views/Examples";
+import "../style.scss";
 import OaPageMobile from "./Views/OaPageMobile";
-
-
-
-
-
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
@@ -29,6 +24,8 @@ root.render(
       <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
       <Route path={`${rootPath}/OaPageMobile`} element={<OaPageMobile />} />
       <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
+      <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
+      <Route path={`${rootPath}/Examples`} element={<Examples />} />
       <Route path={`${rootPath}/About`} element={<About />} />
       <Route path={`${rootPath}/SignInForm`} element={<SignInForm />} />
       <Route path="*" element={<Navigate to="/" />} />
