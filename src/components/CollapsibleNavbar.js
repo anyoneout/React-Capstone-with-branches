@@ -26,7 +26,6 @@ export function CollapsibleNavbar() {
             <li className="nav-item">
               <NavLink
                 to={`${rootPath}/`}
-                end
                 className="nav-link">
                 <i className="bi-house-door-fill me-2"></i>Home
               </NavLink>
