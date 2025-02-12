@@ -41,6 +41,13 @@ export function CollapsibleNavbar() {
             </li>
             <li className="nav-item">
               <NavLink
+                to={`${rootPath}/OaPageMobile`}
+                className="nav-link">
+                <span className="me-2"><NavDalleIcon /></span>OpenAI Mobile
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
                 to={`${rootPath}/OaPage`}
                 className="nav-link">
                 <span className="me-2"><NavDalleIcon /></span>OpenAI
