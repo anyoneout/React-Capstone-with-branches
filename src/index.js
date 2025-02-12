@@ -9,6 +9,10 @@ import { OaPage } from "./Views/OaPage";
 import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 import "../style.scss";
 import SignInForm from "./Views/SignInForm";
+import OaPageMobile from "./Views/OaPageMobile";
+
+
+
 
 
 
@@ -22,8 +26,9 @@ root.render(
     <CollapsibleNavbar />
     <Routes>
       <Route path={`${rootPath}/`} element={<Home />} />
-      <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
       <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
+      <Route path={`${rootPath}/OaPageMobile`} element={<OaPageMobile />} />
+      <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
       <Route path={`${rootPath}/About`} element={<About />} />
       <Route path={`${rootPath}/SignInForm`} element={<SignInForm />} />
       <Route path="*" element={<Navigate to="/" />} />
