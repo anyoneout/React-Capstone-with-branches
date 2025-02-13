@@ -17,7 +17,7 @@ export function BfPage() {
             <div
                 className="row text-end justify-content-end align-items-end"
                 style={{
-                    fontSize: "10px",
+                    fontSize: "11px",
                     minHeight: "20px"
                 }}>
                 <div
@@ -27,7 +27,7 @@ export function BfPage() {
             <div
                 className="row text-end"
                 style={{
-                    fontSize: "10px",
+                    fontSize: "11px",
                     minHeight: "20px"
                 }}>
                 <div

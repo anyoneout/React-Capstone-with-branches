@@ -7855,9 +7855,11 @@ function About() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container mt-3"
+    className: "container mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row justify-content-center spacing"
+    className: "row mt-0 mt-md-5"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row justify-content-center mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-8 col-md-6 col-lg-5 col-xl-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -7929,7 +7931,7 @@ function BfPage() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row text-end justify-content-end align-items-end",
     style: {
-      fontSize: "10px",
+      fontSize: "11px",
       minHeight: "20px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -7937,7 +7939,7 @@ function BfPage() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row text-end",
     style: {
-      fontSize: "10px",
+      fontSize: "11px",
       minHeight: "20px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -8344,7 +8346,7 @@ function OaPage() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row text-end justify-content-end align-items-end",
     style: {
-      fontSize: "10px",
+      fontSize: "11px",
       minHeight: "20px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -8352,7 +8354,7 @@ function OaPage() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row text-end",
     style: {
-      fontSize: "10px",
+      fontSize: "11px",
       minHeight: "20px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -9575,7 +9577,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
   background-color: rgba(255, 255, 255, 0.2588235294);
   color: rgb(255, 255, 255) !important;
   border-radius: 25px;
-}`, "",{"version":3,"sources":["webpack://./src/components/CollapsibleNavbar.scss"],"names":[],"mappings":"AAAA;EACE,yCAAA;AACF;;AAEA;EACE,qDAAA;EACA,mBAAA;AACF;AAAE;EACE,cAAA;EACA,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,iCAAA;AAEJ;AAAE;EACE,YAAA;AAEJ;AAAE;EACE,mDAAA;AAEJ;AAAE;EACE,kBAAA;EACA,SAAA;AAEJ;;AAEA;EACE,oBAAA;AACF;;AAEA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,mDAAA;EACA,oCAAA;EACA,mBAAA;AACF","sourcesContent":[".navbar {\r\n  background-color: rgba(0, 0, 0) !important;\r\n}\r\n\r\n.navbar-nav {\r\n  border: solid, 1px, #ffffff42;\r\n  border-radius: 25px;\r\n  .nav-link {\r\n    margin: 0.2rem;\r\n    color: rgb(238, 238, 238, 0.925) !important;\r\n    font-family: \"Inter\", sans-serif !important;\r\n    font-weight: 500 !important;\r\n    letter-spacing: -0.05em !important;\r\n    padding: 0.5rem 1.8rem !important;\r\n  }\r\n  .nav-link i {\r\n    border: none;\r\n  }\r\n  .nav-link:hover {\r\n    color: #ffffffb2 !important;\r\n  }\r\n  svg {\r\n    position: relative;\r\n    top: -2px;\r\n  }\r\n}\r\n\r\n.navbar-toggler-icon {\r\n  filter: invert(100%);\r\n}\r\n\r\n.navbar-toggler {\r\n  background-color: black;\r\n  border: 2px solid #0dcaf0;\r\n}\r\n\r\n.nav-link.active {\r\n  background-color: #ffffff42;\r\n  color: rgb(255, 255, 255) !important;\r\n  border-radius: 25px;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/CollapsibleNavbar.scss"],"names":[],"mappings":"AAAA;EACE,yCAAA;AACF;;AAEA;EACE,qDAAA;EACA,mBAAA;AACF;AACE;EACE,cAAA;EACA,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,iCAAA;AACJ;AACE;EACE,YAAA;AACJ;AACE;EACE,mDAAA;AACJ;AACE;EACE,kBAAA;EACA,SAAA;AACJ;;AAGA;EACE,oBAAA;AAAF;;AAGA;EACE,uBAAA;EACA,yBAAA;AAAF;;AAGA;EACE,mDAAA;EACA,oCAAA;EACA,mBAAA;AAAF","sourcesContent":[".navbar {\r\n  background-color: rgba(0, 0, 0) !important;\r\n}\r\n\r\n.navbar-nav {\r\n  border: solid, 1px, #ffffff42;\r\n  border-radius: 25px;\r\n  // I had to add !important or the bootstrap style would overwrite the style I wanted.\r\n  .nav-link {\r\n    margin: 0.2rem;\r\n    color: rgb(238, 238, 238, 0.925) !important;\r\n    font-family: \"Inter\", sans-serif !important;\r\n    font-weight: 500 !important;\r\n    letter-spacing: -0.05em !important;\r\n    padding: 0.5rem 1.8rem !important;\r\n  }\r\n  .nav-link i {\r\n    border: none;\r\n  }\r\n  .nav-link:hover {\r\n    color: #ffffffb2 !important;\r\n  }\r\n  svg {\r\n    position: relative;\r\n    top: -2px;\r\n  }\r\n}\r\n\r\n.navbar-toggler-icon {\r\n  filter: invert(100%);\r\n}\r\n\r\n.navbar-toggler {\r\n  background-color: black;\r\n  border: 2px solid #0dcaf0;\r\n}\r\n\r\n.nav-link.active {\r\n  background-color: #ffffff42;\r\n  color: rgb(255, 255, 255) !important;\r\n  border-radius: 25px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9612,10 +9614,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   font-family: "Inter", sans-serif !important;
 }
 
-.spacing {
+/* .spacing {
   margin-top: 50px;
-}
-
+} */
 .custom-tooltip {
   max-width: 120px;
   --bs-tooltip-bg: #fff78a;
@@ -9704,13 +9705,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
  */
 .black-forest-font {
   font-family: "Playfair", serif;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 @font-face {
   font-family: "Playfair";
   src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("opentype");
-}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;EACE,gBAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;AAAF;;AAGA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AAAF;;AAEA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AACF;;AAEA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AACF;;AAEA;;GAAA;AAIA;;;;;EAAA;AAOA;EACE,8BAAA;EACA,eAAA;AADF;;AAIA;EACE,uBAAA;EACA,+DAAA;AADF","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n  font-family: \"Inter\", sans-serif !important;\r\n}\r\n\r\n.spacing {\r\n  margin-top: 50px;\r\n}\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 740px;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n.carousel-item {\r\n  border-top: 2px solid #ffffff42;\r\n  border-bottom: 2px solid #ffffff42;\r\n}\r\n.carousel-images {\r\n  display: block;\r\n  width: 40vw;\r\n  max-width: 320px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.carousel-icons {\r\n  color: white;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.carousel-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n}\r\n\r\n/* .api-form {\r\n  border: solid 1px #fff78a;\r\n} */\r\n\r\n/* .api-inputs {\r\n  border: none;\r\n  background-color: black;\r\n  border-bottom: solid 1px #ffffff69;\r\n}\r\n */\r\n\r\n.black-forest-font {\r\n  font-family: \"Playfair\", serif;\r\n  font-size: 50px;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Playfair\";\r\n  src: url(\"fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;;GAAA;AAIA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AAAJ;AACI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AACN;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AADF;AAEE;EACE,gBAAA;AAAJ;;AAIA;EACE,gBAAA;AADF;;AAIA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;;GAAA;AAIA;;;;;EAAA;AAOA;EACE,8BAAA;EACA,eAAA;AAFF;;AAKA;EACE,uBAAA;EACA,+DAAA;AAFF","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n  font-family: \"Inter\", sans-serif !important;\r\n}\r\n\r\n/* .spacing {\r\n  margin-top: 50px;\r\n} */\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 740px;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n.carousel-item {\r\n  border-top: 2px solid #ffffff42;\r\n  border-bottom: 2px solid #ffffff42;\r\n}\r\n.carousel-images {\r\n  display: block;\r\n  width: 40vw;\r\n  max-width: 320px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.carousel-icons {\r\n  color: white;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.carousel-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n}\r\n\r\n/* .api-form {\r\n  border: solid 1px #fff78a;\r\n} */\r\n\r\n/* .api-inputs {\r\n  border: none;\r\n  background-color: black;\r\n  border-bottom: solid 1px #ffffff69;\r\n}\r\n */\r\n\r\n.black-forest-font {\r\n  font-family: \"Playfair\", serif;\r\n  font-size: 45px;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Playfair\";\r\n  src: url(\"fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -50004,9 +50005,6 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElem
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/OaPage`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_OaPage__WEBPACK_IMPORTED_MODULE_5__.OaPage, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
-  path: `${rootPath}/BfPage`,
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_BfPage__WEBPACK_IMPORTED_MODULE_4__.BfPage, null)
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/Examples`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Examples__WEBPACK_IMPORTED_MODULE_8__["default"], null)
