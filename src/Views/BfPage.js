@@ -45,7 +45,7 @@ export function BfPage() {
                 <ApiFluxIcon />
             </div>
             <div className="row mt-5 d-flex justify-content-center">
-                <div className="col-8 col-sm-6">
+                <div className="col-8">
                     <form className="api-form">
                         <div
                             className="input-group mb-2"
@@ -148,7 +148,7 @@ export function BfPage() {
 
             <div className="row mt-5">
 
-                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div className="col-12 d-flex align-items-center justify-content-center">
                     <div
                         className="spinner-border text-info"
                         role="status"
@@ -176,7 +176,7 @@ export function BfPage() {
                     ></i>
                 </div>
 
-                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div className="col-12 d-flex align-items-center justify-content-center">
                     <div
                         className="spinner-border text-info"
                         role="status"
@@ -193,7 +193,7 @@ export function BfPage() {
 
 
             <div className="row mt-5 d-flex justify-content-center">
-                <div className="col-10 col-md-8">
+                <div className="col-10">
                     <div id="recipeIngredients"></div>
                 </div>
             </div>
