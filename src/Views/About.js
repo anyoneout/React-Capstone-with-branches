@@ -10,7 +10,7 @@ export function About() {
   useEffect(componentDidUnmount, []);
 
   return (
-    <div className="container mt-5 pt-5">
+    <div className="container mt-3">
       <div className="row justify-content-center spacing">
         <div className="col-8 col-md-6 col-lg-5 col-xl-3">
           <div className="card text-center" style={{ backgroundColor: "black" }}>

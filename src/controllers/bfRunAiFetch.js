@@ -8,7 +8,6 @@ function getDomElements() {
   return {
     recipeChoice: document.getElementById("chosenRecipe"),
     recipeIngredientsHTML: document.getElementById("recipeIngredients"),
-    recipeNameHTML: document.getElementById("recipeName"),
     ingredientsImgHTML: document.getElementById("ingredientsAI"),
     recipeImgHTML: document.getElementById("recipeAI"),
     secondArrow: document.getElementById("secondArrowHTML"),
@@ -21,10 +20,9 @@ function iconVisibility(element, isVisible) {
   element.style.visibility = isVisible ? "visible" : "hidden";
 }
 
-async function updateRecipeImage(recipeChoice, recipeImgHTML, recipeNameHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, hfUserToken) {
+async function updateRecipeImage(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, hfUserToken) {
   const dataRecipeImage = await bfRecipeImage(recipeChoice, hfUserToken);
   recipeImgHTML.src = dataRecipeImage;
-  recipeNameHTML.innerHTML = recipeChoice.value;
   recipeImgHTML.classList.add("borderImage");
   iconVisibility(secondArrowHTML, true);
   iconVisibility(spinnerOneHTML, false);
@@ -45,13 +43,13 @@ export async function bfRunAiFetch() {
   const hfUserToken = localStorage.getItem("hfToken");
 
   const elements = getDomElements();
-  const { recipeChoice, recipeIngredientsHTML, recipeNameHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML } = elements;
+  const { recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML } = elements;
 
   bfSaveUser();
 
   iconVisibility(spinnerOneHTML, true);
 
-  await updateRecipeImage(recipeChoice, recipeImgHTML, recipeNameHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, hfUserToken);
+  await updateRecipeImage(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, hfUserToken);
 
   const ingredientsFetched = await bfIngredientsList(recipeChoice, hfUserToken);
 

@@ -9,16 +9,18 @@ export function HomeDalleIcon() {
   return <Dalle.Combine size={50} />;
 }
 
-export function ApiDalleIcon() {
-  return <Dalle.Combine size={80} />;
-}
-
 export function HomeFluxIcon() {
   return <Flux.Combine size={50} />;
 }
+export function ApiOpenAiIcon() {
+  return <OpenAI.Text size={65} />;
+}
+export function ApiDalleIcon() {
+  return <Dalle.Combine size={55} />;
+}
 
 export function ApiFluxIcon() {
-  return <Flux.Combine size={60} />;
+  return <Flux.Combine size={45} />;
 }
 
 export function NavDalleIcon() {
@@ -30,9 +32,9 @@ export function NavFluxIcon() {
 }
 
 export function CarouselDalleIcon() {
-  return <OpenAI size={50} />;
+  return <OpenAI size={30} />;
 }
 
 export function CarouselFluxIcon() {
-  return <Flux size={50} />;
+  return <Flux size={30} />;
 }

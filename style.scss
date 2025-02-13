@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: rgb(127, 208, 245);
+  font-family: "Inter", sans-serif !important;
 }
 
 .spacing {
@@ -54,12 +55,12 @@ body {
 }
 
 .navbar-width {
-  max-width: 1000px;
+  max-width: 740px;
 }
 
-* {
+/* * {
   border: solid 1px yellow;
-}
+} */
 .carousel-item {
   border-top: 2px solid #ffffff42;
   border-bottom: 2px solid #ffffff42;
@@ -67,7 +68,7 @@ body {
 .carousel-images {
   display: block;
   width: 40vw;
-  max-width: 350px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -82,4 +83,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* .api-form {
+  border: solid 1px #fff78a;
+} */
+
+/* .api-inputs {
+  border: none;
+  background-color: black;
+  border-bottom: solid 1px #ffffff69;
+}
+ */
+
+.black-forest-font {
+  font-family: "Playfair", serif;
+  font-size: 50px;
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("fonts/PlayfairDisplay-Regular.otf") format("opentype");
 }

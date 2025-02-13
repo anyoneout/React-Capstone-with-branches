@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ApiFluxIcon } from "../modules/icons";
+import { ApiBlackForestIcon, ApiFluxIcon } from "../modules/icons";
 import { bfRunAiFetch } from "../controllers/bfRunAiFetch";
 
 
@@ -12,201 +12,200 @@ export function BfPage() {
     useEffect(componentDidUnmount, []);
 
     return (
-        <>
-            <div className="container" style={{ minHeight: "15vh" }}>
-                <div className="row"></div>
-                <div className="row mt-4">
-                    <div className="col-7">
-                        <div
-                            className="display-4 fw-bold d-flex align-items-end"
-                            style={{ minHeight: "10vh", color: "#fff78a" }}
-                        >
-                            Black Forest Labs.
-                        </div>
-                        <div style={{ minHeight: "5vh", color: "red", fontSize: ".85rem" }}>
-                            * Due to the unpredictability of models being active on huggingface.co, the question answering api may not return a result.
-                        </div>
-                    </div>
-                    <div className="col-3 justify-content-end d-flex align-items-end">
-                        <div id="userNameHTML"></div>
-                    </div>
-                    <div className="col-2 d-flex align-items-end justify-content-end">
-                        <div id="userEmailHTML" className="text-info"></div>
-                    </div>
+        <div className="container navbar-width">
+            <div
+                className="row text-end justify-content-end align-items-end"
+                style={{
+                    fontSize: "10px",
+                    minHeight: "20px"
+                }}>
+                <div
+                    id="userNameHTML">
                 </div>
             </div>
-            <div className="container" style={{ minHeight: "45vh" }}>
-                <div className="row mt-5 d-flex">
-                    <div className="col-12 col-md-2">
-                        <form>
-                            <div className="input-group">
-                                <label htmlFor="nameInput" className="form-label">
-                                    Full Name:
-                                    <input
-                                        type="text"
-                                        id="nameInput"
-                                        className="form-control"
-                                        placeholder="John Doe"
-                                    />
-                                </label>
-                            </div>
-                            <div className="input-group">
-                                <label htmlFor="emailInput" className="form-label">
-                                    Email:
-                                    <input
-                                        type="email"
-                                        id="emailInput"
-                                        className="form-control"
-                                        placeholder="name@domain.com"
-                                    />
-                                </label>
-                            </div>
-                            <div className="input-group">
-                                <label htmlFor="hfTokenInput">
-                                    Huggingface Token:
-                                    <input
-                                        className="form-control"
-                                        type="text"
-                                        id="hfTokenInput"
-                                    />
-                                </label>
-                            </div>
-                            <br />
-                            <br />
-                            <br />
-                            <div className="dropdown" data-bs-theme="dark">
-                                <label htmlFor="chosenRecipe">Recipes:</label>
-                                <select
-                                    className="form-select mb-2"
-                                    name="chosenRecipe"
-                                    id="chosenRecipe"
-                                >
-                                    <option value="Caprese Salad">
-                                        Caprese Salad
-                                    </option>
-                                    <option value="Trout Grenobloise">
-                                        Trout Grenobloise
-                                    </option>
-                                    <option value="Baked Alaska">
-                                        Baked Alaska
-                                    </option>
-                                    <option value="Artichoke Gratin">
-                                        Artichoke Gratin
-                                    </option>
-                                    <option value="Minestrone Soup">
-                                        Minestrone Soup
-                                    </option>
-                                    <option value="Spaghetti Vongole">
-                                        Spaghetti Vongole
-                                    </option>
-                                    <option value="Beef Stroganoff">
-                                        Beef Stroganoff
-                                    </option>
-                                    <option value="Chicken Kiev">
-                                        Chicken Kiev
-                                    </option>
-                                    <option value="Ceasar Salad">
-                                        Caesar Salad
-                                    </option>
-                                    <option value="Osso Bucco">
-                                        Osso Bucco
-                                    </option>
-                                    <option value="Salmon Teriyaki">
-                                        Salmon Teriyaki
-                                    </option>
-                                    <option value="Pad Thai">Pad Thai</option>
-                                    <option value="Eggs Benedict">
-                                        Eggs Benedict
-                                    </option>
-                                    <option value="Lasagna">Lasagna</option>
-                                    <option value="Ice Cream Sundae">
-                                        Ice Cream Sundae
-                                    </option>
-                                    <option value="Pizza Margherita">
-                                        Pizza Margherita
-                                    </option>
-                                </select>
-                                <button
-                                    type="button"
-                                    id="fetchButton"
-                                    onClick={bfRunAiFetch}
-                                    className="btn btn-sm btn-outline-info mt-2"
-                                >
-                                    Generate
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="col-1"></div>
-                    <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                        <div
-                            className="spinner-border text-info"
-                            role="status"
-                            style={{ visibility: "hidden" }}
-                            id="spinnerOne"
-                        >
-                            <span className="visually-hidden"></span>
-                        </div>
-                        <img
-                            id="recipeAI"
-                            className="rounded-circle"
-                            style={{ maxWidth: "100%" }}
-                        />
-                    </div>
-                    <div className="col-1 d-flex align-items-center justify-content-center">
-                        <i
-                            className="bi bi-arrow-right"
-                            id="secondArrowHTML"
-                            style={{
-                                fontSize: "3rem",
-                                color: "#f1ffb0",
-                                visibility: "hidden",
-                            }}
-                        ></i>
-                    </div>
-                    <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                        <div
-                            className="spinner-border text-info"
-                            role="status"
-                            style={{ visibility: "hidden" }}
-                            id="spinnerTwo"
-                        >
-                            <span className="visually-hidden"></span>
-                        </div>
-                        <img id="ingredientsAI" style={{ maxWidth: "100%" }} />
-                    </div>
+            <div
+                className="row text-end"
+                style={{
+                    fontSize: "10px",
+                    minHeight: "20px"
+                }}>
+                <div
+                    id="userEmailHTML">
+                </div>
+            </div >
+            <div
+                className="row"
+                style={{ color: "#fff78a" }}>
+                <div
+                    className="col-12 d-flex  black-forest-font justify-content-start">
+                    black forest labs.
                 </div>
             </div>
-            <div className="container" style={{ minHeight: "20vh" }}>
-                <div className="row" style={{ minHeight: "5vh" }}></div>
-                <div className="row" style={{ minHeight: "15vh" }}>
-                    <div className="col-3 align-items-start d-flex">
-                        <ApiFluxIcon />
-                    </div>
-                    <div className="col-4 d-flex align-items-start justify-content-center">
-                        <p
-                            id="recipeName"
-                            className="display-6"
-                            style={{ color: "#f1ffb0" }}
-                        ></p>
-                    </div>
-                    <div className="col-1"></div>
-                    <div className="col-4 d-flex align-items-start justify-content-start">
+            <div className="row d-flex justify-content-center">
+                <ApiFluxIcon />
+            </div>
+            <div className="row mt-5 d-flex justify-content-center">
+                <div className="col-8 col-sm-6">
+                    <form className="api-form">
                         <div
-                            id="recipeIngredients"
-                            className="ms-5"
-                            style={{ color: "#f1ffb0", width: "75%" }}
-                        ></div>
-                    </div>
+                            className="input-group mb-2"
+                            data-bs-theme="dark">
+                            <input
+                                type="text"
+                                className="form-control  api-inputs"
+                                placeholder="Name"
+                                aria-label="User Name"
+                                aria-describedby="basic-addon1"
+                                id="nameInput" />
+                        </div>
+                        <div
+                            className="input-group mb-2"
+                            data-bs-theme="dark">
+                            <input
+                                type="text"
+                                className="form-control  api-inputs"
+                                placeholder="Email"
+                                aria-label="User email" aria-describedby="basic-addon2"
+                                id="emailInput" />
+                        </div>
+                        <div
+                            className="input-group mb-2"
+                            data-bs-theme="dark">
+                            <input
+                                type="text"
+                                className="form-control  api-inputs"
+                                placeholder="Token"
+                                aria-label="OpenAi Token Input" aria-describedby="basic-addon2"
+                                id="hfTokenInput" />
+                        </div>
+                        <div
+                            className="input-group"
+                            data-bs-theme="dark">
+                            <select
+                                className="form-select  api-inputs"
+                                id="chosenRecipe"
+                                aria-label="Example select with button addon">
+                                <option>Recipe...</option>
+                                <option value="Caprese Salad">
+                                    Caprese Salad
+                                </option>
+                                <option value="Trout Grenobloise">
+                                    Trout Grenobloise
+                                </option>
+                                <option value="Baked Alaska">
+                                    Baked Alaska
+                                </option>
+                                <option value="Artichoke Gratin">
+                                    Artichoke Gratin
+                                </option>
+                                <option value="Minestrone Soup">
+                                    Minestrone Soup
+                                </option>
+                                <option value="Spaghetti Vongole">
+                                    Spaghetti Vongole
+                                </option>
+                                <option value="Beef Stroganoff">
+                                    Beef Stroganoff
+                                </option>
+                                <option value="Chicken Kiev">
+                                    Chicken Kiev
+                                </option>
+                                <option value="Ceasar Salad">
+                                    Caesar Salad
+                                </option>
+                                <option value="Osso Bucco">
+                                    Osso Bucco
+                                </option>
+                                <option value="Beef Namtok">
+                                    Beef Namtok
+                                </option>
+                                <option value="Steak Au Poivre">
+                                    Steak Au Poivre
+                                </option>
+                                <option value="Steak Tartare">
+                                    Steak Tartare
+                                </option>
+                                <option value="English Breakfast">
+                                    English Breakfast
+                                </option>
+                                <option value="Ice Cream Sundae">
+                                    Ice Cream Sundae
+                                </option>
+                                <option value="Pizza Margherita">
+                                    Pizza Margherita
+                                </option>
+                            </select>
+                            <button
+                                className="btn btn-outline-secondary" type="button"
+                                id="fetchButton"
+                                onClick={bfRunAiFetch}>
+                                Submit
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </>
+
+            <div className="row mt-5">
+
+                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <div
+                        className="spinner-border text-info"
+                        role="status"
+                        style={{ visibility: "hidden" }}
+                        id="spinnerOne"
+                    >
+                        <span className="visually-hidden"></span>
+                    </div>
+                    <img
+                        id="recipeAI"
+                        className="rounded-circle"
+                        style={{ maxWidth: "100%" }}
+                    />
+                </div>
+
+                <div className="col-12  d-none d-flex align-items-center justify-content-center">
+                    <i
+                        className="bi bi-arrow-right"
+                        id="secondArrowHTML"
+                        style={{
+                            fontSize: "3rem",
+                            color: "#f1ffb0",
+                            visibility: "hidden",
+                        }}
+                    ></i>
+                </div>
+
+                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <div
+                        className="spinner-border text-info"
+                        role="status"
+                        style={{ visibility: "hidden" }}
+                        id="spinnerTwo"
+                    >
+                        <span className="visually-hidden"></span>
+                    </div>
+                    <img
+                        id="ingredientsAI"
+                        style={{ maxWidth: "100%" }} />
+                </div>
+            </div>
+
+
+            <div className="row mt-5 d-flex justify-content-center">
+                <div className="col-10 col-md-8">
+                    <div id="recipeIngredients"></div>
+                </div>
+            </div>
+        </div >
+
+
     );
 
     function componentDidMount() {
         setDidMount(true);
-        console.log("The BfPage page component has mounted");
-        document.title = "Recipe Deconstructor - Black Forest Flux";
+        console.log("The OaPage page component has mounted");
+        document.title = "Recipe Deconstructor - Open AI Dall-E-3";
         return componentDidUnmount;
     }
 
