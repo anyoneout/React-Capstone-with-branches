@@ -46,7 +46,7 @@ export function OaPage() {
                 <ApiDalleIcon />
             </div>
             <div className="row mt-5 d-flex justify-content-center">
-                <div className="col-8 col-sm-6">
+                <div className="col-8 ">
                     <form className="api-form">
                         <div
                             className="input-group mb-2"
@@ -149,7 +149,7 @@ export function OaPage() {
 
             <div className="row mt-5">
 
-                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div className="col-12  d-flex align-items-center justify-content-center">
                     <div
                         className="spinner-border text-info"
                         role="status"
@@ -177,7 +177,7 @@ export function OaPage() {
                     ></i>
                 </div>
 
-                <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <div className="col-12d-flex align-items-center justify-content-center">
                     <div
                         className="spinner-border text-info"
                         role="status"
@@ -194,7 +194,7 @@ export function OaPage() {
 
 
             <div className="row mt-5 d-flex justify-content-center">
-                <div className="col-10 col-md-8">
+                <div className="col-10">
                     <div id="recipeIngredients"></div>
                 </div>
             </div>

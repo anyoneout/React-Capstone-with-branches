@@ -16,7 +16,7 @@ export function Home() {
 
   return (
     <div className="container navbar-width">
-      <div className="row text-start mt-md-5">
+      <div className="row text-start">
         <div className="col-12 mt-5">
           <p className="display-3 fw-bold " style={{ color: "#fff78a" }}>
             Recipe Deconstructor
@@ -38,7 +38,7 @@ export function Home() {
 
 
       <div className="row mt-5">
-        <div className="col-12 col-md-6 d-flex flex-column align-items-center">
+        <div className="col-12 d-flex flex-column align-items-center">
           <div className="card icon bg-black d-flex text-white align-items-center justify-content-center">
             <HomeFluxIcon />
           </div>
@@ -52,7 +52,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="col-12 col-md-6 d-flex flex-column align-items-center">
+        <div className="col-12 d-flex flex-column align-items-center">
           <div className="card icon bg-black text-white d-flex align-items-center justify-content-center">
             <HomeDalleIcon />
           </div>
