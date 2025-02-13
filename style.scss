@@ -105,3 +105,7 @@ body {
   font-family: "Playfair";
   src: url("fonts/PlayfairDisplay-Regular.otf") format("opentype");
 }
+
+html {
+  overflow-y: scroll;
+}
