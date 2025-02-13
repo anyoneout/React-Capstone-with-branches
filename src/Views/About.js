@@ -14,7 +14,7 @@ export function About() {
     <div className="container mt-5">
       <div className="row mt-0 mt-md-5"></div>
       <div className="row justify-content-center spacing">
-        <div className="col-8 col-md-6 ">
+        <div className="col-8 col-md-6 col-lg-5 col-xl-3">
           <div className="card text-center" style={{ backgroundColor: "black" }}>
             <img src="src/img/aboutImage.jpg"
               className="rounded-circle card-img-top  pt-3 "

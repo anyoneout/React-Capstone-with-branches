@@ -9,7 +9,7 @@ export function CollapsibleNavbar() {
   let rootPath = "";
   if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
   return (
-    <nav className="navbar mb-3 mt-4 py-0">
+    <nav className="navbar navbar-expand-lg mb-3 mt-4 py-0">
       <div className="container">
         <button
           className="navbar-toggler"
