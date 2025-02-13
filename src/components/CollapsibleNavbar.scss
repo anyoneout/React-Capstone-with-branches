@@ -5,6 +5,7 @@
 .navbar-nav {
   border: solid, 1px, #ffffff42;
   border-radius: 25px;
+  // I had to add !important or the bootstrap style would overwrite the style I wanted.
   .nav-link {
     margin: 0.2rem;
     color: rgb(238, 238, 238, 0.925) !important;

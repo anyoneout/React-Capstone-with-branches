@@ -22,7 +22,6 @@ root.render(
       <Route path={`${rootPath}/`} element={<Home />} />
       <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
       <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
-      <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
       <Route path={`${rootPath}/Examples`} element={<Examples />} />
       <Route path={`${rootPath}/About`} element={<About />} />
       <Route path={`${rootPath}/SignInForm`} element={<SignInForm />} />
