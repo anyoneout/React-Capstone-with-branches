@@ -9,10 +9,8 @@ import oaMinestroneR from "../img/OpenAiImages/oaMinestroneR.png";
 import oaMinestroneI from "../img/OpenAiImages/oaMinestroneI.png";
 import oaEggsBenedictR from "../img/OpenAiImages/oaEggsBenedictR.png";
 import oaEggsBenedictI from "../img/OpenAiImages/oaEggsBenedictI.png";
-import oaCaesarSaladR from "../img/OpenAiImages/oaCaesarSaladR.png";
-import oaCaesarSaladI from "../img/OpenAiImages/oaCaesarSaladI.png";
-import oaBakedAlaskaR from "../img/OpenAiImages/oaBakedAlaskaR.png";
-import oaBakedAlaskaI from "../img/OpenAiImages/oaBakedAlaskaI.png";
+import "../../style.scss"
+
 
 export function CarouselOpenAi() {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./CollapsibleNavbar.scss";
+import "../../style.scss"
 import { NavDalleIcon, NavFluxIcon } from "../modules/icons";
 
 export function CollapsibleNavbar() {

@@ -10,6 +10,7 @@ import bfMinestroneR from "../img/BlackForestImages/bfMinestroneR.jpg";
 import bfMinestroneI from "../img/BlackForestImages/bfMinestroneI.jpg";
 import bfEggsBenedictR from "../img/BlackForestImages/bfEggsBenedictR.jpg";
 import bfEggsBenedictI from "../img/BlackForestImages/bfEggsBenedictI.jpg";
+import "../../style.scss"
 
 
 

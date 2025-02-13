@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { ApiBlackForestIcon, ApiFluxIcon } from "../modules/icons";
+import { ApiFluxIcon } from "../modules/icons";
 import { bfRunAiFetch } from "../controllers/bfRunAiFetch";
+import "../../style.scss"
 
 
 export function BfPage() {

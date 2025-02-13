@@ -1,7 +1,7 @@
 import React from "react";
 import { CarouselOpenAi } from "../components/CarouselOpenAi";
 import { CarouselBlackForest } from "../components/CarouselBlackForest";
-import { CarouselDalleIcon, CarouselFluxIcon, HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
+import { CarouselDalleIcon, CarouselFluxIcon } from "../modules/icons";
 
 export default function Examples() {
   return (
