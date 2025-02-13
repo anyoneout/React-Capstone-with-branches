@@ -40,13 +40,6 @@ export function CollapsibleNavbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to={`${rootPath}/OaPageMobile`}
-                className="nav-link">
-                <span className="me-2"><NavDalleIcon /></span>OpenAI Mobile
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
                 to={`${rootPath}/OaPage`}
                 className="nav-link">
                 <span className="me-2"><NavDalleIcon /></span>OpenAI
@@ -66,13 +59,13 @@ export function CollapsibleNavbar() {
                 <i className="bi-file-person me-2"></i>About
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/*  <li className="nav-item">
               <NavLink
                 to={`${rootPath}/SignInForm`}
                 className="nav-link">
                 <i className="bi-door-open me-2"></i>Sign In
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

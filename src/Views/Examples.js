@@ -5,7 +5,7 @@ import { CarouselDalleIcon, CarouselFluxIcon, HomeDalleIcon, HomeFluxIcon } from
 
 export default function Examples() {
   return (
-    <div className="container navbar-width carousel-container">
+    <div className="container navbar-width carousel-container mt-5">
       <div className="row mt-5">
         <div className="col-1 carousel-icons"><CarouselDalleIcon /></div>
         <div className="col-11"><CarouselOpenAi /></div>

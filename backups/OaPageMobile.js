@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { oaRunAiFetch } from "../controllers/oaRunAiFetch";
-import { ApiDalleIcon } from "../modules/icons";
+import { oaRunAiFetch } from "../src/controllers/oaRunAiFetch";
+import { ApiDalleIcon } from "../src/modules/icons";
 
 export default function OaPageMobile() {
   const [didMount, setDidMount] = useState(false);
