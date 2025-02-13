@@ -27,7 +27,7 @@ export function Home() {
         </div>
         <div className="col-12 mt-4 try-section">
           <h4 style={{ color: "rgba(204, 98, 98, 0.925)" }}>Try here!</h4>
-          <Link to="BfPage" className="btn btn-sm btn-info ms-3 fw-bold me-2 icon">
+          <Link to="BfPage" className="btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon">
             Black Forest
           </Link>
           <Link to="OaPage" className="btn btn-sm btn-outline-info ms-1 fw-bold icon">

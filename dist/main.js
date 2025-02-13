@@ -8194,7 +8194,7 @@ function Home() {
     }
   }, "Try here!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
     to: "BfPage",
-    className: "btn btn-sm btn-info ms-3 fw-bold me-2 icon"
+    className: "btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon"
   }, "Black Forest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
     to: "OaPage",
     className: "btn btn-sm btn-outline-info ms-1 fw-bold icon"
