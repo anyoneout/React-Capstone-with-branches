@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { oaRunAiFetch } from "../controllers/oaRunAiFetch";
 import { ApiDalleIcon, ApiOpenAiIcon } from "../modules/icons";
-import { oaSaveUser } from "../modules/oaSaveUser";
+import "../../style.scss"
 
 
 export function OaPage() {

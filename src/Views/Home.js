@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
 import Card from "../components/Card";
+import "../../style.scss"
 
 
 
