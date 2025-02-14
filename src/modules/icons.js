@@ -32,9 +32,9 @@ export function NavFluxIcon() {
 }
 
 export function CarouselDalleIcon() {
-  return <OpenAI size={30} />;
+  return <OpenAI size={35} />;
 }
 
 export function CarouselFluxIcon() {
-  return <Flux size={30} />;
+  return <Flux size={35} />;
 }
