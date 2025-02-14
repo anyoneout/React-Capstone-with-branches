@@ -27,19 +27,19 @@ export function Home() {
         </div>
         <div className="col-12 mt-4 try-section">
           <h4 style={{ color: "rgba(204, 98, 98, 0.925)" }}>Try here!</h4>
-          <Link to="BfPage" className="btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon">
-            Black Forest
+          <Link to="BfPage" className="btn btn-sm btn-outline-info rounded-pill ms-3 fw-bold me-2 icon">
+            Flux
           </Link>
-          <Link to="OaPage" className="btn btn-sm btn-outline-info ms-1 fw-bold icon">
+          <Link to="OaPage" className="btn btn-sm btn-outline-info rounded-pill ms-1 fw-bold icon">
             Dall-E-3
           </Link>
         </div>
       </div>
 
 
-      <div className="row mt-5">
+      <div className="row">
         <div className="col-12 col-md-6 d-flex flex-column align-items-center">
-          <div className="card icon bg-black d-flex text-white align-items-center justify-content-center">
+          <div className="card icon bg-black d-flex text-white align-items-center justify-content-center pt-5">
             <HomeFluxIcon />
           </div>
           <div className="image-border mt-5">
@@ -53,7 +53,7 @@ export function Home() {
         </div>
 
         <div className="col-12 col-md-6 d-flex flex-column align-items-center">
-          <div className="card icon bg-black text-white d-flex align-items-center justify-content-center">
+          <div className="card icon bg-black text-white d-flex align-items-center justify-content-center pt-5">
             <HomeDalleIcon />
           </div>
           <div className="image-border mt-5">
