@@ -9357,12 +9357,12 @@ function NavFluxIcon() {
 }
 function CarouselDalleIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    size: 30
+    size: 35
   });
 }
 function CarouselFluxIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    size: 30
+    size: 35
   });
 }
 
@@ -9551,7 +9551,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
   font-family: "Inter", sans-serif !important;
   font-weight: 500 !important;
   letter-spacing: -0.05em !important;
-  padding: 0.5rem 1.8rem !important;
+  padding: 0.5rem 2.5rem !important;
 }
 .navbar-nav .nav-link i {
   border: none;
@@ -9577,7 +9577,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
   background-color: rgba(255, 255, 255, 0.2588235294);
   color: rgb(255, 255, 255) !important;
   border-radius: 25px;
-}`, "",{"version":3,"sources":["webpack://./src/components/CollapsibleNavbar.scss"],"names":[],"mappings":"AAAA;EACE,yCAAA;AACF;;AAEA;EACE,qDAAA;EACA,mBAAA;AACF;AACE;EACE,cAAA;EACA,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,iCAAA;AACJ;AACE;EACE,YAAA;AACJ;AACE;EACE,mDAAA;AACJ;AACE;EACE,kBAAA;EACA,SAAA;AACJ;;AAGA;EACE,oBAAA;AAAF;;AAGA;EACE,uBAAA;EACA,yBAAA;AAAF;;AAGA;EACE,mDAAA;EACA,oCAAA;EACA,mBAAA;AAAF","sourcesContent":[".navbar {\r\n  background-color: rgba(0, 0, 0) !important;\r\n}\r\n\r\n.navbar-nav {\r\n  border: solid, 1px, #ffffff42;\r\n  border-radius: 25px;\r\n  // I had to add !important or the bootstrap style would overwrite the style I wanted.\r\n  .nav-link {\r\n    margin: 0.2rem;\r\n    color: rgb(238, 238, 238, 0.925) !important;\r\n    font-family: \"Inter\", sans-serif !important;\r\n    font-weight: 500 !important;\r\n    letter-spacing: -0.05em !important;\r\n    padding: 0.5rem 1.8rem !important;\r\n  }\r\n  .nav-link i {\r\n    border: none;\r\n  }\r\n  .nav-link:hover {\r\n    color: #ffffffb2 !important;\r\n  }\r\n  svg {\r\n    position: relative;\r\n    top: -2px;\r\n  }\r\n}\r\n\r\n.navbar-toggler-icon {\r\n  filter: invert(100%);\r\n}\r\n\r\n.navbar-toggler {\r\n  background-color: black;\r\n  border: 2px solid #0dcaf0;\r\n}\r\n\r\n.nav-link.active {\r\n  background-color: #ffffff42;\r\n  color: rgb(255, 255, 255) !important;\r\n  border-radius: 25px;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/CollapsibleNavbar.scss"],"names":[],"mappings":"AAAA;EACE,yCAAA;AACF;;AAEA;EACE,qDAAA;EACA,mBAAA;AACF;AACE;EACE,cAAA;EACA,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,iCAAA;AACJ;AACE;EACE,YAAA;AACJ;AACE;EACE,mDAAA;AACJ;AACE;EACE,kBAAA;EACA,SAAA;AACJ;;AAGA;EACE,oBAAA;AAAF;;AAGA;EACE,uBAAA;EACA,yBAAA;AAAF;;AAGA;EACE,mDAAA;EACA,oCAAA;EACA,mBAAA;AAAF","sourcesContent":[".navbar {\r\n  background-color: rgba(0, 0, 0) !important;\r\n}\r\n\r\n.navbar-nav {\r\n  border: solid, 1px, #ffffff42;\r\n  border-radius: 25px;\r\n  // I had to add !important or the bootstrap style would overwrite the style I wanted.\r\n  .nav-link {\r\n    margin: 0.2rem;\r\n    color: rgb(238, 238, 238, 0.925) !important;\r\n    font-family: \"Inter\", sans-serif !important;\r\n    font-weight: 500 !important;\r\n    letter-spacing: -0.05em !important;\r\n    padding: 0.5rem 2.5rem !important;\r\n  }\r\n  .nav-link i {\r\n    border: none;\r\n  }\r\n  .nav-link:hover {\r\n    color: #ffffffb2 !important;\r\n  }\r\n  svg {\r\n    position: relative;\r\n    top: -2px;\r\n  }\r\n}\r\n\r\n.navbar-toggler-icon {\r\n  filter: invert(100%);\r\n}\r\n\r\n.navbar-toggler {\r\n  background-color: black;\r\n  border: 2px solid #0dcaf0;\r\n}\r\n\r\n.nav-link.active {\r\n  background-color: #ffffff42;\r\n  color: rgb(255, 255, 255) !important;\r\n  border-radius: 25px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9663,7 +9663,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 
 .navbar-width {
-  max-width: 740px;
+  max-width: 800px;
 }
 
 /* * {
@@ -9676,8 +9676,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 
 .carousel-images {
   display: block;
-  width: 40vw;
-  max-width: 320px;
+  width: 43vw;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -9714,7 +9714,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 html {
   overflow-y: scroll;
-}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;;GAAA;AAIA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AAAJ;AACI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AACN;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AADF;AAEE;EACE,gBAAA;AAAJ;;AAIA;EACE,gBAAA;AADF;;AAIA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;;GAAA;AAIA;;;;;EAAA;AAOA;EACE,8BAAA;EACA,eAAA;AAFF;;AAKA;EACE,uBAAA;EACA,+DAAA;AAFF;AAKA;EACE,kBAAA;AAHF","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n  font-family: \"Inter\", sans-serif !important;\r\n}\r\n\r\n/* .spacing {\r\n  margin-top: 50px;\r\n} */\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 740px;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n.carousel-item {\r\n  border-top: 2px solid #ffffff42;\r\n  border-bottom: 2px solid #ffffff42;\r\n}\r\n.carousel-images {\r\n  display: block;\r\n  width: 40vw;\r\n  max-width: 320px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.carousel-icons {\r\n  color: white;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.carousel-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n}\r\n\r\n/* .api-form {\r\n  border: solid 1px #fff78a;\r\n} */\r\n\r\n/* .api-inputs {\r\n  border: none;\r\n  background-color: black;\r\n  border-bottom: solid 1px #ffffff69;\r\n}\r\n */\r\n\r\n.black-forest-font {\r\n  font-family: \"Playfair\", serif;\r\n  font-size: 45px;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Playfair\";\r\n  src: url(\"fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\r\n}\r\n\r\nhtml {\r\n  overflow-y: scroll;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;;GAAA;AAIA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AAAJ;AACI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AACN;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AADF;AAEE;EACE,gBAAA;AAAJ;;AAIA;EACE,gBAAA;AADF;;AAIA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;;GAAA;AAIA;;;;;EAAA;AAOA;EACE,8BAAA;EACA,eAAA;AAFF;;AAKA;EACE,uBAAA;EACA,+DAAA;AAFF;AAKA;EACE,kBAAA;AAHF","sourcesContent":["body {\r\n  background-color: black;\r\n  color: rgb(127, 208, 245);\r\n  font-family: \"Inter\", sans-serif !important;\r\n}\r\n\r\n/* .spacing {\r\n  margin-top: 50px;\r\n} */\r\n\r\n.custom-tooltip {\r\n  max-width: 120px;\r\n  --bs-tooltip-bg: #fff78a;\r\n  --bs-tooltip-color: black;\r\n  --bs-tooltip-border-radius: 20px;\r\n}\r\n\r\n.image-border {\r\n  border: 2px solid #62cccc;\r\n  border-radius: 10px;\r\n  width: 100%;\r\n  max-width: 400px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  padding: 0px;\r\n  overflow: hidden;\r\n  .card {\r\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\r\n    display: block !important;\r\n    width: fit-content !important;\r\n    min-width: unset !important;\r\n    max-width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n    overflow: hidden;\r\n    img {\r\n      width: 100%;\r\n      height: auto;\r\n      object-fit: cover;\r\n      display: block;\r\n    }\r\n  }\r\n}\r\n\r\n.try-section {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  justify-content: start;\r\n  align-items: center;\r\n  margin-bottom: 2rem;\r\n  h4 {\r\n    margin-bottom: 0;\r\n  }\r\n}\r\n\r\n.navbar-width {\r\n  max-width: 800px;\r\n}\r\n\r\n/* * {\r\n  border: solid 1px yellow;\r\n} */\r\n.carousel-item {\r\n  border-top: 2px solid #ffffff42;\r\n  border-bottom: 2px solid #ffffff42;\r\n}\r\n.carousel-images {\r\n  display: block;\r\n  width: 43vw;\r\n  max-width: 350px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.carousel-icons {\r\n  color: white;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.carousel-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n}\r\n\r\n/* .api-form {\r\n  border: solid 1px #fff78a;\r\n} */\r\n\r\n/* .api-inputs {\r\n  border: none;\r\n  background-color: black;\r\n  border-bottom: solid 1px #ffffff69;\r\n}\r\n */\r\n\r\n.black-forest-font {\r\n  font-family: \"Playfair\", serif;\r\n  font-size: 45px;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Playfair\";\r\n  src: url(\"fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\r\n}\r\n\r\nhtml {\r\n  overflow-y: scroll;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
