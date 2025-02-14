@@ -8194,16 +8194,16 @@ function Home() {
     }
   }, "Try here!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
     to: "BfPage",
-    className: "btn btn-sm btn-outline-info ms-3 fw-bold me-2 icon"
-  }, "Black Forest"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
+    className: "btn btn-sm btn-outline-info rounded-pill ms-3 fw-bold me-2 icon"
+  }, "Flux"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Link, {
     to: "OaPage",
-    className: "btn btn-sm btn-outline-info ms-1 fw-bold icon"
+    className: "btn btn-sm btn-outline-info rounded-pill ms-1 fw-bold icon"
   }, "Dall-E-3"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5"
+    className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex flex-column align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card icon bg-black d-flex text-white align-items-center justify-content-center"
+    className: "card icon bg-black d-flex text-white align-items-center justify-content-center pt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -8231,7 +8231,7 @@ function Home() {
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex flex-column align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "card icon bg-black text-white d-flex align-items-center justify-content-center"
+    className: "card icon bg-black text-white d-flex align-items-center justify-content-center pt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "image-border mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
