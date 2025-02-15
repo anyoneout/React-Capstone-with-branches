@@ -36,19 +36,26 @@ export function Home() {
         </div>
       </div>
 
-
+      <div className="w-100 rounded-3" >
+        <video className="w-100 rounded-pill" autoPlay muted loop>
+          <source
+            src="../../assets/videos/ingredients.mp4"
+            type="video/mp4" >
+          </source>
+        </video>
+      </div>
       <div className="row">
         <div className="col-12 col-md-6 d-flex flex-column align-items-center">
           <div className="card icon bg-black d-flex text-white align-items-center justify-content-center pt-5">
             <HomeFluxIcon />
           </div>
           <div className="image-border mt-5">
-            <Card src="./src/img/BlackForestImages/bfBananaSplitR.jpg" id="bfBsR" tooltipTitle={"<b>Banana Split</b><br><i>recipe</i>"} tooltipPlacement="left" />
-            <Card src="./src/img/BlackForestImages/bfBananaSplitI.jpg" id="bfBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="left" />
+            <Card src="../../assets/images/BlackForestImages/bfBananaSplitR.jpg" id="bfBsR" tooltipTitle={"<b>Banana Split</b><br><i>recipe</i>"} tooltipPlacement="left" />
+            <Card src="../../assets/images/BlackForestImages/bfBananaSplitI.jpg" id="bfBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="left" />
           </div>
           <div className="image-border mt-5">
-            <Card src="./src/img/BlackForestImages/bfCapreseSaladR.jpg" id="bfCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>recipe</i>"} tooltipPlacement="left" />
-            <Card src="./src/img/BlackForestImages/bfCapreseSaladI.jpg" id="bfCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="left" />
+            <Card src="../../assets/images/BlackForestImages/bfCapreseSaladR.jpg" id="bfCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>recipe</i>"} tooltipPlacement="left" />
+            <Card src="../../assets/images/BlackForestImages/bfCapreseSaladI.jpg" id="bfCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="left" />
           </div>
         </div>
 
@@ -57,12 +64,12 @@ export function Home() {
             <HomeDalleIcon />
           </div>
           <div className="image-border mt-5">
-            <Card src="./src/img/OpenAiImages/oaBananaSplitR.jpg" id="oaBsR" tooltipTitle={"<b>Banana Split</b><br><i>Recipe</i>"} tooltipPlacement="right" />
-            <Card src="./src/img/OpenAiImages/oaBananaSplitI.jpg" id="oaBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="right" />
+            <Card src="../../assets/images/OpenAiImages/oaBananaSplitR.jpg" id="oaBsR" tooltipTitle={"<b>Banana Split</b><br><i>Recipe</i>"} tooltipPlacement="right" />
+            <Card src="../../assets/images/OpenAiImages/oaBananaSplitI.jpg" id="oaBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="right" />
           </div>
           <div className="image-border mt-5">
-            <Card src="./src/img/OpenAiImages/oaCapreseSaladR.jpg" id="oaCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>Recipe</i>"} tooltipPlacement="right" />
-            <Card src="./src/img/OpenAiImages/oaCapreseSaladI.jpg" id="oaCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="right" />
+            <Card src="../../assets/images/OpenAiImages/oaCapreseSaladR.jpg" id="oaCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>Recipe</i>"} tooltipPlacement="right" />
+            <Card src="../../assets/images/OpenAiImages/oaCapreseSaladI.jpg" id="oaCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="right" />
           </div>
         </div>
       </div>
