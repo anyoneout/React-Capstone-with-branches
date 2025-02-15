@@ -12,9 +12,11 @@ export function HomeDalleIcon() {
 export function HomeFluxIcon() {
   return <Flux.Combine size={50} />;
 }
+
 export function ApiOpenAiIcon() {
   return <OpenAI.Text size={65} />;
 }
+
 export function ApiDalleIcon() {
   return <Dalle.Combine size={55} />;
 }

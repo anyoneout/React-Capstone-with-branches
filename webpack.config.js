@@ -20,10 +20,6 @@ export default {
             },
         ],
     },
-    resolve: {
-        extensions: [".js", ".jsx", ".json"]
-    },
-
     watch: true,
     mode: "development",
     devtool: "source-map",

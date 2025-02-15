@@ -21,7 +21,6 @@ export function CollapsibleNavbar() {
           </span>
         </button>
 
-
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -71,7 +70,5 @@ export function CollapsibleNavbar() {
         </div>
       </div>
     </nav>
-
-
   )
 }
