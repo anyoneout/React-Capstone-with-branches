@@ -3,7 +3,15 @@ import { Link } from "react-router-dom";
 import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
 import Card from "../components/Card";
 import "../../style.scss"
-
+import ingredientsVideo from "../../assets/videos/ingredients.mp4"
+import bfBananaSplitR from "../../assets/images/BlackForestImages/bfBananaSplitR.jpg"
+import bfBananaSplitI from "../../assets/images/BlackForestImages/bfBananaSplitI.jpg"
+import oaBananaSplitR from "../../assets/images/OpenAiImages/oaBananaSplitR.jpg"
+import oaBananaSplitI from "../../assets/images/OpenAiImages/oaBananaSplitI.jpg"
+import bfCapreseSaladR from "../../assets/images/BlackForestImages/bfCapreseSaladR.jpg"
+import bfCapreseSaladI from "../../assets/images/BlackForestImages/bfCapreseSaladI.jpg"
+import oaCapreseSaladR from "../../assets/images/OpenAiImages/oaCapreseSaladR.jpg"
+import oaCapreseSaladI from "../../assets/images/OpenAiImages/oaCapreseSaladI.jpg"
 
 
 export function Home() {
@@ -39,7 +47,7 @@ export function Home() {
       <div className="w-100 rounded-3" >
         <video className="w-100 rounded-pill" autoPlay muted loop>
           <source
-            src="../../assets/videos/ingredients.mp4"
+            src={ingredientsVideo}
             type="video/mp4" >
           </source>
         </video>
@@ -50,12 +58,12 @@ export function Home() {
             <HomeFluxIcon />
           </div>
           <div className="image-border mt-5">
-            <Card src="../../assets/images/BlackForestImages/bfBananaSplitR.jpg" id="bfBsR" tooltipTitle={"<b>Banana Split</b><br><i>recipe</i>"} tooltipPlacement="left" />
-            <Card src="../../assets/images/BlackForestImages/bfBananaSplitI.jpg" id="bfBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="left" />
+            <Card src={bfBananaSplitR} id="bfBsR" tooltipTitle={"<b>Banana Split</b><br><i>recipe</i>"} tooltipPlacement="left" />
+            <Card src={bfBananaSplitI} id="bfBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="left" />
           </div>
           <div className="image-border mt-5">
-            <Card src="../../assets/images/BlackForestImages/bfCapreseSaladR.jpg" id="bfCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>recipe</i>"} tooltipPlacement="left" />
-            <Card src="../../assets/images/BlackForestImages/bfCapreseSaladI.jpg" id="bfCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="left" />
+            <Card src={bfCapreseSaladR} id="bfCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>recipe</i>"} tooltipPlacement="left" />
+            <Card src={bfCapreseSaladI} id="bfCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="left" />
           </div>
         </div>
 
@@ -64,12 +72,12 @@ export function Home() {
             <HomeDalleIcon />
           </div>
           <div className="image-border mt-5">
-            <Card src="../../assets/images/OpenAiImages/oaBananaSplitR.jpg" id="oaBsR" tooltipTitle={"<b>Banana Split</b><br><i>Recipe</i>"} tooltipPlacement="right" />
-            <Card src="../../assets/images/OpenAiImages/oaBananaSplitI.jpg" id="oaBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="right" />
+            <Card src={oaBananaSplitR} id="oaBsR" tooltipTitle={"<b>Banana Split</b><br><i>Recipe</i>"} tooltipPlacement="right" />
+            <Card src={oaBananaSplitI} id="oaBsI" tooltipTitle={"<b>Banana Split</b><br><i>ingredients</i>"} tooltipPlacement="right" />
           </div>
           <div className="image-border mt-5">
-            <Card src="../../assets/images/OpenAiImages/oaCapreseSaladR.jpg" id="oaCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>Recipe</i>"} tooltipPlacement="right" />
-            <Card src="../../assets/images/OpenAiImages/oaCapreseSaladI.jpg" id="oaCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="right" />
+            <Card src={oaCapreseSaladR} id="oaCsR" tooltipTitle={"<b>Caesar Salad</b><br><i>Recipe</i>"} tooltipPlacement="right" />
+            <Card src={oaCapreseSaladI} id="oaCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="right" />
           </div>
         </div>
       </div>
