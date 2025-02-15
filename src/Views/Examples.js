@@ -26,7 +26,7 @@ export default function Examples() {
   function componentDidMount() {
     setDidMount(true);
     console.log("The OaPage page component has mounted");
-    document.title = "Recipe Deconstructor - Open AI Dall-E-3";
+    document.title = "Recipe Deconstructor - Examples";
     return componentDidUnmount;
   }
 
