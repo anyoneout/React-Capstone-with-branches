@@ -205,7 +205,7 @@ export function BfPage() {
 
     function componentDidMount() {
         setDidMount(true);
-        console.log("The OaPage page component has mounted");
+        console.log("The Black Forest page component has mounted");
         document.title = "Recipe Deconstructor - Black Forest Flux";
         return componentDidUnmount;
     }

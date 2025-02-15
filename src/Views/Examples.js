@@ -25,7 +25,7 @@ export default function Examples() {
   )
   function componentDidMount() {
     setDidMount(true);
-    console.log("The OaPage page component has mounted");
+    console.log("The Examples page component has mounted");
     document.title = "Recipe Deconstructor - Examples";
     return componentDidUnmount;
   }
