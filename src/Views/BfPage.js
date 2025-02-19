@@ -53,7 +53,7 @@ export function BfPage() {
                             data-bs-theme="dark">
                             <input
                                 type="text"
-                                className="form-control  api-inputs"
+                                className="form-control api-inputs"
                                 placeholder="Name"
                                 aria-label="User Name"
                                 aria-describedby="basic-addon1"
@@ -64,7 +64,7 @@ export function BfPage() {
                             data-bs-theme="dark">
                             <input
                                 type="text"
-                                className="form-control  api-inputs"
+                                className="form-control api-inputs"
                                 placeholder="Email"
                                 aria-label="User email" aria-describedby="basic-addon2"
                                 id="emailInput" />
@@ -74,7 +74,7 @@ export function BfPage() {
                             data-bs-theme="dark">
                             <input
                                 type="text"
-                                className="form-control  api-inputs"
+                                className="form-control api-inputs"
                                 placeholder="Token"
                                 aria-label="OpenAi Token Input" aria-describedby="basic-addon2"
                                 id="hfTokenInput" />
@@ -83,7 +83,7 @@ export function BfPage() {
                             className="input-group"
                             data-bs-theme="dark">
                             <select
-                                className="form-select  api-inputs"
+                                className="form-select"
                                 id="chosenRecipe"
                                 aria-label="Example select with button addon">
                                 <option>Recipe...</option>
