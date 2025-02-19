@@ -1,5 +1,8 @@
+import { authenticationAws } from "../modules/authenticationAws";
 
-export default function handleSignInAttempt(event, setErrorMessage) {
+
+
+export async function handleSignInAttempt(event, setErrorMessage) {
   event.preventDefault();
   const form = event.target;
   const emailInput = form[1];
@@ -8,7 +11,12 @@ export default function handleSignInAttempt(event, setErrorMessage) {
 
   const email = emailInput.value;
   const password = passwordInput.value;
-  console.log(email);
-  console.log(password);
-  setErrorMessage("testing");
+  const resolveValue = await authenticationAws(email, password);
+  const isAuthenticated = resolveValue;
+  if (isAuthenticated) {
+    console.log("is authenticated");
+    closeButton.click;
+    form.reset();
+
+  } else setErrorMessage("error");
 }
