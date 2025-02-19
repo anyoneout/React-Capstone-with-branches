@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SignInContent from "./SignInContent";
-import handleSignIn from "../controllers/handleSignInAttempt";
-import handleSignInAttempt from "../controllers/handleSignInAttempt";
+import { handleSignInAttempt } from "../controllers/handleSignInAttempt";
 
 
 export default function SignInForm() {
