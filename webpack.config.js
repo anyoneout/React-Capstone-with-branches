@@ -27,6 +27,8 @@ export default {
     mode: "development",
     devtool: "source-map",
     plugins: [
-        new Dotenv(),
+        new Dotenv({
+            systemvars: true,
+        })
     ]
 };
