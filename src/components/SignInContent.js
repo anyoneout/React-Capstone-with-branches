@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SignInContent(props) {
+export default function SignInContent() {
 
   return (
     <>

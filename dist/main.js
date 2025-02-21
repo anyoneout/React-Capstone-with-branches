@@ -31454,6 +31454,62 @@ function CollapsibleNavbar() {
 
 /***/ }),
 
+/***/ "./src/components/SignInArea.js":
+/*!**************************************!*\
+  !*** ./src/components/SignInArea.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SignInArea)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SignInModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInModal */ "./src/components/SignInModal.js");
+/* harmony import */ var _SignOutModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SignOutModal */ "./src/components/SignOutModal.js");
+
+
+
+function SignInArea() {
+  const [button, setButton] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
+  const [isSignedIn, setIsSignedIn] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [isSignedIn]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, button);
+  function componentDidMount() {
+    setDidMount(true);
+    console.log("mount phase");
+    if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      onSignOut: handleSignOut
+    }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      onSignIn: handleSignIn
+    }));
+  }
+  function componentDidUpdate() {
+    if (didMount) {
+      console.log("Update phase for SignInArea");
+      if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        onSignOut: handleSignOut
+      }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        onSignIn: handleSignIn
+      }));
+    }
+  }
+  function handleSignIn() {
+    setIsSignedIn(true);
+    console.log("User is signed in");
+  }
+  function handleSignOut() {
+    setIsSignedIn(false);
+    console.log("User is signed out");
+  }
+}
+
+/***/ }),
+
 /***/ "./src/components/SignInContent.js":
 /*!*****************************************!*\
   !*** ./src/components/SignInContent.js ***!
@@ -31468,7 +31524,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-function SignInContent(props) {
+function SignInContent() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, "Email:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "email",
     name: "email",
@@ -31606,62 +31662,6 @@ function SignOutModal(props) {
     event.preventDefault();
     console.log("Module has signed out");
     onSignOut();
-  }
-}
-
-/***/ }),
-
-/***/ "./src/controllers/SignInArea.js":
-/*!***************************************!*\
-  !*** ./src/controllers/SignInArea.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ SignInArea)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_SignInModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/SignInModal */ "./src/components/SignInModal.js");
-/* harmony import */ var _components_SignOutModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SignOutModal */ "./src/components/SignOutModal.js");
-
-
-
-function SignInArea() {
-  const [button, setButton] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
-  const [isSignedIn, setIsSignedIn] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [isSignedIn]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, button);
-  function componentDidMount() {
-    setDidMount(true);
-    console.log("mount phase");
-    if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      onSignOut: handleSignOut
-    }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      onSignIn: handleSignIn
-    }));
-  }
-  function componentDidUpdate() {
-    if (didMount) {
-      console.log("Update phase for SignInArea");
-      if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        onSignOut: handleSignOut
-      }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        onSignIn: handleSignIn
-      }));
-    }
-  }
-  function handleSignIn() {
-    setIsSignedIn(true);
-    console.log("User is signed in");
-  }
-  function handleSignOut() {
-    setIsSignedIn(false);
-    console.log("User is signed out");
   }
 }
 
@@ -31852,9 +31852,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _aws_sdk_lib_dynamodb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @aws-sdk/lib-dynamodb */ "./node_modules/@aws-sdk/lib-dynamodb/dist-es/index.js");
 
 
-const accessKeyId = "MISSING_ENV_VAR".REACT_APP_AWS_ACCESS_KEY_ID;
-const secretAccessKey = "MISSING_ENV_VAR".REACT_APP_AWS_SECRET_ACCESS_KEY;
-const region = "MISSING_ENV_VAR".REACT_APP_AWS_REGION;
+const accessKeyId = "AKIAQ4NSBJEZVDSPQPE6";
+const secretAccessKey = "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";
+const region = "us-east-1";
 async function authenticationAws(email = "", password = "") {
   const apiKey = {
     region: region,
@@ -74313,20 +74313,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _Views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Views/Home */ "./src/Views/Home.js");
 /* harmony import */ var _Views_About__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Views/About */ "./src/Views/About.js");
 /* harmony import */ var _Views_BfPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Views/BfPage */ "./src/Views/BfPage.js");
 /* harmony import */ var _Views_OaPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Views/OaPage */ "./src/Views/OaPage.js");
 /* harmony import */ var _components_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/CollapsibleNavbar */ "./src/components/CollapsibleNavbar.js");
-/* harmony import */ var _Views_Examples__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Views/Examples */ "./src/Views/Examples.js");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../style.scss */ "./style.scss");
-/* harmony import */ var _components_SignInModal__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/SignInModal */ "./src/components/SignInModal.js");
-/* harmony import */ var _components_SignOutModal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/SignOutModal */ "./src/components/SignOutModal.js");
-/* harmony import */ var _controllers_SignInArea__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./controllers/SignInArea */ "./src/controllers/SignInArea.js");
-
-
+/* harmony import */ var _components_SignInArea__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/SignInArea */ "./src/components/SignInArea.js");
+/* harmony import */ var _Views_Examples__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Views/Examples */ "./src/Views/Examples.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../style.scss */ "./style.scss");
 
 
 
@@ -74343,36 +74339,27 @@ const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(bodyTa
 const domain = window.location.hostname;
 let rootPath = "";
 if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches";
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_6__.CollapsibleNavbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_CollapsibleNavbar__WEBPACK_IMPORTED_MODULE_6__.CollapsibleNavbar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Home__WEBPACK_IMPORTED_MODULE_2__.Home, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-  path: `${rootPath}/signin`,
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SignInModal__WEBPACK_IMPORTED_MODULE_9__["default"], null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-  path: `${rootPath}/signinarea`,
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_controllers_SignInArea__WEBPACK_IMPORTED_MODULE_11__["default"], null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-  path: `${rootPath}/signout`,
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SignOutModal__WEBPACK_IMPORTED_MODULE_10__["default"], null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/BfPage`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_BfPage__WEBPACK_IMPORTED_MODULE_4__.BfPage, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/OaPage`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_OaPage__WEBPACK_IMPORTED_MODULE_5__.OaPage, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/Examples`,
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Examples__WEBPACK_IMPORTED_MODULE_7__["default"], null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_Examples__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: `${rootPath}/About`,
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Views_About__WEBPACK_IMPORTED_MODULE_3__.About, null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
-  path: `${rootPath}/SignInForm`,
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_controllers_SignInArea__WEBPACK_IMPORTED_MODULE_11__["default"], null)
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Route, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  path: `${rootPath}/signin`,
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SignInArea__WEBPACK_IMPORTED_MODULE_7__["default"], null)
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
   path: "*",
-  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Navigate, {
+  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Navigate, {
     to: "/"
   })
 }))));
