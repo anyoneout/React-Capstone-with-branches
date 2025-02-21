@@ -9,6 +9,7 @@ import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 import SignInForm from "./Views/SignInForm";
 import Examples from "./Views/Examples";
 import "../style.scss";
+import SignInModal from "./components/SignInModal";
 
 const bodyTag = document.getElementById("bodyTag");
 const root = createRoot(bodyTag);
@@ -20,6 +21,7 @@ root.render(
     <CollapsibleNavbar />
     <Routes>
       <Route path={`${rootPath}/`} element={<Home />} />
+      <Route path={`${rootPath}/signin`} element={<SignInModal />} />
       <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
       <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
       <Route path={`${rootPath}/Examples`} element={<Examples />} />
