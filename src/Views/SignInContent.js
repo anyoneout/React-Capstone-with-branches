@@ -1,6 +1,8 @@
-import React from "react";
+/* import React from "react";
 
 export default function SignInContent({ errorMessage }) {
+
+
 
   return (
     <>
@@ -18,4 +20,4 @@ export default function SignInContent({ errorMessage }) {
       <div>{errorMessage}</div>
     </>
   )
-}
+} */

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import SignInContent from "./SignInContent";
+import { handleSignInAttempt } from "../controllers/handleSignInAttempt";
 
-export default function SignInModal() {
+export default function SignInModal(props) {
+  const onSignIn = props.onSignIn;
 
   return (
     <>
@@ -58,6 +60,8 @@ export default function SignInModal() {
   );
   function handleSubmit(event) {
     event.preventDefault();
+    handleSignInAttempt(event, onSignIn);
+    console.log("User has attempted a sign-in");
   }
 }
 

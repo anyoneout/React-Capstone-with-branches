@@ -1,3 +1,6 @@
+import Dotenv from "dotenv-webpack";
+
+
 export default {
     module: {
         rules: [
@@ -23,4 +26,7 @@ export default {
     watch: true,
     mode: "development",
     devtool: "source-map",
+    plugins: [
+        new Dotenv(),
+    ]
 };

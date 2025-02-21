@@ -1,8 +1,8 @@
 import React from "react";
 
 
-export default function SignOutModal() {
-
+export default function SignOutModal(props) {
+  const onSignOut = props.onSignOut;
   return (
     <>
       <button
@@ -56,7 +56,8 @@ export default function SignOutModal() {
   )
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("Module has signed out")
+    console.log("Module has signed out");
+    onSignOut();
   }
 }
 

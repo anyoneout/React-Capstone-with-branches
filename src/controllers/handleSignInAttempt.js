@@ -2,21 +2,23 @@ import { authenticationAws } from "../modules/authenticationAws";
 
 
 
-export async function handleSignInAttempt(event, setErrorMessage) {
+
+export async function handleSignInAttempt(event, onSignIn) {
   event.preventDefault();
   const form = event.target;
-  const emailInput = form[1];
-  const passwordInput = form[2];
-  const closeButton = form[3];
+  const emailInput = form.querySelector("[name='email']");
+  const passwordInput = form.querySelector("[name='password']");
+  const closeButton = form.querySelector("[data-bs-dismiss='modal']");
 
   const email = emailInput.value;
   const password = passwordInput.value;
-  const resolveValue = await authenticationAws(email, password);
-  const isAuthenticated = resolveValue;
+
+  const isAuthenticated = await authenticationAws(email, password);
+
   if (isAuthenticated) {
     console.log("is authenticated");
-    closeButton.click;
+    closeButton.click();
     form.reset();
-
-  } else setErrorMessage("error");
+    onSignIn();
+  }
 }
