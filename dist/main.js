@@ -30758,15 +30758,7 @@ function Home() {
     className: "btn btn-sm btn-outline-info rounded-pill ms-1 fw-bold icon"
   }, "Dall-E-3"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "w-100 rounded-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("video", {
-    className: "w-100 rounded-pill",
-    autoPlay: true,
-    muted: true,
-    loop: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
-    src: _assets_videos_ingredients_mp4__WEBPACK_IMPORTED_MODULE_4__,
-    type: "video/mp4"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex flex-column align-items-center"
@@ -31384,10 +31376,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _CollapsibleNavbar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CollapsibleNavbar.scss */ "./src/components/CollapsibleNavbar.scss");
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../style.scss */ "./style.scss");
 /* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
+/* harmony import */ var _SignInArea__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SignInArea */ "./src/components/SignInArea.js");
+
 
 
 
@@ -31415,41 +31409,41 @@ function CollapsibleNavbar() {
     className: "navbar-nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.NavLink, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.NavLink, {
     to: `${rootPath}/`,
     end: true,
-    className: "nav-link"
+    className: "nav-link home-nav-style"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi-house-door-fill me-2"
   }), "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.NavLink, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.NavLink, {
     to: `${rootPath}/BfPage`,
     className: "nav-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "me-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_3__.NavFluxIcon, null)), "Black Forest")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.NavLink, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.NavLink, {
     to: `${rootPath}/OaPage`,
     className: "nav-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "me-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_3__.NavDalleIcon, null)), "OpenAI")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.NavLink, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.NavLink, {
     to: `${rootPath}/Examples`,
     className: "nav-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi bi-images me-2"
   }), "Examples")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.NavLink, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.NavLink, {
     to: `${rootPath}/About`,
     className: "nav-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi-file-person me-2"
-  }), "About"))))));
+  }), "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInArea__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
 }
 
 /***/ }),
@@ -31469,42 +31463,74 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _SignInModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInModal */ "./src/components/SignInModal.js");
 /* harmony import */ var _SignOutModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SignOutModal */ "./src/components/SignOutModal.js");
+/* harmony import */ var _CollapsibleNavbar_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CollapsibleNavbar.scss */ "./src/components/CollapsibleNavbar.scss");
+/* harmony import */ var _SignInArea_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SignInArea.scss */ "./src/components/SignInArea.scss");
+
+
 
 
 
 function SignInArea() {
-  const [button, setButton] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null));
   const [isSignedIn, setIsSignedIn] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [didMount, setDidMount] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [buttonText, setButtonText] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Sign In");
+  const [buttonClass, setButtonClass] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("sign-in-btn");
+  const [showModal, setShowModal] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [isSignedIn]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, button);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: "nav-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    className: buttonClass,
+    onClick: isSignedIn ? handleSignOut : handleSignIn
+  }, buttonText)), showModal === "signIn" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    onSignIn: handleSubmitCloseSignIn,
+    closeButton: handleCloseSignIn
+  }), showModal === "signOut" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    onSignOut: handleSubmitCloseSignOut,
+    closeButton: handleCloseSignOut
+  }));
   function componentDidMount() {
     setDidMount(true);
-    console.log("mount phase");
-    if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      onSignOut: handleSignOut
-    }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      onSignIn: handleSignIn
-    }));
+    console.log("SignInArea Mounted");
   }
   function componentDidUpdate() {
     if (didMount) {
-      console.log("Update phase for SignInArea");
-      if (isSignedIn) setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        onSignOut: handleSignOut
-      }));else setButton(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        onSignIn: handleSignIn
-      }));
+      console.log("SignInArea Updated");
+      if (isSignedIn) {
+        setButtonText("Sign Out");
+        setButtonClass("sign-out-btn");
+      } else {
+        setButtonText("Sign In");
+        setButtonClass("sign-in-btn");
+      }
     }
   }
   function handleSignIn() {
+    console.log("User is signing in...");
+    setShowModal("signIn");
+  }
+  function handleCloseSignIn() {
+    console.log("Closing Sign-In Modal...");
+    setShowModal(null);
+  }
+  function handleSubmitCloseSignIn() {
+    console.log("Closing Sign-In Modal...");
     setIsSignedIn(true);
-    console.log("User is signed in");
+    setShowModal(null);
   }
   function handleSignOut() {
+    console.log("User is signing out...");
+    setShowModal("signOut");
+  }
+  function handleCloseSignOut() {
+    console.log("Closing Sign-Out Modal...");
+    setShowModal(null);
+  }
+  function handleSubmitCloseSignOut() {
+    console.log("Closing Sign-Out Modal...");
     setIsSignedIn(false);
-    console.log("User is signed out");
+    setShowModal(null);
   }
 }
 
@@ -31527,12 +31553,10 @@ __webpack_require__.r(__webpack_exports__);
 function SignInContent() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, "Email:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "email",
-    name: "email",
-    required: true
+    name: "email"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Password:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     name: "password",
-    type: "password",
-    required: true
+    type: "password"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null));
 }
 
@@ -31556,21 +31580,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function SignInModal(props) {
   const onSignIn = props.onSignIn;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    type: "button",
-    className: "btn btn-primary",
-    "data-bs-toggle": "modal",
-    "data-bs-target": "#signInModal"
-  }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+  const closeButton = props.closeButton;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: handleSubmit
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "modal fade",
+    className: "modal show d-block fade",
     id: "signInModal",
     tabIndex: "-1",
     "aria-labelledby": "signInModalLabel",
-    "aria-hidden": "true"
+    "aria-hidden": "false"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-dialog"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -31583,24 +31604,29 @@ function SignInModal(props) {
   }, "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button",
     className: "btn-close",
-    "data-bs-dismiss": "modal",
+    onClick: closeButton,
     "aria-label": "Close"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInContent__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    type: "submit",
+    type: "button",
     className: "btn btn-secondary",
-    "data-bs-dismiss": "modal"
+    onClick: closeButton
   }, "Close"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "submit",
-    className: "btn btn-primary"
-  }, "Sign In")))))));
-  function handleSubmit(event) {
+    className: "btn btn-primary",
+    "data-bs-dismiss": "modal"
+  }, "Sign In"))))));
+  async function handleSubmit(event) {
     event.preventDefault();
-    (0,_controllers_handleSignInAttempt__WEBPACK_IMPORTED_MODULE_2__.handleSignInAttempt)(event, onSignIn);
-    console.log("User has attempted a sign-in");
+    const isAuthenticated = await (0,_controllers_handleSignInAttempt__WEBPACK_IMPORTED_MODULE_2__.handleSignInAttempt)(event, onSignIn);
+    if (isAuthenticated) {
+      onSignIn();
+    } else {
+      console.log("authentication failed");
+    }
   }
 }
 
@@ -31622,18 +31648,14 @@ __webpack_require__.r(__webpack_exports__);
 
 function SignOutModal(props) {
   const onSignOut = props.onSignOut;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
-    type: "button",
-    className: "btn btn-warning",
-    "data-bs-toggle": "modal",
-    "data-bs-target": "#signOutModal"
-  }, "Sign Out"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+  const closeButton = props.closeButton;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: handleSubmit,
-    className: "modal fade",
+    className: "modal fade show d-block",
     id: "signOutModal",
     tabIndex: "-1",
     "aria-labelledby": "signOutModalLabel",
-    "aria-hidden": "true"
+    "aria-hidden": "false"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-dialog"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -31643,7 +31665,7 @@ function SignOutModal(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Sign Out"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button",
     className: "btn-close",
-    "data-bs-dismiss": "modal",
+    onClick: closeButton,
     "aria-label": "Close"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "modal-body"
@@ -31652,12 +31674,12 @@ function SignOutModal(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "button",
     className: "btn btn-secondary",
-    "data-bs-dismiss": "modal"
+    onClick: closeButton
   }, "Close"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "submit",
     className: "btn btn-warning",
     "data-bs-dismiss": "modal"
-  }, "Sign Out"))))));
+  }, "Sign Out")))));
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Module has signed out");
@@ -31760,9 +31782,12 @@ async function handleSignInAttempt(event, onSignIn) {
   const isAuthenticated = await (0,_modules_authenticationAws__WEBPACK_IMPORTED_MODULE_0__.authenticationAws)(email, password);
   if (isAuthenticated) {
     console.log("is authenticated");
-    closeButton.click();
     form.reset();
     onSignIn();
+    return true;
+  } else {
+    console.log("User authentication failed");
+    return false;
   }
 }
 
@@ -32302,25 +32327,31 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
   background-color: rgb(0, 0, 0) !important;
+  white-space: nowrap;
 }
 
 .navbar-nav {
-  border: solid, 1px, rgba(255, 255, 255, 0.2588235294);
-  border-radius: 25px;
+  border: solid, 1px, rgba(255, 255, 255, 0.259);
+  border-radius: 12px;
 }
 .navbar-nav .nav-link {
-  margin: 0.2rem;
   color: rgba(238, 238, 238, 0.925) !important;
   font-family: "Inter", sans-serif !important;
   font-weight: 500 !important;
   letter-spacing: -0.05em !important;
-  padding: 0.5rem 2.5rem !important;
+  padding: 0.5rem 2rem !important;
+  margin: 0.24rem 0.12rem;
+}
+.navbar-nav .home-nav-style {
+  margin-left: 0.2rem !important;
 }
 .navbar-nav .nav-link i {
   border: none;
 }
 .navbar-nav .nav-link:hover {
   color: rgba(255, 255, 255, 0.6980392157) !important;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
 }
 .navbar-nav svg {
   position: relative;
@@ -32337,10 +32368,69 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.navbar {
 }
 
 .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.2588235294);
+  background-color: rgba(255, 255, 255, 0.259);
   color: rgb(255, 255, 255) !important;
-  border-radius: 25px;
-}`, "",{"version":3,"sources":["webpack://./src/components/CollapsibleNavbar.scss"],"names":[],"mappings":"AAAA;EACE,yCAAA;AACF;;AAEA;EACE,qDAAA;EACA,mBAAA;AACF;AACE;EACE,cAAA;EACA,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,iCAAA;AACJ;AACE;EACE,YAAA;AACJ;AACE;EACE,mDAAA;AACJ;AACE;EACE,kBAAA;EACA,SAAA;AACJ;;AAGA;EACE,oBAAA;AAAF;;AAGA;EACE,uBAAA;EACA,yBAAA;AAAF;;AAGA;EACE,mDAAA;EACA,oCAAA;EACA,mBAAA;AAAF","sourcesContent":[".navbar {\n  background-color: rgba(0, 0, 0) !important;\n}\n\n.navbar-nav {\n  border: solid, 1px, #ffffff42;\n  border-radius: 25px;\n  // I had to add !important or the bootstrap style would overwrite the style I wanted.\n  .nav-link {\n    margin: 0.2rem;\n    color: rgb(238, 238, 238, 0.925) !important;\n    font-family: \"Inter\", sans-serif !important;\n    font-weight: 500 !important;\n    letter-spacing: -0.05em !important;\n    padding: 0.5rem 2.5rem !important;\n  }\n  .nav-link i {\n    border: none;\n  }\n  .nav-link:hover {\n    color: #ffffffb2 !important;\n  }\n  svg {\n    position: relative;\n    top: -2px;\n  }\n}\n\n.navbar-toggler-icon {\n  filter: invert(100%);\n}\n\n.navbar-toggler {\n  background-color: black;\n  border: 2px solid #0dcaf0;\n}\n\n.nav-link.active {\n  background-color: #ffffff42;\n  color: rgb(255, 255, 255) !important;\n  border-radius: 25px;\n}\n"],"sourceRoot":""}]);
+  border-radius: 12px;
+}`, "",{"version":3,"sources":["webpack://./src/components/CollapsibleNavbar.scss"],"names":[],"mappings":"AAAA;EACE,yCAAA;EACA,mBAAA;AACF;;AACA;EACE,8CAAA;EACA,mBAAA;AAEF;AAAE;EACE,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,+BAAA;EACA,uBAAA;AAEJ;AAAE;EACE,8BAAA;AAEJ;AAAE;EACE,YAAA;AAEJ;AAAE;EACE,mDAAA;EACA,2CAAA;EACA,mBAAA;AAEJ;AAAE;EACE,kBAAA;EACA,SAAA;AAEJ;;AAEA;EACE,oBAAA;AACF;;AAEA;EACE,uBAAA;EACA,yBAAA;AACF;;AAEA;EACE,4CAAA;EACA,oCAAA;EACA,mBAAA;AACF","sourcesContent":[".navbar {\n  background-color: rgba(0, 0, 0) !important;\n  white-space: nowrap;\n}\n.navbar-nav {\n  border: solid, 1px, rgba(255, 255, 255, 0.259);\n  border-radius: 12px;\n  // I had to add !important or the bootstrap style would overwrite the style I wanted.\n  .nav-link {\n    color: rgb(238, 238, 238, 0.925) !important;\n    font-family: \"Inter\", sans-serif !important;\n    font-weight: 500 !important;\n    letter-spacing: -0.05em !important;\n    padding: 0.5rem 2rem !important;\n    margin: 0.24rem 0.12rem;\n  }\n  .home-nav-style {\n    margin-left: 0.2rem !important;\n  }\n  .nav-link i {\n    border: none;\n  }\n  .nav-link:hover {\n    color: #ffffffb2 !important;\n    background-color: rgba(255, 255, 255, 0.15);\n    border-radius: 12px;\n  }\n  svg {\n    position: relative;\n    top: -2px;\n  }\n}\n\n.navbar-toggler-icon {\n  filter: invert(100%);\n}\n\n.navbar-toggler {\n  background-color: black;\n  border: 2px solid #0dcaf0;\n}\n\n.nav-link.active {\n  background-color: rgba(255, 255, 255, 0.259);\n  color: rgb(255, 255, 255) !important;\n  border-radius: 12px;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInArea.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInArea.scss ***!
+  \*********************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.sign-in-btn,
+.sign-out-btn {
+  color: rgba(255, 255, 255, 0.925) !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.05em !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 12px;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+  padding: 0.5rem 2rem !important;
+  margin: 0.24rem 0.12rem;
+  margin-right: 0.2rem;
+}
+
+.sign-in-btn {
+  background-color: rgba(47, 178, 204, 0.8) !important;
+  color: black;
+}
+
+.sign-out-btn {
+  background-color: rgba(220, 53, 69, 0.5);
+}
+
+.sign-in-btn:hover {
+  background-color: rgb(47, 178, 204) !important;
+}
+
+.sign-out-btn:hover {
+  background-color: rgba(220, 53, 69, 0.8) !important;
+  color: white !important;
+}`, "",{"version":3,"sources":["webpack://./src/components/SignInArea.scss"],"names":[],"mappings":"AAAA;;EAEE,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,+BAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;EACA,6CAAA;EACA,+BAAA;EACA,uBAAA;EACA,oBAAA;AACF;;AAEA;EACE,oDAAA;EACA,YAAA;AACF;;AAEA;EACE,wCAAA;AACF;;AAEA;EACE,8CAAA;AACF;;AAEA;EACE,mDAAA;EACA,uBAAA;AACF","sourcesContent":[".sign-in-btn,\r\n.sign-out-btn {\r\n  color: rgba(255, 255, 255, 0.925) !important;\r\n  font-family: \"Inter\", sans-serif !important;\r\n  font-weight: 500 !important;\r\n  letter-spacing: -0.05em !important;\r\n  padding: 0.5rem 2rem !important;\r\n  border-radius: 12px;\r\n  border: none;\r\n  background-color: transparent;\r\n  transition: background-color 0.2s ease-in-out;\r\n  padding: 0.5rem 2rem !important;\r\n  margin: 0.24rem 0.12rem;\r\n  margin-right: 0.2rem;\r\n}\r\n\r\n.sign-in-btn {\r\n  background-color: rgb(47, 178, 204, 0.8) !important;\r\n  color: black;\r\n}\r\n\r\n.sign-out-btn {\r\n  background-color: rgba(220, 53, 69, 0.5);\r\n}\r\n\r\n.sign-in-btn:hover {\r\n  background-color: rgb(47, 178, 204) !important;\r\n}\r\n\r\n.sign-out-btn:hover {\r\n  background-color: rgba(220, 53, 69, 0.8) !important;\r\n  color: white !important;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -32389,7 +32479,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 
 .image-border {
-  border: 2px solid #62cccc;
+  border: 2px solid #079ab8;
   border-radius: 10px;
   width: 100%;
   max-width: 400px;
@@ -32477,7 +32567,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 html {
   overflow-y: scroll;
-}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;;GAAA;AAIA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AAAJ;AACI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AACN;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AADF;AAEE;EACE,gBAAA;AAAJ;;AAIA;EACE,gBAAA;AADF;;AAIA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;;GAAA;AAIA;EACE,6CAAA;EACA,mDAAA;AADF;;AAIA;EACE,8BAAA;EACA,eAAA;AADF;;AAIA;EACE,uBAAA;EACA,+DAAA;AADF;AAIA;EACE,kBAAA;AAFF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n/* .spacing {\n  margin-top: 50px;\n} */\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #62cccc;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n}\n\n/* * {\n  border: solid 1px yellow;\n} */\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n/* .api-form {\n  border: solid 1px #fff78a;\n} */\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 45px;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;;GAAA;AAIA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AAAJ;AACI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AACN;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AADF;AAEE;EACE,gBAAA;AAAJ;;AAIA;EACE,gBAAA;AADF;;AAIA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;;GAAA;AAIA;EACE,6CAAA;EACA,mDAAA;AADF;;AAIA;EACE,8BAAA;EACA,eAAA;AADF;;AAIA;EACE,uBAAA;EACA,+DAAA;AADF;AAIA;EACE,kBAAA;AAFF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n/* .spacing {\n  margin-top: 50px;\n} */\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n}\n\n/* * {\n  border: solid 1px yellow;\n} */\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n/* .api-form {\n  border: solid 1px #fff78a;\n} */\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 45px;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -71854,6 +71944,59 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_CollapsibleNavbar_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_CollapsibleNavbar_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_CollapsibleNavbar_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/SignInArea.scss":
+/*!****************************************!*\
+  !*** ./src/components/SignInArea.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./SignInArea.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInArea.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),

@@ -8,14 +8,14 @@ export default function SignInContent() {
       <input
         type="email"
         name="email"
-        required
+
       />
       <br />
       Password:
       <input
         name="password"
         type="password"
-        required
+
       />
       <div></div>
     </>

@@ -17,8 +17,11 @@ export async function handleSignInAttempt(event, onSignIn) {
 
   if (isAuthenticated) {
     console.log("is authenticated");
-    closeButton.click();
     form.reset();
     onSignIn();
+    return true;
+  } else {
+    console.log("User authentication failed");
+    return false;
   }
 }

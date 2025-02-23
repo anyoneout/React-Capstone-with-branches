@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./CollapsibleNavbar.scss";
 import "../../style.scss"
 import { NavDalleIcon, NavFluxIcon } from "../modules/icons";
+import SignInArea from "./SignInArea";
 
 export function CollapsibleNavbar() {
   const domain = window.location.hostname;
@@ -27,7 +28,7 @@ export function CollapsibleNavbar() {
               <NavLink
                 to={`${rootPath}/`}
                 end
-                className="nav-link">
+                className="nav-link home-nav-style">
                 <i className="bi-house-door-fill me-2"></i>Home
               </NavLink>
             </li>
@@ -59,13 +60,9 @@ export function CollapsibleNavbar() {
                 <i className="bi-file-person me-2"></i>About
               </NavLink>
             </li>
-            {/*  <li className="nav-item">
-              <NavLink
-                to={`${rootPath}/SignInForm`}
-                className="nav-link">
-                <i className="bi-door-open me-2"></i>Sign In
-              </NavLink>
-            </li> */}
+
+            <SignInArea />
+
           </ul>
         </div>
       </div>
