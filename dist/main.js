@@ -32573,9 +32573,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.modal-content {
   width: 300px;
 }
 
-.modal-backdrop {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-  backdrop-filter: blur(5px);
+.modal-backdrop.show {
+  opacity: 0.7;
 }
 
 .modal-sign-in-btn,
@@ -32585,7 +32584,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.modal-content {
   width: 100%;
   text-align: center;
   padding: 5px;
-}`, "",{"version":3,"sources":["webpack://./src/components/SignInOutModal.scss"],"names":[],"mappings":"AAAA;EACE,oCAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;AACF;;AACA;EACE,mBAAA;AAEF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;EACA,QAAA;EACA,gBAAA;AAGF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AAGF;;AAAA;EACE,YAAA;AAGF;;AAAA;EACE,+CAAA;EACA,0BAAA;AAGF;;AAAA;;;;EAIE,WAAA;EACA,kBAAA;EACA,YAAA;AAGF","sourcesContent":[".modal-content {\r\n  background-color: #222222 !important;\r\n  color: white;\r\n  border-radius: 8px;\r\n  padding: 10px;\r\n}\r\n.modal-header {\r\n  border-bottom: none;\r\n}\r\n.modal-footer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 100%;\r\n  gap: 5px;\r\n  border-top: none;\r\n}\r\n\r\n.modal-body {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 12px;\r\n}\r\n\r\n.modal-dialog {\r\n  width: 300px;\r\n}\r\n\r\n.modal-backdrop {\r\n  background-color: rgba(0, 0, 0, 0.9) !important;\r\n  backdrop-filter: blur(5px);\r\n}\r\n\r\n.modal-sign-in-btn,\r\n.modal-btn-secondary,\r\n.modal-close-button,\r\n.modal-btn-warning {\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 5px;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SignInOutModal.scss"],"names":[],"mappings":"AAAA;EACE,oCAAA;EACA,YAAA;EACA,kBAAA;EACA,aAAA;AACF;;AACA;EACE,mBAAA;AAEF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;EACA,QAAA;EACA,gBAAA;AAGF;;AAAA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AAGF;;AAAA;EACE,YAAA;AAGF;;AAAA;EACE,YAAA;AAGF;;AAAA;;;;EAIE,WAAA;EACA,kBAAA;EACA,YAAA;AAGF","sourcesContent":[".modal-content {\r\n  background-color: #222222 !important;\r\n  color: white;\r\n  border-radius: 8px;\r\n  padding: 10px;\r\n}\r\n.modal-header {\r\n  border-bottom: none;\r\n}\r\n.modal-footer {\r\n  display: flex;\r\n  flex-direction: column;\r\n  width: 100%;\r\n  gap: 5px;\r\n  border-top: none;\r\n}\r\n\r\n.modal-body {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 12px;\r\n}\r\n\r\n.modal-dialog {\r\n  width: 300px;\r\n}\r\n\r\n.modal-backdrop.show {\r\n  opacity: 0.7;\r\n}\r\n\r\n.modal-sign-in-btn,\r\n.modal-btn-secondary,\r\n.modal-close-button,\r\n.modal-btn-warning {\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 5px;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
