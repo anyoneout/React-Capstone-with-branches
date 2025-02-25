@@ -31385,10 +31385,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var _CollapsibleNavbar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CollapsibleNavbar.scss */ "./src/components/CollapsibleNavbar.scss");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../style.scss */ "./style.scss");
-/* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
-/* harmony import */ var _SignInArea__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SignInArea */ "./src/components/SignInArea.js");
+/* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
+/* harmony import */ var _SignInArea__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SignInArea */ "./src/components/SignInArea.js");
+/* harmony import */ var _CollapsibleNavbar_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CollapsibleNavbar.scss */ "./src/components/CollapsibleNavbar.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../style.scss */ "./style.scss");
 
 
 
@@ -31430,14 +31430,14 @@ function CollapsibleNavbar() {
     className: "nav-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "me-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_3__.NavFluxIcon, null)), "Black Forest")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.NavFluxIcon, null)), "Black Forest")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.NavLink, {
     to: `${rootPath}/OaPage`,
     className: "nav-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "me-2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_3__.NavDalleIcon, null)), "OpenAI")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.NavDalleIcon, null)), "OpenAI")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.NavLink, {
     to: `${rootPath}/Examples`,
@@ -31451,7 +31451,7 @@ function CollapsibleNavbar() {
     className: "nav-link"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("i", {
     className: "bi-file-person me-2"
-  }), "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInArea__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
+  }), "About")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInArea__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
 }
 
 /***/ }),
@@ -31580,7 +31580,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SignInContent() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "input-style",
@@ -31592,7 +31592,7 @@ function SignInContent() {
     name: "password",
     type: "password",
     placeholder: "Password"
-  })));
+  }));
 }
 
 /***/ }),
@@ -32497,18 +32497,18 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.input-style {
+  color: white;
   width: 100%;
   padding: 5px;
-  background-color: #0d1117; /* Dark input field */
-  border: 1px solid #30363d; /* Subtle border */
-  color: white;
-  border-radius: 6px; /* Rounded edges */
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
   transition: border 0.2s ease-in-out;
   font-size: 13px;
 }
 
 .input-style:focus {
-  border-color: #58a6ff; /* Blue border when focused */
+  border-color: #58a6ff;
   outline: none;
   box-shadow: 0 0 4px rgba(88, 166, 255, 0.6);
 }
@@ -32517,7 +32517,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.input-style {
   gap: 7px;
   display: flex;
   flex-direction: column;
-}`, "",{"version":3,"sources":["webpack://./src/components/SignInContent.scss"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,YAAA;EACA,yBAAA,EAAA,qBAAA;EACA,yBAAA,EAAA,kBAAA;EACA,YAAA;EACA,kBAAA,EAAA,kBAAA;EACA,mCAAA;EACA,eAAA;AACF;;AAEA;EACE,qBAAA,EAAA,6BAAA;EACA,aAAA;EACA,2CAAA;AACF;;AAEA;EACE,QAAA;EACA,aAAA;EACA,sBAAA;AACF","sourcesContent":[".input-style {\r\n  width: 100%;\r\n  padding: 5px;\r\n  background-color: #0d1117; /* Dark input field */\r\n  border: 1px solid #30363d; /* Subtle border */\r\n  color: white;\r\n  border-radius: 6px; /* Rounded edges */\r\n  transition: border 0.2s ease-in-out;\r\n  font-size: 13px;\r\n}\r\n\r\n.input-style:focus {\r\n  border-color: #58a6ff; /* Blue border when focused */\r\n  outline: none;\r\n  box-shadow: 0 0 4px rgba(88, 166, 255, 0.6);\r\n}\r\n\r\n.input-container {\r\n  gap: 7px;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SignInContent.scss"],"names":[],"mappings":"AAAA;EACE,YAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,yBAAA;EACA,kBAAA;EACA,mCAAA;EACA,eAAA;AACF;;AAEA;EACE,qBAAA;EACA,aAAA;EACA,2CAAA;AACF;;AAEA;EACE,QAAA;EACA,aAAA;EACA,sBAAA;AACF","sourcesContent":[".input-style {\r\n  color: white;\r\n  width: 100%;\r\n  padding: 5px;\r\n  background-color: #0d1117;\r\n  border: 1px solid #30363d;\r\n  border-radius: 6px;\r\n  transition: border 0.2s ease-in-out;\r\n  font-size: 13px;\r\n}\r\n\r\n.input-style:focus {\r\n  border-color: #58a6ff;\r\n  outline: none;\r\n  box-shadow: 0 0 4px rgba(88, 166, 255, 0.6);\r\n}\r\n\r\n.input-container {\r\n  gap: 7px;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
