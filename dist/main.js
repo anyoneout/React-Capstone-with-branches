@@ -30758,7 +30758,15 @@ function Home() {
     className: "btn btn-sm btn-outline-info rounded-pill ms-1 fw-bold icon"
   }, "Dall-E-3"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "w-100 rounded-3"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("video", {
+    className: "w-100 rounded-pill",
+    autoPlay: true,
+    muted: true,
+    loop: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
+    src: _assets_videos_ingredients_mp4__WEBPACK_IMPORTED_MODULE_4__,
+    type: "video/mp4"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex flex-column align-items-center"
@@ -31484,6 +31492,7 @@ function SignInArea() {
     className: buttonClass,
     onClick: isSignedIn ? handleSignOut : handleSignIn
   }, buttonText)), showModal === "signIn" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignInModal__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "modal-width",
     onSignIn: handleSubmitCloseSignIn,
     closeButton: handleCloseSignIn
   }), showModal === "signOut" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SignOutModal__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -31549,15 +31558,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SignInContent_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInContent.scss */ "./src/components/SignInContent.scss");
+
 
 function SignInContent() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, "Email:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: "input-style",
+    style: {
+      backgroundColor: "black",
+      border: "1px solid yellow",
+      color: "white"
+    },
     type: "email",
-    name: "email"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Password:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    name: "email",
+    placeholder: "Email"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    style: {
+      backgroundColor: "black",
+      border: "1px solid blue",
+      color: "white"
+    },
     name: "password",
-    type: "password"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null));
+    type: "password",
+    placeholder: "Password"
+  })));
 }
 
 /***/ }),
@@ -31577,6 +31601,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _SignInContent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SignInContent */ "./src/components/SignInContent.js");
 /* harmony import */ var _controllers_handleSignInAttempt__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleSignInAttempt */ "./src/controllers/handleSignInAttempt.js");
+/* harmony import */ var _SignInModal_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SignInModal.scss */ "./src/components/SignInModal.scss");
 
 
 
@@ -31587,7 +31612,7 @@ function SignInModal(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: handleSubmit
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "modal show d-block fade",
+    className: "modal fade d-block show d-flex align-items-center",
     id: "signInModal",
     tabIndex: "-1",
     "aria-labelledby": "signInModalLabel",
@@ -32437,6 +32462,96 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sign-in-btn,
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInContent.scss":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInContent.scss ***!
+  \************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.input-style {
+  color: white;
+}`, "",{"version":3,"sources":["webpack://./src/components/SignInContent.scss"],"names":[],"mappings":"AAAA;EACE,YAAA;AACF","sourcesContent":[".input-style {\r\n  color: white;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInModal.scss":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInModal.scss ***!
+  \**********************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.modal-content {
+  background-color: rgb(27, 27, 27) !important;
+  opacity: 1 !important;
+  border: none;
+  width: 100%;
+  color: white;
+}
+
+.modal-header {
+  border: none;
+  height: 200px;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-body {
+  width: 100%;
+}
+
+.modal-dialog {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 27, 27);
+  width: 40vw;
+  max-width: 300px;
+  height: 300px;
+  font-size: 0.7rem;
+  border: 1px solid yellow;
+  padding: 4px;
+  color: white;
+}`, "",{"version":3,"sources":["webpack://./src/components/SignInModal.scss"],"names":[],"mappings":"AAAA;EACE,4CAAA;EACA,qBAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;AACF;;AACA;EACE,YAAA;EACA,aAAA;AAEF;;AAAA;EACE,YAAA;AAGF;;AAAA;EACE,WAAA;AAGF;;AADA;EACE,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iCAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,iBAAA;EACA,wBAAA;EACA,YAAA;EACA,YAAA;AAIF","sourcesContent":[".modal-content {\r\n  background-color: rgb(27, 27, 27) !important;\r\n  opacity: 1 !important;\r\n  border: none;\r\n  width: 100%;\r\n  color: white;\r\n}\r\n.modal-header {\r\n  border: none;\r\n  height: 200px;\r\n}\r\n.modal-footer {\r\n  border: none;\r\n}\r\n\r\n.modal-body {\r\n  width: 100%;\r\n}\r\n.modal-dialog {\r\n  border-radius: 12px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background-color: rgb(27, 27, 27);\r\n  width: 40vw;\r\n  max-width: 300px;\r\n  height: 300px;\r\n  font-size: 0.7rem;\r\n  border: 1px solid yellow;\r\n  padding: 4px;\r\n  color: white;\r\n}\r\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./style.scss":
 /*!*************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./style.scss ***!
@@ -32518,6 +32633,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 
 .navbar-width {
   max-width: 800px;
+  width: 100%;
 }
 
 /* * {
@@ -32567,7 +32683,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 html {
   overflow-y: scroll;
-}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;;GAAA;AAIA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AAAJ;AACI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AACN;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AADF;AAEE;EACE,gBAAA;AAAJ;;AAIA;EACE,gBAAA;AADF;;AAIA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;;GAAA;AAIA;EACE,6CAAA;EACA,mDAAA;AADF;;AAIA;EACE,8BAAA;EACA,eAAA;AADF;;AAIA;EACE,uBAAA;EACA,+DAAA;AADF;AAIA;EACE,kBAAA;AAFF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n/* .spacing {\n  margin-top: 50px;\n} */\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n}\n\n/* * {\n  border: solid 1px yellow;\n} */\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n/* .api-form {\n  border: solid 1px #fff78a;\n} */\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 45px;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;;GAAA;AAIA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AAAF;AACE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AAAJ;AACI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AACN;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AADF;AAEE;EACE,gBAAA;AAAJ;;AAIA;EACE,gBAAA;EACA,WAAA;AADF;;AAIA;;GAAA;AAGA;EACE,uDAAA;EACA,0DAAA;AADF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;;GAAA;AAIA;EACE,6CAAA;EACA,mDAAA;AADF;;AAIA;EACE,8BAAA;EACA,eAAA;AADF;;AAIA;EACE,uBAAA;EACA,+DAAA;AADF;AAIA;EACE,kBAAA;AAFF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n/* .spacing {\n  margin-top: 50px;\n} */\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n  width: 100%;\n}\n\n/* * {\n  border: solid 1px yellow;\n} */\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n/* .api-form {\n  border: solid 1px #fff78a;\n} */\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 45px;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -71997,6 +72113,112 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInArea_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/SignInContent.scss":
+/*!*******************************************!*\
+  !*** ./src/components/SignInContent.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInContent_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./SignInContent.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInContent.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInContent_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInContent_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInContent_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInContent_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/components/SignInModal.scss":
+/*!*****************************************!*\
+  !*** ./src/components/SignInModal.scss ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInModal_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./SignInModal.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/SignInModal.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInModal_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInModal_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInModal_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SignInModal_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),

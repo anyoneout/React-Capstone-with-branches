@@ -45,12 +45,12 @@ export function Home() {
       </div>
 
       <div className="w-100 rounded-3" >
-        {/*     <video className="w-100 rounded-pill" autoPlay muted loop>
+        <video className="w-100 rounded-pill" autoPlay muted loop>
           <source
             src={ingredientsVideo}
             type="video/mp4" >
           </source>
-        </video> */}
+        </video>
       </div>
       <div className="row">
         <div className="col-12 col-md-6 d-flex flex-column align-items-center">

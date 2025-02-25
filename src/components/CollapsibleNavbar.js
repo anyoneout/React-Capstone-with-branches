@@ -60,9 +60,7 @@ export function CollapsibleNavbar() {
                 <i className="bi-file-person me-2"></i>About
               </NavLink>
             </li>
-
             <SignInArea />
-
           </ul>
         </div>
       </div>

@@ -1,7 +1,8 @@
 import React from "react";
 import SignInContent from "./SignInContent";
 import { handleSignInAttempt } from "../controllers/handleSignInAttempt";
-import { ComparisonOperator } from "@aws-sdk/client-dynamodb";
+import "./SignInModal.scss";
+
 
 export default function SignInModal(props) {
   const onSignIn = props.onSignIn;
@@ -12,7 +13,7 @@ export default function SignInModal(props) {
   return (
     <form onSubmit={handleSubmit}>
       <div
-        className="modal show d-block fade"
+        className="modal fade d-block show d-flex align-items-center"
         id="signInModal"
         tabIndex="-1"
         aria-labelledby="signInModalLabel"
