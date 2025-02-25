@@ -1,7 +1,8 @@
 import React from "react";
 import SignInContent from "./SignInContent";
 import { handleSignInAttempt } from "../controllers/handleSignInAttempt";
-import "./SignInModal.scss";
+import "./SignInOutModal.scss";
+import "./SignInArea.scss";
 
 
 export default function SignInModal(props) {
@@ -13,41 +14,35 @@ export default function SignInModal(props) {
   return (
     <form onSubmit={handleSubmit}>
       <div
-        className="modal fade d-block show d-flex align-items-center"
+        className="modal fade show d-block d-flex align-items-center"
         id="signInModal"
         tabIndex="-1"
         aria-labelledby="signInModalLabel"
         aria-hidden="false">
         <div className="modal-dialog">
           <div className="modal-content">
-            <div className="modal-header">
-              <h5
+            <div className="modal-header d-flex justify-content-center">
+              <h1
                 className="modal-title"
                 id="signInModalLabel">
                 Sign In
-              </h5>
-              <button
-                type="button"
-                className="btn-close"
-                onClick={closeButton}
-                aria-label="Close">
-              </button>
+              </h1>
             </div>
             <div className="modal-body">
               <SignInContent />
             </div>
             <div className="modal-footer">
               <button
-                type="button"
-                className="btn btn-secondary"
-                onClick={closeButton}>
-                Close
-              </button>
-              <button
                 type="submit"
-                className="btn btn-primary"
+                className="btn btn-primary modal-sign-in-btn"
                 data-bs-dismiss="modal">
                 Sign In
+              </button>
+              <button
+                type="button"
+                className="btn btn-secondary modal-close-button"
+                onClick={closeButton}>
+                Close
               </button>
             </div>
           </div>

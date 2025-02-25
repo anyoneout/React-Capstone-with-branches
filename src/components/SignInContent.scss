@@ -1,3 +1,22 @@
 .input-style {
+  width: 100%;
+  padding: 5px;
+  background-color: #0d1117; /* Dark input field */
+  border: 1px solid #30363d; /* Subtle border */
   color: white;
+  border-radius: 6px; /* Rounded edges */
+  transition: border 0.2s ease-in-out;
+  font-size: 13px;
+}
+
+.input-style:focus {
+  border-color: #58a6ff; /* Blue border when focused */
+  outline: none;
+  box-shadow: 0 0 4px rgba(88, 166, 255, 0.6);
+}
+
+.input-container {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./SignInOutModal.scss";
 
 
 export default function SignOutModal(props) {
@@ -7,37 +8,31 @@ export default function SignOutModal(props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="modal fade show d-block"
+      className="modal fade show d-block d-flex align-items-center"
       id="signOutModal"
       tabIndex="-1"
       aria-labelledby="signOutModalLabel"
       aria-hidden="false">
       <div className="modal-dialog">
         <div className="modal-content">
-          <div className="modal-header">
+          <div className="modal-header d-flex justify-content-center">
             <h1>Sign Out</h1>
-            <button
-              type="button"
-              className="btn-close"
-              onClick={closeButton}
-              aria-label="Close">
-            </button>
           </div>
           <div className="modal-body">
             Are you sure you want to sign out?
           </div>
           <div className="modal-footer">
             <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={closeButton}>
-              Close
-            </button>
-            <button
               type="submit"
-              className="btn btn-warning"
+              className="btn btn-warning modal-btn-warning"
               data-bs-dismiss="modal">
               Sign Out
+            </button>
+            <button
+              type="button"
+              className="btn btn-secondary modal-btn-secondary"
+              onClick={closeButton}>
+              Close
             </button>
           </div>
         </div>

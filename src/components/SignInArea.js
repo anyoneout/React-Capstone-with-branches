@@ -56,29 +56,47 @@ export default function SignInArea() {
   function handleSignIn() {
     console.log("User is signing in...");
     setShowModal("signIn");
+    const backdrop = document.createElement("div");
+    backdrop.className = "modal-backdrop fade show";
+    document.body.appendChild(backdrop);
   }
 
   function handleCloseSignIn() {
     console.log("Closing Sign-In Modal...");
     setShowModal(null);
+    const backdrop = document.querySelector(".modal-backdrop");
+    backdrop.classList.remove("show"); // Fade out effect
+    setTimeout(() => backdrop.remove(), 300); // Remove after transition
   }
   function handleSubmitCloseSignIn() {
     console.log("Closing Sign-In Modal...");
     setIsSignedIn(true);
     setShowModal(null);
+    const backdrop = document.querySelector(".modal-backdrop");
+    backdrop.classList.remove("show"); // Fade out effect
+    setTimeout(() => backdrop.remove(), 300); // Remove after transition
   }
   function handleSignOut() {
     console.log("User is signing out...");
     setShowModal("signOut");
+    const backdrop = document.createElement("div");
+    backdrop.className = "modal-backdrop fade show";
+    document.body.appendChild(backdrop);
   }
 
   function handleCloseSignOut() {
     console.log("Closing Sign-Out Modal...");
     setShowModal(null);
+    const backdrop = document.querySelector(".modal-backdrop");
+    backdrop.classList.remove("show"); // Fade out effect
+    setTimeout(() => backdrop.remove(), 300); // Remove after transition
   }
   function handleSubmitCloseSignOut() {
     console.log("Closing Sign-Out Modal...");
     setIsSignedIn(false);
     setShowModal(null);
+    const backdrop = document.querySelector(".modal-backdrop");
+    backdrop.classList.remove("show"); // Fade out effect
+    setTimeout(() => backdrop.remove(), 300); // Remove after transition
   }
 }

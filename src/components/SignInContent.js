@@ -4,15 +4,13 @@ import "./SignInContent.scss";
 export default function SignInContent() {
   return (
     <>
-      <div>
-        <input className="input-style" style={{ backgroundColor: "black", border: "1px solid yellow", color: "white" }}
+      <div className="input-container">
+        <input className="input-style"
           type="email"
           name="email"
           placeholder="Email"
         />
-        <br />
-        <br />
-        <input style={{ backgroundColor: "black", border: "1px solid blue", color: "white" }}
+        <input className="input-style"
           name="password"
           type="password"
           placeholder="Password"
