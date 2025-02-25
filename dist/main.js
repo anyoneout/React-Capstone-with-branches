@@ -31515,6 +31515,8 @@ function SignInArea() {
       }
     }
   }
+
+  // There were a number of issues that were created when I decided to add the sign in and out buttons to the navbar. I tried controlling visibility conditionally of the modals but ended up having to conditionally render them and create a backdrop element to handle the fade effect. It was more trouble than it was worth for the just aesthetic benefit of integrating the modal buttons into the navbar.
   function handleSignIn() {
     console.log("User is signing in...");
     setShowModal("signIn");
@@ -31526,16 +31528,16 @@ function SignInArea() {
     console.log("Closing Sign-In Modal...");
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
   function handleSubmitCloseSignIn() {
     console.log("Closing Sign-In Modal...");
     setIsSignedIn(true);
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
   function handleSignOut() {
     console.log("User is signing out...");
@@ -31548,16 +31550,16 @@ function SignInArea() {
     console.log("Closing Sign-Out Modal...");
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
   function handleSubmitCloseSignOut() {
     console.log("Closing Sign-Out Modal...");
     setIsSignedIn(false);
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
 }
 
@@ -32434,7 +32436,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sign-in-btn,
   font-family: "Inter", sans-serif !important;
   font-weight: 500 !important;
   letter-spacing: -0.05em !important;
-  padding: 0.5rem 2rem !important;
   border-radius: 12px;
   border: none;
   background-color: transparent;
@@ -32442,6 +32443,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sign-in-btn,
   padding: 0.5rem 2rem !important;
   margin: 0.24rem 0.12rem;
   margin-right: 0.2rem;
+  width: 110px;
+  text-align: center;
 }
 
 .sign-in-btn {
@@ -32469,7 +32472,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sign-in-btn,
   padding: 0.5rem 2rem !important;
   border-radius: 12px;
   border: none;
-}`, "",{"version":3,"sources":["webpack://./src/components/SignInArea.scss"],"names":[],"mappings":"AAAA;;EAEE,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,+BAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;EACA,6CAAA;EACA,+BAAA;EACA,uBAAA;EACA,oBAAA;AACF;;AAEA;EACE,oDAAA;AACF;;AAEA;EACE,wCAAA;AACF;;AAEA;EACE,8CAAA;AACF;;AAEA;EACE,mDAAA;EACA,uBAAA;AACF;;AAEA;EACE,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,+BAAA;EACA,mBAAA;EACA,YAAA;AACF","sourcesContent":[".sign-in-btn,\r\n.sign-out-btn {\r\n  color: rgba(255, 255, 255, 0.925) !important;\r\n  font-family: \"Inter\", sans-serif !important;\r\n  font-weight: 500 !important;\r\n  letter-spacing: -0.05em !important;\r\n  padding: 0.5rem 2rem !important;\r\n  border-radius: 12px;\r\n  border: none;\r\n  background-color: transparent;\r\n  transition: background-color 0.2s ease-in-out;\r\n  padding: 0.5rem 2rem !important;\r\n  margin: 0.24rem 0.12rem;\r\n  margin-right: 0.2rem;\r\n}\r\n\r\n.sign-in-btn {\r\n  background-color: rgb(47, 178, 204, 0.8) !important;\r\n}\r\n\r\n.sign-out-btn {\r\n  background-color: rgba(220, 53, 69, 0.5);\r\n}\r\n\r\n.sign-in-btn:hover {\r\n  background-color: rgb(47, 178, 204) !important;\r\n}\r\n\r\n.sign-out-btn:hover {\r\n  background-color: rgba(220, 53, 69, 0.8) !important;\r\n  color: white !important;\r\n}\r\n\r\n.close-button {\r\n  color: rgba(255, 255, 255, 0.925) !important;\r\n  font-family: \"Inter\", sans-serif !important;\r\n  font-weight: 500 !important;\r\n  letter-spacing: -0.05em !important;\r\n  padding: 0.5rem 2rem !important;\r\n  border-radius: 12px;\r\n  border: none;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SignInArea.scss"],"names":[],"mappings":"AAAA;;EAEE,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;EACA,6CAAA;EACA,+BAAA;EAEA,uBAAA;EACA,oBAAA;EAEA,YAAA;EACA,kBAAA;AADF;;AAIA;EACE,oDAAA;AADF;;AAIA;EACE,wCAAA;AADF;;AAIA;EACE,8CAAA;AADF;;AAIA;EACE,mDAAA;EACA,uBAAA;AADF;;AAIA;EACE,4CAAA;EACA,2CAAA;EACA,2BAAA;EACA,kCAAA;EACA,+BAAA;EACA,mBAAA;EACA,YAAA;AADF","sourcesContent":[".sign-in-btn,\r\n.sign-out-btn {\r\n  color: rgba(255, 255, 255, 0.925) !important;\r\n  font-family: \"Inter\", sans-serif !important;\r\n  font-weight: 500 !important;\r\n  letter-spacing: -0.05em !important;\r\n  border-radius: 12px;\r\n  border: none;\r\n  background-color: transparent;\r\n  transition: background-color 0.2s ease-in-out;\r\n  padding: 0.5rem 2rem !important;\r\n  //these odd margins are to compensate for the added signIn/Out button while keeping spacing consistent.\r\n  margin: 0.24rem 0.12rem;\r\n  margin-right: 0.2rem;\r\n  //this keeps the navbar from adjusting it's width when the extra letter from sign out is added\r\n  width: 110px;\r\n  text-align: center;\r\n}\r\n\r\n.sign-in-btn {\r\n  background-color: rgb(47, 178, 204, 0.8) !important;\r\n}\r\n\r\n.sign-out-btn {\r\n  background-color: rgba(220, 53, 69, 0.5);\r\n}\r\n\r\n.sign-in-btn:hover {\r\n  background-color: rgb(47, 178, 204) !important;\r\n}\r\n\r\n.sign-out-btn:hover {\r\n  background-color: rgba(220, 53, 69, 0.8) !important;\r\n  color: white !important;\r\n}\r\n\r\n.close-button {\r\n  color: rgba(255, 255, 255, 0.925) !important;\r\n  font-family: \"Inter\", sans-serif !important;\r\n  font-weight: 500 !important;\r\n  letter-spacing: -0.05em !important;\r\n  padding: 0.5rem 2rem !important;\r\n  border-radius: 12px;\r\n  border: none;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

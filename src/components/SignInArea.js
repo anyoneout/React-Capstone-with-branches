@@ -52,7 +52,7 @@ export default function SignInArea() {
     }
   }
 
-
+  // There were a number of issues that were created when I decided to add the sign in and out buttons to the navbar. I tried controlling visibility conditionally of the modals but ended up having to conditionally render them and create a backdrop element to handle the fade effect. It was more trouble than it was worth for the just aesthetic benefit of integrating the modal buttons into the navbar.
   function handleSignIn() {
     console.log("User is signing in...");
     setShowModal("signIn");
@@ -65,16 +65,16 @@ export default function SignInArea() {
     console.log("Closing Sign-In Modal...");
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
   function handleSubmitCloseSignIn() {
     console.log("Closing Sign-In Modal...");
     setIsSignedIn(true);
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
   function handleSignOut() {
     console.log("User is signing out...");
@@ -88,15 +88,15 @@ export default function SignInArea() {
     console.log("Closing Sign-Out Modal...");
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
   function handleSubmitCloseSignOut() {
     console.log("Closing Sign-Out Modal...");
     setIsSignedIn(false);
     setShowModal(null);
     const backdrop = document.querySelector(".modal-backdrop");
-    backdrop.classList.remove("show"); // Fade out effect
-    setTimeout(() => backdrop.remove(), 300); // Remove after transition
+    backdrop.classList.remove("show");
+    setTimeout(() => backdrop.remove(), 300);
   }
 }

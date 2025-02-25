@@ -4,14 +4,17 @@
   font-family: "Inter", sans-serif !important;
   font-weight: 500 !important;
   letter-spacing: -0.05em !important;
-  padding: 0.5rem 2rem !important;
   border-radius: 12px;
   border: none;
   background-color: transparent;
   transition: background-color 0.2s ease-in-out;
   padding: 0.5rem 2rem !important;
+  //these odd margins are to compensate for the added signIn/Out button while keeping spacing consistent.
   margin: 0.24rem 0.12rem;
   margin-right: 0.2rem;
+  //this keeps the navbar from adjusting it's width when the extra letter from sign out is added
+  width: 110px;
+  text-align: center;
 }
 
 .sign-in-btn {
