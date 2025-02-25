@@ -4,10 +4,6 @@ body {
   font-family: "Inter", sans-serif !important;
 }
 
-/* .spacing {
-  margin-top: 50px;
-} */
-
 .custom-tooltip {
   max-width: 120px;
   --bs-tooltip-bg: #fff78a;
@@ -59,13 +55,11 @@ body {
   width: 100%;
 }
 
-/* * {
-  border: solid 1px yellow;
-} */
 .carousel-item {
   border-top: 2px solid #ffffff42;
   border-bottom: 2px solid #ffffff42;
 }
+
 .carousel-images {
   display: block;
   width: 45vw;
@@ -85,10 +79,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
-/* .api-form {
-  border: solid 1px #fff78a;
-} */
 
 .api-inputs {
   background-color: #00000042;
