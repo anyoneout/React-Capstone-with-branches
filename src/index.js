@@ -9,6 +9,7 @@ import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 import SignInArea from "./components/SignInArea"
 import Examples from "./Views/Examples";
 import "../style.scss";
+import { HandleRefresh } from "./handleRefresh";
 
 
 const bodyTag = document.getElementById("bodyTag");
@@ -19,14 +20,16 @@ if (domain === "anyoneout.github.io") rootPath = "/React-Capstone-with-branches"
 root.render(
   <BrowserRouter>
     <CollapsibleNavbar />
-    <Routes>
-      <Route path={`${rootPath}/`} element={<Home />} />
-      <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
-      <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
-      <Route path={`${rootPath}/Examples`} element={<Examples />} />
-      <Route path={`${rootPath}/About`} element={<About />} />
-      <Route path={`${rootPath}/signin`} element={<SignInArea />} />
-      <Route path="*" element={<Navigate to="/" />} />
-    </Routes>
+    <HandleRefresh>
+      <Routes>
+        <Route path={`${rootPath}/`} element={<Home />} />
+        <Route path={`${rootPath}/BfPage`} element={<BfPage />} />
+        <Route path={`${rootPath}/OaPage`} element={<OaPage />} />
+        <Route path={`${rootPath}/Examples`} element={<Examples />} />
+        <Route path={`${rootPath}/About`} element={<About />} />
+        <Route path={`${rootPath}/signin`} element={<SignInArea />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </HandleRefresh>
   </BrowserRouter>
 );   
