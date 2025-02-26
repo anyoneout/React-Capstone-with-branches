@@ -1,5 +1,5 @@
 export const recipeArray = [
-  //generated an array of recipes by county for mapping instead of hardcoding the recipes into the api pages
+  //generated an array of recipes by country for mapping instead of hardcoding the recipes into the api pages
 
   "Margherita Pizza",
   "Spaghetti Carbonara",

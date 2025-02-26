@@ -9,7 +9,7 @@ import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 import SignInArea from "./components/SignInArea"
 import Examples from "./Views/Examples";
 import "../style.scss";
-import { HandleRefresh } from "./handleRefresh";
+import { HandleRefresh } from "./components/HandleRefresh";
 
 
 const bodyTag = document.getElementById("bodyTag");
