@@ -43,8 +43,11 @@ export function BfPage() {
                         black forest labs.
                     </div>
                     <div
-                        className="d-flex justify-content-start">
+                        className="d-flex justify-content-start mb-3">
                         <ApiFluxIcon />
+                    </div>
+                    <div style={{ color: "red", fontSize: ".7rem" }}>
+                        *If not currently warm on huggingface.com, this model may timeout on the first attempt.
                     </div>
                 </div>
                 <div className="col-md-6">
