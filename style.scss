@@ -83,11 +83,13 @@ body {
 .api-inputs {
   background-color: #00000042;
   border: solid 1px #ffffff69;
+  font-size: small;
 }
 
 .black-forest-font {
   font-family: "Playfair", serif;
-  font-size: 45px;
+  font-size: 40px;
+  color: #fff78a;
 }
 
 @font-face {
@@ -97,4 +99,20 @@ body {
 
 html {
   overflow-y: scroll;
+}
+* {
+  border: 1px solid yellow;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  padding-bottom: 4px;
+}
+
+.api-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

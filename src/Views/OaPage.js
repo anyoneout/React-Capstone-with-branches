@@ -13,136 +13,145 @@ export function OaPage() {
     useEffect(componentDidUnmount, []);
 
     return (
-        <div className="container navbar-width">
+        <div className="container api-container navbar-width mt-3">
             <div
-                className="row text-end justify-content-end align-items-end"
+                className="row text-end "
                 style={{
                     fontSize: "11px",
-                    minHeight: "20px"
+                    minHeight: "20px",
+                    color: "#fff78a"
                 }}>
                 <div
                     id="userNameHTML">
                 </div>
             </div>
             <div
-                className="row text-end"
+                className="row mb-5 text-end"
                 style={{
                     fontSize: "11px",
-                    minHeight: "20px"
+                    minHeight: "20px",
+                    color: "#fff78a"
                 }}>
                 <div
                     id="userEmailHTML">
                 </div>
             </div >
-            <div
-                className="row"
-                style={{ color: "#fff78a" }}>
-                <div
-                    className="col-12 d-flex justify-content-start">
-                    <ApiOpenAiIcon />
+            <div className="row">
+                <div className="col-md-6 mb-5">
+                    <div
+                        className="d-flex justify-content-start align-items-center"
+                        style={{ color: "#fff78a", padding: "10px 0" }}>
+                        <ApiOpenAiIcon />
+                    </div>
+                    <div className="d-flex justify-content-start align-items-center">
+
+                        <ApiDalleIcon />
+                    </div>
                 </div>
-            </div>
-            <div className="row d-flex justify-content-center">
-                <ApiDalleIcon />
-            </div>
-            <div className="row mt-5 d-flex justify-content-center">
-                <div className="col-8 col-sm-6">
+                <div className="col-md-6">
                     <form className="api-form">
-                        <div
-                            className="input-group mb-2"
-                            data-bs-theme="dark">
-                            <input
-                                type="text"
-                                className="form-control api-inputs"
-                                placeholder="Name"
-                                aria-label="User Name"
-                                aria-describedby="basic-addon1"
-                                id="nameInput" />
-                        </div>
-                        <div
-                            className="input-group mb-2"
-                            data-bs-theme="dark">
-                            <input
-                                type="text"
-                                className="form-control api-inputs"
-                                placeholder="Email"
-                                aria-label="User email" aria-describedby="basic-addon2"
-                                id="emailInput" />
-                        </div>
-                        <div
-                            className="input-group mb-2"
-                            data-bs-theme="dark">
-                            <input
-                                type="text"
-                                className="form-control api-inputs"
-                                placeholder="Token"
-                                aria-label="OpenAi Token Input" aria-describedby="basic-addon2"
-                                id="openAiTokenInput" />
-                        </div>
-                        <div
-                            className="input-group"
-                            data-bs-theme="dark">
-                            <select
-                                className="form-select"
-                                id="chosenRecipe"
-                                aria-label="Example select with button addon">
-                                <option>Recipe...</option>
-                                <option value="Caprese Salad">
-                                    Caprese Salad
-                                </option>
-                                <option value="Trout Grenobloise">
-                                    Trout Grenobloise
-                                </option>
-                                <option value="Baked Alaska">
-                                    Baked Alaska
-                                </option>
-                                <option value="Artichoke Gratin">
-                                    Artichoke Gratin
-                                </option>
-                                <option value="Minestrone Soup">
-                                    Minestrone Soup
-                                </option>
-                                <option value="Spaghetti Vongole">
-                                    Spaghetti Vongole
-                                </option>
-                                <option value="Beef Stroganoff">
-                                    Beef Stroganoff
-                                </option>
-                                <option value="Chicken Kiev">
-                                    Chicken Kiev
-                                </option>
-                                <option value="Ceasar Salad">
-                                    Caesar Salad
-                                </option>
-                                <option value="Osso Bucco">
-                                    Osso Bucco
-                                </option>
-                                <option value="Beef Namtok">
-                                    Beef Namtok
-                                </option>
-                                <option value="Steak Au Poivre">
-                                    Steak Au Poivre
-                                </option>
-                                <option value="Steak Tartare">
-                                    Steak Tartare
-                                </option>
-                                <option value="English Breakfast">
-                                    English Breakfast
-                                </option>
-                                <option value="Ice Cream Sundae">
-                                    Ice Cream Sundae
-                                </option>
-                                <option value="Pizza Margherita">
-                                    Pizza Margherita
-                                </option>
-                            </select>
-                            <button
-                                className="btn btn-outline-secondary" type="button"
-                                id="fetchButton"
-                                onClick={oaRunAiFetch}>
-                                Submit
-                            </button>
-                        </div>
+                        <fieldset>
+                            <legend>User login/ OpenAI token</legend>
+                            <div
+                                className="input-group mb-2"
+                                data-bs-theme="dark">
+                                <input
+                                    type="text"
+                                    className="form-control api-inputs"
+                                    placeholder="Name"
+                                    aria-label="User Name"
+                                    aria-describedby="basic-addon1"
+                                    id="nameInput" />
+                            </div>
+                            <div
+                                className="input-group mb-2"
+                                data-bs-theme="dark">
+                                <input
+                                    type="text"
+                                    className="form-control api-inputs"
+                                    placeholder="Email"
+                                    aria-label="User email" aria-describedby="basic-addon2"
+                                    id="emailInput" />
+                            </div>
+                            <div
+                                className="input-group mb-2"
+                                data-bs-theme="dark">
+                                <input
+                                    type="text"
+                                    className="form-control api-inputs"
+                                    placeholder="Token"
+                                    aria-label="OpenAi Token Input" aria-describedby="basic-addon2"
+                                    id="openAiTokenInput" />
+                            </div>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend>Recipe Selection</legend>
+                            <div
+                                className="input-group"
+                                data-bs-theme="dark">
+                                <select
+                                    className="form-select"
+                                    id="chosenRecipe"
+                                    aria-label="Example select with button addon">
+                                    <option>Recipe...</option>
+                                    <option value="Caprese Salad">
+                                        Caprese Salad
+                                    </option>
+                                    <option value="Trout Grenobloise">
+                                        Trout Grenobloise
+                                    </option>
+                                    <option value="Baked Alaska">
+                                        Baked Alaska
+                                    </option>
+                                    <option value="Artichoke Gratin">
+                                        Artichoke Gratin
+                                    </option>
+                                    <option value="Minestrone Soup">
+                                        Minestrone Soup
+                                    </option>
+                                    <option value="Spaghetti Vongole">
+                                        Spaghetti Vongole
+                                    </option>
+                                    <option value="Beef Stroganoff">
+                                        Beef Stroganoff
+                                    </option>
+                                    <option value="Chicken Kiev">
+                                        Chicken Kiev
+                                    </option>
+                                    <option value="Ceasar Salad">
+                                        Caesar Salad
+                                    </option>
+                                    <option value="Osso Bucco">
+                                        Osso Bucco
+                                    </option>
+                                    <option value="Beef Namtok">
+                                        Beef Namtok
+                                    </option>
+                                    <option value="Steak Au Poivre">
+                                        Steak Au Poivre
+                                    </option>
+                                    <option value="Steak Tartare">
+                                        Steak Tartare
+                                    </option>
+                                    <option value="English Breakfast">
+                                        English Breakfast
+                                    </option>
+                                    <option value="Ice Cream Sundae">
+                                        Ice Cream Sundae
+                                    </option>
+                                    <option value="Pizza Margherita">
+                                        Pizza Margherita
+                                    </option>
+                                </select>
+                                <button
+                                    className="btn btn-outline-secondary" type="button"
+                                    id="fetchButton"
+                                    onClick={oaRunAiFetch}>
+                                    Submit
+                                </button>
+                            </div>
+                        </fieldset>
                     </form>
                 </div>
             </div>
@@ -222,3 +231,5 @@ export function OaPage() {
         return delayedUnmount;
     }
 }
+
+

@@ -30463,39 +30463,38 @@ function BfPage() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container navbar-width"
+    className: "container api-container navbar-width mt-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row text-end justify-content-end align-items-end",
     style: {
       fontSize: "11px",
-      minHeight: "20px"
+      minHeight: "20px",
+      color: "#fff78a"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "userNameHTML"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row text-end",
+    className: "row mb-5 text-end",
     style: {
       fontSize: "11px",
-      minHeight: "20px"
+      minHeight: "20px",
+      color: "#fff78a"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "userEmailHTML"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row",
-    style: {
-      color: "#fff78a"
-    }
+    className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-12 d-flex  black-forest-font justify-content-start"
-  }, "black forest labs.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row d-flex justify-content-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.ApiFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5 d-flex justify-content-center"
+    className: "col-md-6 mb-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-8 col-sm-6"
+    className: "d-flex black-forest-font justify-content-start"
+  }, "black forest labs."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "d-flex justify-content-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.ApiFluxIcon, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     className: "api-form"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "User login/ Huggingface token"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-group mb-2",
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -30525,7 +30524,7 @@ function BfPage() {
     "aria-label": "OpenAi Token Input",
     "aria-describedby": "basic-addon2",
     id: "hfTokenInput"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Recipe Selection"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-group",
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
@@ -30569,7 +30568,7 @@ function BfPage() {
     type: "button",
     id: "fetchButton",
     onClick: _controllers_bfRunAiFetch__WEBPACK_IMPORTED_MODULE_2__.bfRunAiFetch
-  }, "Submit"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Submit")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex align-items-center justify-content-center"
@@ -30956,39 +30955,42 @@ function OaPage() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "container navbar-width"
+    className: "container api-container navbar-width mt-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row text-end justify-content-end align-items-end",
+    className: "row text-end ",
     style: {
       fontSize: "11px",
-      minHeight: "20px"
+      minHeight: "20px",
+      color: "#fff78a"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "userNameHTML"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row text-end",
+    className: "row mb-5 text-end",
     style: {
       fontSize: "11px",
-      minHeight: "20px"
+      minHeight: "20px",
+      color: "#fff78a"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     id: "userEmailHTML"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row",
+    className: "row"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-md-6 mb-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "d-flex justify-content-start align-items-center",
     style: {
-      color: "#fff78a"
+      color: "#fff78a",
+      padding: "10px 0"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-12 d-flex justify-content-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__.ApiOpenAiIcon, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row d-flex justify-content-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__.ApiDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5 d-flex justify-content-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "col-8 col-sm-6"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__.ApiOpenAiIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "d-flex justify-content-start align-items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_2__.ApiDalleIcon, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     className: "api-form"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "User login/ OpenAI token"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-group mb-2",
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -31018,7 +31020,7 @@ function OaPage() {
     "aria-label": "OpenAi Token Input",
     "aria-describedby": "basic-addon2",
     id: "openAiTokenInput"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Recipe Selection"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-group",
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
@@ -31062,7 +31064,7 @@ function OaPage() {
     type: "button",
     id: "fetchButton",
     onClick: _controllers_oaRunAiFetch__WEBPACK_IMPORTED_MODULE_1__.oaRunAiFetch
-  }, "Submit"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Submit")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-md-6 d-flex align-items-center justify-content-center"
@@ -31656,19 +31658,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SignInContent() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", {
+    className: "signInContentFieldset"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "input-style",
     type: "email",
     name: "email",
-    placeholder: "Email"
+    placeholder: "Email",
+    required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: "input-style",
     name: "password",
     type: "password",
-    placeholder: "Password"
-  }));
+    placeholder: "Password",
+    required: true
+  })));
 }
 
 /***/ }),
@@ -32521,17 +32527,17 @@ function HomeFluxIcon() {
 }
 function ApiOpenAiIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_3__["default"].Text, {
-    size: 65
+    size: 40
   });
 }
 function ApiDalleIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_1__["default"].Combine, {
-    size: 55
+    size: 40
   });
 }
 function ApiFluxIcon() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_lobehub_icons__WEBPACK_IMPORTED_MODULE_2__["default"].Combine, {
-    size: 45
+    size: 40
   });
 }
 function NavDalleIcon() {
@@ -33161,11 +33167,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 .api-inputs {
   background-color: rgba(0, 0, 0, 0.2588235294);
   border: solid 1px rgba(255, 255, 255, 0.4117647059);
+  font-size: small;
 }
 
 .black-forest-font {
   font-family: "Playfair", serif;
-  font-size: 45px;
+  font-size: 40px;
+  color: #fff78a;
 }
 
 @font-face {
@@ -33174,7 +33182,24 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 html {
   overflow-y: scroll;
-}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;EACA,WAAA;AAAF;;AAGA;EACE,uDAAA;EACA,0DAAA;AAAF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,6CAAA;EACA,mDAAA;AAAF;;AAGA;EACE,8BAAA;EACA,eAAA;AAAF;;AAGA;EACE,uBAAA;EACA,+DAAA;AAAF;AAGA;EACE,kBAAA;AADF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n  width: 100%;\n}\n\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 45px;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n"],"sourceRoot":""}]);
+}
+
+* {
+  border: 1px solid yellow;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  padding-bottom: 4px;
+}
+
+.api-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;EACA,WAAA;AAAF;;AAGA;EACE,uDAAA;EACA,0DAAA;AAAF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,6CAAA;EACA,mDAAA;EACA,gBAAA;AAAF;;AAGA;EACE,8BAAA;EACA,eAAA;EACA,cAAA;AAAF;;AAGA;EACE,uBAAA;EACA,+DAAA;AAAF;AAGA;EACE,kBAAA;AADF;;AAGA;EACE,wBAAA;AAAF;;AAGA;EACE,iBAAA;EACA,iBAAA;EACA,YAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n  width: 100%;\n}\n\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n  font-size: small;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 40px;\n  color: #fff78a;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n* {\n  border: 1px solid yellow;\n}\n\nlegend {\n  font-weight: bold;\n  font-size: 1.2rem;\n  color: white;\n  padding-bottom: 4px;\n}\n\n.api-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -14,15 +14,15 @@ export function HomeFluxIcon() {
 }
 
 export function ApiOpenAiIcon() {
-  return <OpenAI.Text size={65} />;
+  return <OpenAI.Text size={40} />;
 }
 
 export function ApiDalleIcon() {
-  return <Dalle.Combine size={55} />;
+  return <Dalle.Combine size={40} />;
 }
 
 export function ApiFluxIcon() {
-  return <Flux.Combine size={45} />;
+  return <Flux.Combine size={40} />;
 }
 
 export function NavDalleIcon() {
