@@ -30529,6 +30529,9 @@ function BfPage() {
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
     className: "form-select",
+    style: {
+      fontSize: ".8rem"
+    },
     id: "chosenRecipe",
     "aria-label": "Example select with button addon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Recipe..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
@@ -31025,6 +31028,9 @@ function OaPage() {
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
     className: "form-select",
+    style: {
+      fontSize: ".8rem"
+    },
     id: "chosenRecipe",
     "aria-label": "Example select with button addon"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Recipe..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
@@ -33167,7 +33173,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 .api-inputs {
   background-color: rgba(0, 0, 0, 0.2588235294);
   border: solid 1px rgba(255, 255, 255, 0.4117647059);
-  font-size: small;
+  font-size: 0.8rem;
 }
 
 .black-forest-font {
@@ -33186,7 +33192,7 @@ html {
 
 legend {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: white;
   padding-bottom: 4px;
 }
@@ -33195,7 +33201,7 @@ legend {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;EACA,WAAA;AAAF;;AAGA;EACE,uDAAA;EACA,0DAAA;AAAF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,6CAAA;EACA,mDAAA;EACA,gBAAA;AAAF;;AAGA;EACE,8BAAA;EACA,eAAA;EACA,cAAA;AAAF;;AAGA;EACE,uBAAA;EACA,+DAAA;AAAF;AAGA;EACE,kBAAA;AADF;;AAIA;EACE,iBAAA;EACA,iBAAA;EACA,YAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AADF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n  width: 100%;\n}\n\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n  font-size: small;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 40px;\n  color: #fff78a;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n\nlegend {\n  font-weight: bold;\n  font-size: 1.2rem;\n  color: white;\n  padding-bottom: 4px;\n}\n\n.api-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./style.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;EACA,WAAA;AAAF;;AAGA;EACE,uDAAA;EACA,0DAAA;AAAF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,6CAAA;EACA,mDAAA;EACA,iBAAA;AAAF;;AAGA;EACE,8BAAA;EACA,eAAA;EACA,cAAA;AAAF;;AAGA;EACE,uBAAA;EACA,+DAAA;AAAF;AAGA;EACE,kBAAA;AADF;;AAIA;EACE,iBAAA;EACA,iBAAA;EACA,YAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AADF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 800px;\n  width: 100%;\n}\n\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n  font-size: 0.8rem;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 40px;\n  color: #fff78a;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n\nlegend {\n  font-weight: bold;\n  font-size: 0.9rem;\n  color: white;\n  padding-bottom: 4px;\n}\n\n.api-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

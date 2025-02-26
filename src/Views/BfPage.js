@@ -89,7 +89,7 @@ export function BfPage() {
                                 className="input-group"
                                 data-bs-theme="dark">
                                 <select
-                                    className="form-select"
+                                    className="form-select" style={{ fontSize: ".8rem" }}
                                     id="chosenRecipe"
                                     aria-label="Example select with button addon">
                                     <option>Recipe...</option>
