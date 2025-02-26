@@ -30444,12 +30444,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
 /* harmony import */ var _controllers_bfRunAiFetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/bfRunAiFetch */ "./src/controllers/bfRunAiFetch.js");
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../style.scss */ "./style.scss");
+/* harmony import */ var _modules_recipeArray__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/recipeArray */ "./src/modules/recipeArray.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -30524,49 +30526,23 @@ function BfPage() {
     "aria-label": "OpenAi Token Input",
     "aria-describedby": "basic-addon2",
     id: "hfTokenInput"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Recipe Selection"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Generate ingredients"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-group",
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
     className: "form-select",
+    id: "chosenRecipe",
     style: {
       fontSize: ".8rem"
-    },
-    id: "chosenRecipe",
-    "aria-label": "Example select with button addon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Recipe..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Caprese Salad"
-  }, "Caprese Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Trout Grenobloise"
-  }, "Trout Grenobloise"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Baked Alaska"
-  }, "Baked Alaska"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Artichoke Gratin"
-  }, "Artichoke Gratin"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Minestrone Soup"
-  }, "Minestrone Soup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Spaghetti Vongole"
-  }, "Spaghetti Vongole"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Beef Stroganoff"
-  }, "Beef Stroganoff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Chicken Kiev"
-  }, "Chicken Kiev"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Ceasar Salad"
-  }, "Caesar Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Osso Bucco"
-  }, "Osso Bucco"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Beef Namtok"
-  }, "Beef Namtok"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Steak Au Poivre"
-  }, "Steak Au Poivre"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Steak Tartare"
-  }, "Steak Tartare"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "English Breakfast"
-  }, "English Breakfast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Ice Cream Sundae"
-  }, "Ice Cream Sundae"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Pizza Margherita"
-  }, "Pizza Margherita")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: ""
+  }, "Select a Recipe..."), _modules_recipeArray__WEBPACK_IMPORTED_MODULE_4__.recipeArray.map(function (recipe, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+      key: index,
+      value: recipe
+    }, recipe);
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "btn btn-outline-secondary",
     type: "button",
     id: "fetchButton",
@@ -30939,12 +30915,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _controllers_oaRunAiFetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../controllers/oaRunAiFetch */ "./src/controllers/oaRunAiFetch.js");
 /* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../style.scss */ "./style.scss");
+/* harmony import */ var _modules_recipeArray__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/recipeArray */ "./src/modules/recipeArray.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -31023,49 +31001,23 @@ function OaPage() {
     "aria-label": "OpenAi Token Input",
     "aria-describedby": "basic-addon2",
     id: "openAiTokenInput"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Recipe Selection"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("fieldset", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("legend", null, "Generate ingredients"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "input-group",
     "data-bs-theme": "dark"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
     className: "form-select",
+    id: "chosenRecipe",
     style: {
       fontSize: ".8rem"
-    },
-    id: "chosenRecipe",
-    "aria-label": "Example select with button addon"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", null, "Recipe..."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Caprese Salad"
-  }, "Caprese Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Trout Grenobloise"
-  }, "Trout Grenobloise"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Baked Alaska"
-  }, "Baked Alaska"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Artichoke Gratin"
-  }, "Artichoke Gratin"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Minestrone Soup"
-  }, "Minestrone Soup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Spaghetti Vongole"
-  }, "Spaghetti Vongole"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Beef Stroganoff"
-  }, "Beef Stroganoff"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Chicken Kiev"
-  }, "Chicken Kiev"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Ceasar Salad"
-  }, "Caesar Salad"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Osso Bucco"
-  }, "Osso Bucco"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Beef Namtok"
-  }, "Beef Namtok"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Steak Au Poivre"
-  }, "Steak Au Poivre"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Steak Tartare"
-  }, "Steak Tartare"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "English Breakfast"
-  }, "English Breakfast"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Ice Cream Sundae"
-  }, "Ice Cream Sundae"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
-    value: "Pizza Margherita"
-  }, "Pizza Margherita")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+    value: ""
+  }, "Select a Recipe..."), _modules_recipeArray__WEBPACK_IMPORTED_MODULE_4__.recipeArray.map(function (recipe, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+      key: index,
+      value: recipe
+    }, recipe);
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: "btn btn-outline-secondary",
     type: "button",
     id: "fetchButton",
@@ -32794,6 +32746,41 @@ function updateUI() {
   userNameHandle.innerHTML = userName;
   userEmailHandle.innerHTML = userEmail;
 }
+
+/***/ }),
+
+/***/ "./src/modules/recipeArray.js":
+/*!************************************!*\
+  !*** ./src/modules/recipeArray.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   recipeArray: () => (/* binding */ recipeArray)
+/* harmony export */ });
+var recipeArray = [
+// 🇮🇹 Italy
+"Margherita Pizza", "Spaghetti Carbonara", "Lasagna", "Risotto alla Milanese", "Osso Buco", "Tiramisu", "Panna Cotta", "Focaccia", "Ravioli", "Gnocchi",
+// 🇫🇷 France
+"Coq au Vin", "Bouillabaisse", "Ratatouille", "Beef Bourguignon", "Croque Monsieur", "Quiche Lorraine", "Crêpes Suzette", "Duck Confit", "Tarte Tatin", "French Onion Soup",
+// 🇪🇸 Spain
+"Paella Valenciana", "Gazpacho", "Tortilla Española", "Churros con Chocolate", "Pisto", "Fabada Asturiana", "Jamón Ibérico with Pan con Tomate", "Pulpo a la Gallega", "Patatas Bravas", "Leche Frita",
+// 🇬🇷 Greece
+"Moussaka", "Souvlaki", "Spanakopita", "Tzatziki", "Dolmades", "Baklava", "Fasolada", "Kleftiko", "Loukoumades", "Greek Salad",
+// 🇹🇭 Thailand
+"Pad Thai", "Tom Yum Goong", "Green Curry", "Som Tam", "Massaman Curry", "Khao Soi", "Mango Sticky Rice", "Panang Curry", "Thai Basil Chicken", "Tom Kha Gai",
+// 🇯🇵 Japan
+"Sushi", "Ramen", "Tempura", "Okonomiyaki", "Takoyaki", "Katsudon", "Unagi Don", "Yakiniku", "Mochi", "Gyoza",
+// 🇨🇳 China
+"Peking Duck", "Mapo Tofu", "Kung Pao Chicken", "Dim Sum", "Hot Pot", "Char Siu", "Dan Dan Noodles", "Scallion Pancakes", "Sichuan Twice-Cooked Pork", "Egg Tarts",
+// 🇮🇳 India
+"Butter Chicken", "Biryani", "Paneer Tikka", "Rogan Josh", "Dal Makhani", "Aloo Gobi", "Samosas", "Masala Dosa", "Pani Puri", "Gulab Jamun",
+// 🇲🇽 Mexico
+"Tacos al Pastor", "Chiles Rellenos", "Enchiladas", "Tamales", "Guacamole", "Pozole", "Mole Poblano", "Ceviche", "Churros", "Flan",
+// 🌍 Other Global Favorites
+"American Cheeseburger", "BBQ Ribs", "Poutine", "Jollof Rice", "Bobotie", "Falafel", "Shawarma", "Borscht", "Kimchi", "Haggis"];
 
 /***/ }),
 

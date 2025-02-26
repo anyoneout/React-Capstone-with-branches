@@ -1,0 +1,122 @@
+export const recipeArray = [
+  // 🇮🇹 Italy
+  "Margherita Pizza",
+  "Spaghetti Carbonara",
+  "Lasagna",
+  "Risotto alla Milanese",
+  "Osso Buco",
+  "Tiramisu",
+  "Panna Cotta",
+  "Focaccia",
+  "Ravioli",
+  "Gnocchi",
+
+  // 🇫🇷 France
+  "Coq au Vin",
+  "Bouillabaisse",
+  "Ratatouille",
+  "Beef Bourguignon",
+  "Croque Monsieur",
+  "Quiche Lorraine",
+  "Crêpes Suzette",
+  "Duck Confit",
+  "Tarte Tatin",
+  "French Onion Soup",
+
+  // 🇪🇸 Spain
+  "Paella Valenciana",
+  "Gazpacho",
+  "Tortilla Española",
+  "Churros con Chocolate",
+  "Pisto",
+  "Fabada Asturiana",
+  "Jamón Ibérico with Pan con Tomate",
+  "Pulpo a la Gallega",
+  "Patatas Bravas",
+  "Leche Frita",
+
+  // 🇬🇷 Greece
+  "Moussaka",
+  "Souvlaki",
+  "Spanakopita",
+  "Tzatziki",
+  "Dolmades",
+  "Baklava",
+  "Fasolada",
+  "Kleftiko",
+  "Loukoumades",
+  "Greek Salad",
+
+  // 🇹🇭 Thailand
+  "Pad Thai",
+  "Tom Yum Goong",
+  "Green Curry",
+  "Som Tam",
+  "Massaman Curry",
+  "Khao Soi",
+  "Mango Sticky Rice",
+  "Panang Curry",
+  "Thai Basil Chicken",
+  "Tom Kha Gai",
+
+  // 🇯🇵 Japan
+  "Sushi",
+  "Ramen",
+  "Tempura",
+  "Okonomiyaki",
+  "Takoyaki",
+  "Katsudon",
+  "Unagi Don",
+  "Yakiniku",
+  "Mochi",
+  "Gyoza",
+
+  // 🇨🇳 China
+  "Peking Duck",
+  "Mapo Tofu",
+  "Kung Pao Chicken",
+  "Dim Sum",
+  "Hot Pot",
+  "Char Siu",
+  "Dan Dan Noodles",
+  "Scallion Pancakes",
+  "Sichuan Twice-Cooked Pork",
+  "Egg Tarts",
+
+  // 🇮🇳 India
+  "Butter Chicken",
+  "Biryani",
+  "Paneer Tikka",
+  "Rogan Josh",
+  "Dal Makhani",
+  "Aloo Gobi",
+  "Samosas",
+  "Masala Dosa",
+  "Pani Puri",
+  "Gulab Jamun",
+
+  // 🇲🇽 Mexico
+  "Tacos al Pastor",
+  "Chiles Rellenos",
+  "Enchiladas",
+  "Tamales",
+  "Guacamole",
+  "Pozole",
+  "Mole Poblano",
+  "Ceviche",
+  "Churros",
+  "Flan",
+
+  // 🌍 Other Global Favorites
+  "American Cheeseburger",
+  "BBQ Ribs",
+  "Poutine",
+  "Jollof Rice",
+  "Bobotie",
+  "Falafel",
+  "Shawarma",
+  "Borscht",
+  "Kimchi",
+  "Haggis"
+];
+

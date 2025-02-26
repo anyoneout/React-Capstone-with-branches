@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { oaRunAiFetch } from "../controllers/oaRunAiFetch";
 import { ApiDalleIcon, ApiOpenAiIcon } from "../modules/icons";
 import "../../style.scss"
+import { recipeArray } from "../modules/recipeArray";
 
 
 export function OaPage() {
@@ -86,63 +87,16 @@ export function OaPage() {
                         </fieldset>
                         <br />
                         <fieldset>
-                            <legend>Recipe Selection</legend>
+                            <legend>Generate ingredients</legend>
                             <div
                                 className="input-group"
                                 data-bs-theme="dark">
-                                <select
-                                    className="form-select" style={{ fontSize: ".8rem" }}
-                                    id="chosenRecipe"
-                                    aria-label="Example select with button addon">
-                                    <option>Recipe...</option>
-                                    <option value="Caprese Salad">
-                                        Caprese Salad
-                                    </option>
-                                    <option value="Trout Grenobloise">
-                                        Trout Grenobloise
-                                    </option>
-                                    <option value="Baked Alaska">
-                                        Baked Alaska
-                                    </option>
-                                    <option value="Artichoke Gratin">
-                                        Artichoke Gratin
-                                    </option>
-                                    <option value="Minestrone Soup">
-                                        Minestrone Soup
-                                    </option>
-                                    <option value="Spaghetti Vongole">
-                                        Spaghetti Vongole
-                                    </option>
-                                    <option value="Beef Stroganoff">
-                                        Beef Stroganoff
-                                    </option>
-                                    <option value="Chicken Kiev">
-                                        Chicken Kiev
-                                    </option>
-                                    <option value="Ceasar Salad">
-                                        Caesar Salad
-                                    </option>
-                                    <option value="Osso Bucco">
-                                        Osso Bucco
-                                    </option>
-                                    <option value="Beef Namtok">
-                                        Beef Namtok
-                                    </option>
-                                    <option value="Steak Au Poivre">
-                                        Steak Au Poivre
-                                    </option>
-                                    <option value="Steak Tartare">
-                                        Steak Tartare
-                                    </option>
-                                    <option value="English Breakfast">
-                                        English Breakfast
-                                    </option>
-                                    <option value="Ice Cream Sundae">
-                                        Ice Cream Sundae
-                                    </option>
-                                    <option value="Pizza Margherita">
-                                        Pizza Margherita
-                                    </option>
+                                {/*   added a recipe array for mapping */}
+                                <select className="form-select" id="chosenRecipe" style={{ fontSize: ".8rem" }}>
+                                    <option value="">Select a Recipe...</option>
+                                    {recipeArray.map((recipe, index) => (
+                                        <option key={index} value={recipe}>{recipe}</option>
+                                    ))}
                                 </select>
                                 <button
                                     className="btn btn-outline-secondary" type="button"
