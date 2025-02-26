@@ -1,5 +1,6 @@
 export const recipeArray = [
-  // 🇮🇹 Italy
+  //generated an array of recipes by county for mapping instead of hardcoding the recipes into the api pages
+
   "Margherita Pizza",
   "Spaghetti Carbonara",
   "Lasagna",
@@ -10,8 +11,6 @@ export const recipeArray = [
   "Focaccia",
   "Ravioli",
   "Gnocchi",
-
-  // 🇫🇷 France
   "Coq au Vin",
   "Bouillabaisse",
   "Ratatouille",
@@ -22,8 +21,6 @@ export const recipeArray = [
   "Duck Confit",
   "Tarte Tatin",
   "French Onion Soup",
-
-  // 🇪🇸 Spain
   "Paella Valenciana",
   "Gazpacho",
   "Tortilla Española",
@@ -34,8 +31,6 @@ export const recipeArray = [
   "Pulpo a la Gallega",
   "Patatas Bravas",
   "Leche Frita",
-
-  // 🇬🇷 Greece
   "Moussaka",
   "Souvlaki",
   "Spanakopita",
@@ -46,8 +41,6 @@ export const recipeArray = [
   "Kleftiko",
   "Loukoumades",
   "Greek Salad",
-
-  // 🇹🇭 Thailand
   "Pad Thai",
   "Tom Yum Goong",
   "Green Curry",
@@ -58,8 +51,6 @@ export const recipeArray = [
   "Panang Curry",
   "Thai Basil Chicken",
   "Tom Kha Gai",
-
-  // 🇯🇵 Japan
   "Sushi",
   "Ramen",
   "Tempura",
@@ -70,8 +61,6 @@ export const recipeArray = [
   "Yakiniku",
   "Mochi",
   "Gyoza",
-
-  // 🇨🇳 China
   "Peking Duck",
   "Mapo Tofu",
   "Kung Pao Chicken",
@@ -82,8 +71,6 @@ export const recipeArray = [
   "Scallion Pancakes",
   "Sichuan Twice-Cooked Pork",
   "Egg Tarts",
-
-  // 🇮🇳 India
   "Butter Chicken",
   "Biryani",
   "Paneer Tikka",
@@ -94,8 +81,6 @@ export const recipeArray = [
   "Masala Dosa",
   "Pani Puri",
   "Gulab Jamun",
-
-  // 🇲🇽 Mexico
   "Tacos al Pastor",
   "Chiles Rellenos",
   "Enchiladas",
@@ -106,8 +91,6 @@ export const recipeArray = [
   "Ceviche",
   "Churros",
   "Flan",
-
-  // 🌍 Other Global Favorites
   "American Cheeseburger",
   "BBQ Ribs",
   "Poutine",
