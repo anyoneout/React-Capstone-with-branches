@@ -39,7 +39,7 @@ async function updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingr
   ingredientsImgHTML.classList.add("borderImage");
 }
 
-export async function bfRunAiFetch() {
+export async function handleBfFetch() {
   const hfUserToken = localStorage.getItem("hfToken");
 
   const elements = getDomElements();

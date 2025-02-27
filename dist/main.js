@@ -31493,7 +31493,7 @@ function HandleRefresh(props) {
     }
     setTimeout(function () {
       return setDidMount(true);
-    }, 200);
+    }, 50);
   }
 }
 
@@ -31828,7 +31828,7 @@ function SignOutModal(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   bfRunAiFetch: () => (/* binding */ bfRunAiFetch)
+/* harmony export */   handleBfFetch: () => (/* binding */ handleBfFetch)
 /* harmony export */ });
 /* harmony import */ var _modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/bfSaveUser */ "./src/modules/bfSaveUser.js");
 /* harmony import */ var _modules_bfRecipeImage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/bfRecipeImage */ "./src/modules/bfRecipeImage.js");
@@ -31907,11 +31907,11 @@ function _updateIngredients() {
   }));
   return _updateIngredients.apply(this, arguments);
 }
-function bfRunAiFetch() {
-  return _bfRunAiFetch.apply(this, arguments);
+function handleBfFetch() {
+  return _handleBfFetch.apply(this, arguments);
 }
-function _bfRunAiFetch() {
-  _bfRunAiFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+function _handleBfFetch() {
+  _handleBfFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
     var hfUserToken, elements, recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML, ingredientsFetched;
     return _regeneratorRuntime().wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
@@ -31936,7 +31936,7 @@ function _bfRunAiFetch() {
       }
     }, _callee3);
   }));
-  return _bfRunAiFetch.apply(this, arguments);
+  return _handleBfFetch.apply(this, arguments);
 }
 
 /***/ }),
@@ -31950,7 +31950,7 @@ function _bfRunAiFetch() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   oaRunAiFetch: () => (/* binding */ oaRunAiFetch)
+/* harmony export */   handleOaFetch: () => (/* binding */ handleOaFetch)
 /* harmony export */ });
 /* harmony import */ var _modules_oaIngredientsList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/oaIngredientsList */ "./src/modules/oaIngredientsList.js");
 /* harmony import */ var _modules_oaSaveUser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/oaSaveUser */ "./src/modules/oaSaveUser.js");
@@ -32029,11 +32029,11 @@ function _updateIngredients() {
   }));
   return _updateIngredients.apply(this, arguments);
 }
-function oaRunAiFetch() {
-  return _oaRunAiFetch.apply(this, arguments);
+function handleOaFetch() {
+  return _handleOaFetch.apply(this, arguments);
 }
-function _oaRunAiFetch() {
-  _oaRunAiFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+function _handleOaFetch() {
+  _handleOaFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
     var oaUserToken, elements, recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML, ingredientsFetched;
     return _regeneratorRuntime().wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
@@ -32058,7 +32058,7 @@ function _oaRunAiFetch() {
       }
     }, _callee3);
   }));
-  return _oaRunAiFetch.apply(this, arguments);
+  return _handleOaFetch.apply(this, arguments);
 }
 
 /***/ }),

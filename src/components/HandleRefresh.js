@@ -19,6 +19,6 @@ export function HandleRefresh(props) {
       navigateTo(redirectPath);
     }
 
-    setTimeout(() => setDidMount(true), 200);
+    setTimeout(() => setDidMount(true), 50);
   }
 }

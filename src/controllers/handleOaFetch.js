@@ -2,6 +2,7 @@ import { oaIngredientsList } from "../modules/oaIngredientsList";
 import { oaSaveUser } from "../modules/oaSaveUser";
 import { oaIngredientsImage } from "../modules/oaIngredientsImage";
 import { oaRecipeImage } from "../modules/oaRecipeImage";
+
 function getDomElements() {
   return {
     recipeChoice: document.getElementById("chosenRecipe"),
@@ -35,7 +36,7 @@ async function updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingr
   ingredientsImgHTML.classList.add("borderImage");
 }
 
-export async function oaRunAiFetch() {
+export async function handleOaFetch() {
   const oaUserToken = localStorage.getItem("oaiToken");
 
   const elements = getDomElements();
