@@ -8,7 +8,7 @@ export default function SignOutModal(props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="modal fade show d-block d-flex align-items-center"
+      className="modal fade show d-block d-flex align-items-center justify-content-center"
       id="signOutModal"
       tabIndex="-1"
       aria-labelledby="signOutModalLabel"

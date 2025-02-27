@@ -31719,7 +31719,7 @@ function SignInModal(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: handleSubmit
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "modal fade show d-block d-flex align-items-center",
+    className: "modal fade show d-block d-flex align-items-center justify-content-center",
     id: "signInModal",
     tabIndex: "-1",
     "aria-labelledby": "signInModalLabel",
@@ -31798,7 +31798,7 @@ function SignOutModal(props) {
   var closeButton = props.closeButton;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     onSubmit: handleSubmit,
-    className: "modal fade show d-block d-flex align-items-center",
+    className: "modal fade show d-block d-flex align-items-center justify-content-center",
     id: "signOutModal",
     tabIndex: "-1",
     "aria-labelledby": "signOutModalLabel",
