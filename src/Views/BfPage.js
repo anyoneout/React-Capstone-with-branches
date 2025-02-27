@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ApiFluxIcon } from "../modules/icons";
-import { bfRunAiFetch } from "../controllers/bfRunAiFetch";
+import { handleBfFetch } from "../controllers/handleBfFetch";
 import { recipeArray } from "../modules/recipeArray";
 
 
@@ -103,7 +103,7 @@ export function BfPage() {
                                 <button
                                     className="btn btn-outline-secondary" type="button"
                                     id="fetchButton"
-                                    onClick={bfRunAiFetch}>
+                                    onClick={handleBfFetch}>
                                     Submit
                                 </button>
                             </div>

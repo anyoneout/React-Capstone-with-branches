@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { oaRunAiFetch } from "../controllers/oaRunAiFetch";
+import { handleOaFetch } from "../controllers/handleOaFetch";
 import { ApiDalleIcon, ApiOpenAiIcon } from "../modules/icons";
 import { recipeArray } from "../modules/recipeArray";
 
@@ -102,7 +102,7 @@ export function OaPage() {
                                 <button
                                     className="btn btn-outline-secondary" type="button"
                                     id="fetchButton"
-                                    onClick={oaRunAiFetch}>
+                                    onClick={handleOaFetch}>
                                     Submit
                                 </button>
                             </div>

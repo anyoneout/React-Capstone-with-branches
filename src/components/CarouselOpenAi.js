@@ -11,7 +11,6 @@ import oaEggsBenedictR from "../../assets/images/OpenAiImages/oaEggsBenedictR.pn
 import oaEggsBenedictI from "../../assets/images/OpenAiImages/oaEggsBenedictI.png";
 
 
-
 export function CarouselOpenAi() {
   return (
     <>
