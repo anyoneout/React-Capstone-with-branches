@@ -30712,7 +30712,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_BlackForestImages_bfBananaSplitR_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/BlackForestImages/bfBananaSplitR.jpg */ "./assets/images/BlackForestImages/bfBananaSplitR.jpg");
 /* harmony import */ var _assets_images_BlackForestImages_bfBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/BlackForestImages/bfBananaSplitI.jpg */ "./assets/images/BlackForestImages/bfBananaSplitI.jpg");
 /* harmony import */ var _assets_images_OpenAiImages_oaBananaSplitR_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaBananaSplitR.jpg */ "./assets/images/OpenAiImages/oaBananaSplitR.jpg");
-/* harmony import */ var _assets_images_OpenAiImages_oaBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaBananaSplitI.jpg */ "./assets/images/OpenAiImages/oaBananaSplitI.jpg");
+/* harmony import */ var _assets_images_OpenAiImages_oaBananaSplitI_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaBananaSplitI.png */ "./assets/images/OpenAiImages/oaBananaSplitI.png");
 /* harmony import */ var _assets_images_BlackForestImages_bfCapreseSaladR_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/images/BlackForestImages/bfCapreseSaladR.jpg */ "./assets/images/BlackForestImages/bfCapreseSaladR.jpg");
 /* harmony import */ var _assets_images_BlackForestImages_bfCapreseSaladI_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/images/BlackForestImages/bfCapreseSaladI.jpg */ "./assets/images/BlackForestImages/bfCapreseSaladI.jpg");
 /* harmony import */ var _assets_images_OpenAiImages_oaCapreseSaladR_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaCapreseSaladR.jpg */ "./assets/images/OpenAiImages/oaCapreseSaladR.jpg");
@@ -30826,7 +30826,7 @@ function Home() {
     tooltipTitle: "<b>Banana Split</b><br><i>Recipe</i>",
     tooltipPlacement: "right"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    src: _assets_images_OpenAiImages_oaBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_7__,
+    src: _assets_images_OpenAiImages_oaBananaSplitI_png__WEBPACK_IMPORTED_MODULE_7__,
     id: "oaBsI",
     tooltipTitle: "<b>Banana Split</b><br><i>ingredients</i>",
     tooltipPlacement: "right"
@@ -31265,7 +31265,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _assets_images_OpenAiImages_oaBananaSplitR_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaBananaSplitR.jpg */ "./assets/images/OpenAiImages/oaBananaSplitR.jpg");
-/* harmony import */ var _assets_images_OpenAiImages_oaBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaBananaSplitI.jpg */ "./assets/images/OpenAiImages/oaBananaSplitI.jpg");
+/* harmony import */ var _assets_images_OpenAiImages_oaBananaSplitI_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaBananaSplitI.png */ "./assets/images/OpenAiImages/oaBananaSplitI.png");
 /* harmony import */ var _assets_images_OpenAiImages_oaCapreseSaladR_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaCapreseSaladR.jpg */ "./assets/images/OpenAiImages/oaCapreseSaladR.jpg");
 /* harmony import */ var _assets_images_OpenAiImages_oaCapreseSaladI_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaCapreseSaladI.jpg */ "./assets/images/OpenAiImages/oaCapreseSaladI.jpg");
 /* harmony import */ var _assets_images_OpenAiImages_oaChickenKievR_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/images/OpenAiImages/oaChickenKievR.png */ "./assets/images/OpenAiImages/oaChickenKievR.png");
@@ -31314,7 +31314,7 @@ function CarouselOpenAi() {
     className: "carousel-images",
     alt: "..."
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: _assets_images_OpenAiImages_oaBananaSplitI_jpg__WEBPACK_IMPORTED_MODULE_2__,
+    src: _assets_images_OpenAiImages_oaBananaSplitI_png__WEBPACK_IMPORTED_MODULE_2__,
     className: "carousel-images",
     alt: "..."
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -32757,7 +32757,7 @@ __webpack_require__.r(__webpack_exports__);
 var recipeArray = [
 //generated an array of recipes by country for mapping instead of hardcoding the recipes into the api pages
 
-"Margherita Pizza", "Spaghetti Carbonara", "Lasagna", "Risotto alla Milanese", "Osso Buco", "Tiramisu", "Panna Cotta", "Focaccia", "Ravioli", "Gnocchi", "Coq au Vin", "Bouillabaisse", "Ratatouille", "Beef Bourguignon", "Croque Monsieur", "Quiche Lorraine", "Crêpes Suzette", "Duck Confit", "Tarte Tatin", "French Onion Soup", "Paella Valenciana", "Gazpacho", "Tortilla Española", "Churros con Chocolate", "Pisto", "Fabada Asturiana", "Jamón Ibérico with Pan con Tomate", "Pulpo a la Gallega", "Patatas Bravas", "Leche Frita", "Moussaka", "Souvlaki", "Spanakopita", "Tzatziki", "Dolmades", "Baklava", "Fasolada", "Kleftiko", "Loukoumades", "Greek Salad", "Pad Thai", "Tom Yum Goong", "Green Curry", "Som Tam", "Massaman Curry", "Khao Soi", "Mango Sticky Rice", "Panang Curry", "Thai Basil Chicken", "Tom Kha Gai", "Sushi", "Ramen", "Tempura", "Okonomiyaki", "Takoyaki", "Katsudon", "Unagi Don", "Yakiniku", "Mochi", "Gyoza", "Peking Duck", "Mapo Tofu", "Kung Pao Chicken", "Dim Sum", "Hot Pot", "Char Siu", "Dan Dan Noodles", "Scallion Pancakes", "Sichuan Twice-Cooked Pork", "Egg Tarts", "Butter Chicken", "Biryani", "Paneer Tikka", "Rogan Josh", "Dal Makhani", "Aloo Gobi", "Samosas", "Masala Dosa", "Pani Puri", "Gulab Jamun", "Tacos al Pastor", "Chiles Rellenos", "Enchiladas", "Tamales", "Guacamole", "Pozole", "Mole Poblano", "Ceviche", "Churros", "Flan", "American Cheeseburger", "BBQ Ribs", "Poutine", "Jollof Rice", "Bobotie", "Falafel", "Shawarma", "Borscht", "Kimchi", "Haggis"];
+"Margherita Pizza", "Spaghetti Carbonara", "Lasagna", "Risotto alla Milanese", "Osso Buco", "Tiramisu", "Panna Cotta", "Focaccia", "Ravioli", "Gnocchi", "Coq au Vin", "Bouillabaisse", "Ratatouille", "Beef Bourguignon", "Croque Monsieur", "Quiche Lorraine", "Crêpes Suzette", "Duck Confit", "Tarte Tatin", "French Onion Soup", "Paella Valenciana", "Gazpacho", "Tortilla Española", "Churros con Chocolate", "Pisto", "Fabada Asturiana", "Jamón Ibérico with Pan con Tomate", "Pulpo a la Gallega", "Patatas Bravas", "Leche Frita", "Moussaka", "Souvlaki", "Spanakopita", "Tzatziki", "Dolmades", "Baklava", "Fasolada", "Kleftiko", "Loukoumades", "Greek Salad", "Pad Thai", "Tom Yum Goong", "Green Curry", "Som Tam", "Massaman Curry", "Khao Soi", "Mango Sticky Rice", "Panang Curry", "Thai Basil Chicken", "Tom Kha Gai", "Sushi", "Ramen", "Tempura", "Okonomiyaki", "Takoyaki", "Katsudon", "Unagi Don", "Yakiniku", "Mochi", "Gyoza", "Peking Duck", "Mapo Tofu", "Kung Pao Chicken", "Dim Sum", "Hot Pot", "Char Siu", "Dan Dan Noodles", "Scallion Pancakes", "Sichuan Twice-Cooked Pork", "Egg Tarts", "Butter Chicken", "Biryani", "Paneer Tikka", "Rogan Josh", "Dal Makhani", "Aloo Gobi", "Samosas", "Masala Dosa", "Pani Puri", "Gulab Jamun", "Tacos al Pastor", "Chiles Rellenos", "Enchiladas", "Tamales", "Guacamole", "Pozole", "Mole Poblano", "Ceviche", "Churros", "Flan", "American Cheeseburger", "BBQ Ribs", "Poutine", "Jollof Rice", "Bobotie", "Falafel", "Shawarma", "Borscht", "Kimchi", "Haggis", "Banana Split"];
 
 /***/ }),
 
@@ -73171,14 +73171,14 @@ module.exports = __webpack_require__.p + "a93563e4a289ed52a723.jpg";
 
 /***/ }),
 
-/***/ "./assets/images/OpenAiImages/oaBananaSplitI.jpg":
+/***/ "./assets/images/OpenAiImages/oaBananaSplitI.png":
 /*!*******************************************************!*\
-  !*** ./assets/images/OpenAiImages/oaBananaSplitI.jpg ***!
+  !*** ./assets/images/OpenAiImages/oaBananaSplitI.png ***!
   \*******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "b12b0d7cd1cb48e9abf1.jpg";
+module.exports = __webpack_require__.p + "7ea53bb3ea8e5c2828da.png";
 
 /***/ }),
 

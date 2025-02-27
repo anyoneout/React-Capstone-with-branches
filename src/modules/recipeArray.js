@@ -100,6 +100,7 @@ export const recipeArray = [
   "Shawarma",
   "Borscht",
   "Kimchi",
-  "Haggis"
+  "Haggis",
+  "Banana Split"
 ];
 

@@ -6,7 +6,7 @@ import ingredientsVideo from "../../assets/videos/ingredients.mp4";
 import bfBananaSplitR from "../../assets/images/BlackForestImages/bfBananaSplitR.jpg";
 import bfBananaSplitI from "../../assets/images/BlackForestImages/bfBananaSplitI.jpg";
 import oaBananaSplitR from "../../assets/images/OpenAiImages/oaBananaSplitR.jpg";
-import oaBananaSplitI from "../../assets/images/OpenAiImages/oaBananaSplitI.jpg";
+import oaBananaSplitI from "../../assets/images/OpenAiImages/oaBananaSplitI.png";
 import bfCapreseSaladR from "../../assets/images/BlackForestImages/bfCapreseSaladR.jpg";
 import bfCapreseSaladI from "../../assets/images/BlackForestImages/bfCapreseSaladI.jpg";
 import oaCapreseSaladR from "../../assets/images/OpenAiImages/oaCapreseSaladR.jpg";
