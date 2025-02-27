@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import aboutMeImage from "../../assets/images/AboutMe.jpg"
+import ingredientsVideo from "../../assets/videos/ingredients.mp4";
 
 
 export function About() {
@@ -18,9 +18,14 @@ export function About() {
       <div className="row justify-content-center spacing mt-sm-5">
         <div className="col-8 col-md-6 col-lg-5 col-xl-3">
           <div className="card text-center" style={{ backgroundColor: "black" }}>
-            <img src={aboutMeImage}
-              className="rounded-circle card-img-top  pt-3 "
-              alt="" />
+            <div className="col-12 d-flex mt-5 justify-content-center" >
+              <video className="video-small rounded-pill" autoPlay muted loop>
+                <source
+                  src={ingredientsVideo}
+                  type="video/mp4" >
+                </source>
+              </video>
+            </div>
             <div className="card-body">
               <div
                 className="card-title display-6 d-flex justify-content-center text-light">

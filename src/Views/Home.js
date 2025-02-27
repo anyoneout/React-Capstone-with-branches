@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
 import Card from "../components/Card";
-import ingredientsVideo from "../../assets/videos/ingredients.mp4";
 import bfBananaSplitR from "../../assets/images/BlackForestImages/bfBananaSplitR.jpg";
 import bfBananaSplitI from "../../assets/images/BlackForestImages/bfBananaSplitI.jpg";
 import oaBananaSplitR from "../../assets/images/OpenAiImages/oaBananaSplitR.jpg";
@@ -24,36 +23,35 @@ export function Home() {
   }, []);
 
   return (
-    <div className="container navbar-width">
+    <div className="container navbar-width mt-2">
       <div className="row text-start mt-md-5">
-        <div className="col-12 mt-5">
-          <p className="display-3 fw-bold " style={{ color: "#fff78a" }}>
-            Recipe Deconstructor
-          </p>
-          <h1 className="display-3 " style={{ color: "rgb(238, 238, 238)" }}>
-            Separate dishes into their ingredients
-          </h1>
-        </div>
-        <div className="col-12 mt-4 try-section">
-          <h4 style={{ color: "rgba(204, 98, 98, 0.925)" }}>Try here!</h4>
-          <Link to="BfPage" className="btn btn-sm btn-outline-info rounded-pill ms-3 fw-bold me-2 icon">
-            Flux
-          </Link>
-          <Link to="OaPage" className="btn btn-sm btn-outline-info rounded-pill ms-1 fw-bold icon">
-            Dall-E-3
-          </Link>
+        <div className="d-flex justify-content-center">
+          <div className="col-12 mt-5">
+            <p className="display-2 fw-bold mt-5 ms-4 " style={{ color: "#fff78a" }}>
+              Recipe Deconstructor
+            </p>
+
+            <h1 className="display-6 ms-4" style={{ color: "rgb(238, 238, 238)" }}>
+              Separate dishes into their ingredients
+            </h1>
+            <div className="d-flex justify-content-start mt-5 ms-5">
+              <span className="try-here">
+                Try here!
+                <Link to="BfPage" className="ms-3 btn btn-sm btn-outline-info try-buttons">
+                  Flux
+                </Link>
+                <Link to="OaPage" className="btn btn-sm btn-outline-info try-buttons ">
+                  Dall-E-3
+                </Link>
+              </span>
+            </div>
+
+
+          </div>
         </div>
       </div>
 
-      <div className="w-100 rounded-3" >
-        <video className="w-100 rounded-pill" autoPlay muted loop>
-          <source
-            src={ingredientsVideo}
-            type="video/mp4" >
-          </source>
-        </video>
-      </div>
-      <div className="row">
+      <div className="row mt-5">
         <div className="col-12 col-md-6 d-flex flex-column align-items-center">
           <div className="card icon bg-black d-flex text-white align-items-center justify-content-center pt-5">
             <HomeFluxIcon />

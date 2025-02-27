@@ -22,7 +22,7 @@ body {
   padding: 0px;
   overflow: hidden;
   .card {
-    // I had to add !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of. If there is an alternative I would love to learn it!
+    // added !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of.
     display: block !important;
     width: fit-content !important;
     min-width: unset !important;
@@ -112,4 +112,35 @@ legend {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+/* 
+* {
+  border: 1px solid yellow;
+} */
+
+.video-small {
+  height: auto;
+  width: 600px;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.try-here {
+  color: rgba(226, 72, 72, 0.925);
+  font-size: 1rem;
+}
+
+.try-buttons {
+  color: rgba(255, 255, 255, 0.925) !important;
+  border: 2px solid #079ab8;
+  font-family: "Inter", sans-serif !important;
+  border-radius: 25px;
+  transition: background-color 0.2s ease-in-out;
+  width: 120px;
+  text-align: center;
+  padding: 2px;
+  margin-left: 5px;
+  min-width: 60px;
+  max-width: 80px;
 }
