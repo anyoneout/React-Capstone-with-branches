@@ -9,7 +9,7 @@ import oaMinestroneR from "../../assets/images/OpenAiImages/oaMinestroneR.png";
 import oaMinestroneI from "../../assets/images/OpenAiImages/oaMinestroneI.png";
 import oaEggsBenedictR from "../../assets/images/OpenAiImages/oaEggsBenedictR.png";
 import oaEggsBenedictI from "../../assets/images/OpenAiImages/oaEggsBenedictI.png";
-import "../../style.scss"
+
 
 
 export function CarouselOpenAi() {

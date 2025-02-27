@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
 import Card from "../components/Card";
-import "../../style.scss"
-import ingredientsVideo from "../../assets/videos/ingredients.mp4"
-import bfBananaSplitR from "../../assets/images/BlackForestImages/bfBananaSplitR.jpg"
-import bfBananaSplitI from "../../assets/images/BlackForestImages/bfBananaSplitI.jpg"
-import oaBananaSplitR from "../../assets/images/OpenAiImages/oaBananaSplitR.jpg"
-import oaBananaSplitI from "../../assets/images/OpenAiImages/oaBananaSplitI.jpg"
-import bfCapreseSaladR from "../../assets/images/BlackForestImages/bfCapreseSaladR.jpg"
-import bfCapreseSaladI from "../../assets/images/BlackForestImages/bfCapreseSaladI.jpg"
-import oaCapreseSaladR from "../../assets/images/OpenAiImages/oaCapreseSaladR.jpg"
-import oaCapreseSaladI from "../../assets/images/OpenAiImages/oaCapreseSaladI.jpg"
+import ingredientsVideo from "../../assets/videos/ingredients.mp4";
+import bfBananaSplitR from "../../assets/images/BlackForestImages/bfBananaSplitR.jpg";
+import bfBananaSplitI from "../../assets/images/BlackForestImages/bfBananaSplitI.jpg";
+import oaBananaSplitR from "../../assets/images/OpenAiImages/oaBananaSplitR.jpg";
+import oaBananaSplitI from "../../assets/images/OpenAiImages/oaBananaSplitI.jpg";
+import bfCapreseSaladR from "../../assets/images/BlackForestImages/bfCapreseSaladR.jpg";
+import bfCapreseSaladI from "../../assets/images/BlackForestImages/bfCapreseSaladI.jpg";
+import oaCapreseSaladR from "../../assets/images/OpenAiImages/oaCapreseSaladR.jpg";
+import oaCapreseSaladI from "../../assets/images/OpenAiImages/oaCapreseSaladI.jpg";
 
 
 export function Home() {

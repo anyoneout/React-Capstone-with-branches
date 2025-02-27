@@ -9,7 +9,7 @@ import bfMinestroneR from "../../assets/images/BlackForestImages/bfMinestroneR.j
 import bfMinestroneI from "../../assets/images/BlackForestImages/bfMinestroneI.jpg";
 import bfEggsBenedictR from "../../assets/images/BlackForestImages/bfEggsBenedictR.jpg";
 import bfEggsBenedictI from "../../assets/images/BlackForestImages/bfEggsBenedictI.jpg";
-import "../../style.scss"
+
 
 export function CarouselBlackForest() {
   return (

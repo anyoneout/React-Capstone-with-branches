@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../../style.scss"
 import aboutMeImage from "../../assets/images/AboutMe.jpg"
 
 

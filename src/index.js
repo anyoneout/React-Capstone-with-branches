@@ -5,11 +5,11 @@ import { Home } from "./Views/Home";
 import { About } from "./Views/About";
 import { BfPage } from "./Views/BfPage";
 import { OaPage } from "./Views/OaPage";
+import Examples from "./Views/Examples";
+import { HandleRefresh } from "./components/HandleRefresh";
 import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
 import SignInArea from "./components/SignInArea"
-import Examples from "./Views/Examples";
-import "../style.scss";
-import { HandleRefresh } from "./components/HandleRefresh";
+import "./index.scss";
 
 
 const bodyTag = document.getElementById("bodyTag");
