@@ -48,7 +48,7 @@ export function BfPage() {
                         <ApiFluxIcon />
                     </div>
                     <div style={{ color: "red", fontSize: ".7rem" }}>
-                        *If not currently warm on huggingface.com, this model may timeout on the first attempt.
+                        *If not currently warm on huggingface.co, this model may timeout on the first attempt.
                     </div>
                 </div>
                 <div className="col-md-6">

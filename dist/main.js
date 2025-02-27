@@ -30496,7 +30496,7 @@ function BfPage() {
       color: "red",
       fontSize: ".7rem"
     }
-  }, "*If not currently warm on huggingface.com, this model may timeout on the first attempt.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "*If not currently warm on huggingface.co, this model may timeout on the first attempt.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     className: "api-form"
