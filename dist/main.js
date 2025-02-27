@@ -30494,9 +30494,10 @@ function BfPage() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.ApiFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     style: {
       color: "red",
-      fontSize: ".7rem"
+      fontSize: ".7rem",
+      width: "230px"
     }
-  }, "*If not currently warm on huggingface.co, this model may timeout on the first attempt.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "*This model may timeout on the first attempt, if not currently warm on huggingface.co")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-md-6"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     className: "api-form"
