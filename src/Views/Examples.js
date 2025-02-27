@@ -9,7 +9,9 @@ export default function Examples() {
 
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate, [didMount]);
-  useEffect(componentDidUnmount, []);
+  useEffect(function () {
+    return componentDidUnmount();
+  }, []);
 
   return (
     <div className="container navbar-width carousel-container mt-5">
@@ -26,8 +28,7 @@ export default function Examples() {
   function componentDidMount() {
     setDidMount(true);
     console.log("The Examples page component has mounted");
-    document.title = "Recipe Deconstructor - Examples";
-    return componentDidUnmount;
+    document.title = "Recipe Deconstructor - Examples";;
   }
 
   function componentDidUpdate() {
@@ -35,7 +36,6 @@ export default function Examples() {
   }
 
   function componentDidUnmount() {
-    // I added this function to delay the unmount phase until the page changes. Without it,it was unmounting immediately so I replaced the greeting message from the lesson with the console.log to delay it.
     function delayedUnmount() {
       console.log("component has unmounted")
     }

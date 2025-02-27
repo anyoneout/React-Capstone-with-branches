@@ -11,7 +11,9 @@ export function OaPage() {
 
     useEffect(componentDidMount, []);
     useEffect(componentDidUpdate, [didMount]);
-    useEffect(componentDidUnmount, []);
+    useEffect(function () {
+        return componentDidUnmount();
+    }, []);
 
     return (
         <div className="container api-container navbar-width mt-3">
@@ -170,7 +172,6 @@ export function OaPage() {
         setDidMount(true);
         console.log("The OaPage page component has mounted");
         document.title = "Recipe Deconstructor - Open AI Dall-E-3";
-        return componentDidUnmount;
     }
 
     function componentDidUpdate() {
@@ -178,7 +179,6 @@ export function OaPage() {
     }
 
     function componentDidUnmount() {
-        // I added this function to delay the unmount phase until the page changes. Without it,it was unmounting immediately so I replaced the greeting message from the lesson with the console.log to delay it.
         function delayedUnmount() {
             console.log("component has unmounted")
         }

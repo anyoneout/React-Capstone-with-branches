@@ -20,7 +20,9 @@ export function Home() {
 
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate, [didMount]);
-  useEffect(componentDidUnmount, []);
+  useEffect(function () {
+    return componentDidUnmount();
+  }, []);
 
   return (
     <div className="container navbar-width">
@@ -108,8 +110,6 @@ export function Home() {
     new bootstrap.Tooltip(oaCsR, { html: true, sanitize: false });
     const oaCsI = document.getElementById("oaCsI");
     new bootstrap.Tooltip(oaCsI, { html: true, sanitize: false });
-
-    return componentDidUnmount;
   }
 
   function componentDidUpdate() {
@@ -117,7 +117,7 @@ export function Home() {
   }
 
   function componentDidUnmount() {
-    // I added this function to delay the unmount phase until the page changes. Without it,it was unmounting immediately so I replaced the greeting message from the lesson with the console.log to delay it.
+
     function delayedUnmount() {
       console.log("The component has unmounted");
     }
