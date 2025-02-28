@@ -1,14 +1,14 @@
 import React from "react";
-import bfBananaSplitR from "../../assets/images/BlackForestImages/bfBananaSplitR.jpg";
-import bfBananaSplitI from "../../assets/images/BlackForestImages/bfBananaSplitI.jpg";
-import bfCapreseSaladR from "../../assets/images/BlackForestImages/bfCapreseSaladR.jpg";
-import bfCapreseSaladI from "../../assets/images/BlackForestImages/bfCapreseSaladI.jpg";
-import bfChickenKievR from "../../assets/images/BlackForestImages/bfChickenKievR.jpg";
-import bfChickenKievI from "../../assets/images/BlackForestImages/bfChickenKievI.jpg";
-import bfMinestroneR from "../../assets/images/BlackForestImages/bfMinestroneR.jpg";
-import bfMinestroneI from "../../assets/images/BlackForestImages/bfMinestroneI.jpg";
-import bfEggsBenedictR from "../../assets/images/BlackForestImages/bfEggsBenedictR.jpg";
-import bfEggsBenedictI from "../../assets/images/BlackForestImages/bfEggsBenedictI.jpg";
+import bfBananaSplitR from "../../../assets/images/BlackForestImages/bfBananaSplitR.jpg";
+import bfBananaSplitI from "../../../assets/images/BlackForestImages/bfBananaSplitI.jpg";
+import bfCapreseSaladR from "../../../assets/images/BlackForestImages/bfCapreseSaladR.jpg";
+import bfCapreseSaladI from "../../../assets/images/BlackForestImages/bfCapreseSaladI.jpg";
+import bfChickenKievR from "../../../assets/images/BlackForestImages/bfChickenKievR.jpg";
+import bfChickenKievI from "../../../assets/images/BlackForestImages/bfChickenKievI.jpg";
+import bfMinestroneR from "../../../assets/images/BlackForestImages/bfMinestroneR.jpg";
+import bfMinestroneI from "../../../assets/images/BlackForestImages/bfMinestroneI.jpg";
+import bfEggsBenedictR from "../../../assets/images/BlackForestImages/bfEggsBenedictR.jpg";
+import bfEggsBenedictI from "../../../assets/images/BlackForestImages/bfEggsBenedictI.jpg";
 
 
 export function CarouselBlackForest() {

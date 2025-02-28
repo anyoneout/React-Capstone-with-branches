@@ -1,14 +1,14 @@
 import React from "react";
-import oaBananaSplitR from "../../assets/images/OpenAiImages/oaBananaSplitR.jpg";
-import oaBananaSplitI from "../../assets/images/OpenAiImages/oaBananaSplitI.png";
-import oaCapreseSaladR from "../../assets/images/OpenAiImages/oaCapreseSaladR.jpg";
-import oaCapreseSaladI from "../../assets/images/OpenAiImages/oaCapreseSaladI.jpg";
-import oaChickenKievR from "../../assets/images/OpenAiImages/oaChickenKievR.png";
-import oaChickenKievI from "../../assets/images/OpenAiImages/oaChickenKievI.png";
-import oaMinestroneR from "../../assets/images/OpenAiImages/oaMinestroneR.png";
-import oaMinestroneI from "../../assets/images/OpenAiImages/oaMinestroneI.png";
-import oaEggsBenedictR from "../../assets/images/OpenAiImages/oaEggsBenedictR.png";
-import oaEggsBenedictI from "../../assets/images/OpenAiImages/oaEggsBenedictI.png";
+import oaBananaSplitR from "../../../assets/images/OpenAiImages/oaBananaSplitR.jpg";
+import oaBananaSplitI from "../../../assets/images/OpenAiImages/oaBananaSplitI.png";
+import oaCapreseSaladR from "../../../assets/images/OpenAiImages/oaCapreseSaladR.jpg";
+import oaCapreseSaladI from "../../../assets/images/OpenAiImages/oaCapreseSaladI.jpg";
+import oaChickenKievR from "../../../assets/images/OpenAiImages/oaChickenKievR.png";
+import oaChickenKievI from "../../../assets/images/OpenAiImages/oaChickenKievI.png";
+import oaMinestroneR from "../../../assets/images/OpenAiImages/oaMinestroneR.png";
+import oaMinestroneI from "../../../assets/images/OpenAiImages/oaMinestroneI.png";
+import oaEggsBenedictR from "../../../assets/images/OpenAiImages/oaEggsBenedictR.png";
+import oaEggsBenedictI from "../../../assets/images/OpenAiImages/oaEggsBenedictI.png";
 
 
 export function CarouselOpenAi() {

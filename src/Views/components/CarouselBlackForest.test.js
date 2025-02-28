@@ -1,14 +1,14 @@
 //added to replace the images with strings instead of modifying jest.config.js 
-jest.mock("../../assets/images/BlackForestImages/bfBananaSplitR.jpg", () => "bfBananaSplitR.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfBananaSplitI.jpg", () => "bfBananaSplitI.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfCapreseSaladR.jpg", () => "bfCapreseSaladR.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfCapreseSaladI.jpg", () => "bfCapreseSaladI.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfChickenKievR.jpg", () => "bfChickenKievR.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfChickenKievI.jpg", () => "bfChickenKievI.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfEggsBenedictR.jpg", () => "bfEggsBenedictR.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfEggsBenedictI.jpg", () => "bfEggsBenedictI.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfMinestroneR.jpg", () => "bfMinestroneR.jpg");
-jest.mock("../../assets/images/BlackForestImages/bfMinestroneI.jpg", () => "bfMinestroneI.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfBananaSplitR.jpg", () => "bfBananaSplitR.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfBananaSplitI.jpg", () => "bfBananaSplitI.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfCapreseSaladR.jpg", () => "bfCapreseSaladR.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfCapreseSaladI.jpg", () => "bfCapreseSaladI.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfChickenKievR.jpg", () => "bfChickenKievR.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfChickenKievI.jpg", () => "bfChickenKievI.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfEggsBenedictR.jpg", () => "bfEggsBenedictR.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfEggsBenedictI.jpg", () => "bfEggsBenedictI.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfMinestroneR.jpg", () => "bfMinestroneR.jpg");
+jest.mock("../../../assets/images/BlackForestImages/bfMinestroneI.jpg", () => "bfMinestroneI.jpg");
 
 import React from "react";
 import { describe, expect, it } from "@jest/globals";

@@ -6,9 +6,9 @@ import { About } from "./Views/About";
 import { BfPage } from "./Views/BfPage";
 import { OaPage } from "./Views/OaPage";
 import Examples from "./Views/Examples";
-import { HandleRefresh } from "./components/HandleRefresh";
-import { CollapsibleNavbar } from "./components/CollapsibleNavbar";
-import SignInArea from "./components/SignInArea"
+import { HandleRefresh } from "./Views/components/HandleRefresh";
+import { CollapsibleNavbar } from "./Views/components/CollapsibleNavbar";
+import SignInArea from "./Views/components/SignInArea"
 import "./index.scss";
 
 

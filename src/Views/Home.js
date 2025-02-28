@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HomeDalleIcon, HomeFluxIcon } from "../modules/icons";
-import Card from "../components/Card";
+import Card from "./components/Card";
 import bfBananaSplitR from "../../assets/images/BlackForestImages/bfBananaSplitR.jpg";
 import bfBananaSplitI from "../../assets/images/BlackForestImages/bfBananaSplitI.jpg";
 import oaBananaSplitR from "../../assets/images/OpenAiImages/oaBananaSplitR.jpg";

@@ -1,14 +1,14 @@
 //added to replace the images with strings instead of modifying jest.config.js 
-jest.mock("../../assets/images/OpenAiImages/oaBananaSplitR.jpg", () => "oaBananaSplitR.jpg");
-jest.mock("../../assets/images/OpenAiImages/oaBananaSplitI.png", () => "oaBananaSplitI.png");
-jest.mock("../../assets/images/OpenAiImages/oaCapreseSaladR.jpg", () => "oaCapreseSaladR.jpg");
-jest.mock("../../assets/images/OpenAiImages/oaCapreseSaladI.jpg", () => "oaCapreseSaladI.jpg");
-jest.mock("../../assets/images/OpenAiImages/oaChickenKievR.png", () => "oaChickenKievR.png");
-jest.mock("../../assets/images/OpenAiImages/oaChickenKievI.png", () => "oaChickenKievI.png");
-jest.mock("../../assets/images/OpenAiImages/oaEggsBenedictR.png", () => "oaEggsBenedictR.png");
-jest.mock("../../assets/images/OpenAiImages/oaEggsBenedictI.png", () => "oaEggsBenedictI.png");
-jest.mock("../../assets/images/OpenAiImages/oaMinestroneR.png", () => "oaMinestroneR.png");
-jest.mock("../../assets/images/OpenAiImages/oaMinestroneI.png", () => "oaMinestroneI.png");
+jest.mock("../../../assets/images/OpenAiImages/oaBananaSplitR.jpg", () => "oaBananaSplitR.jpg");
+jest.mock("../../../assets/images/OpenAiImages/oaBananaSplitI.png", () => "oaBananaSplitI.png");
+jest.mock("../../../assets/images/OpenAiImages/oaCapreseSaladR.jpg", () => "oaCapreseSaladR.jpg");
+jest.mock("../../../assets/images/OpenAiImages/oaCapreseSaladI.jpg", () => "oaCapreseSaladI.jpg");
+jest.mock("../../../assets/images/OpenAiImages/oaChickenKievR.png", () => "oaChickenKievR.png");
+jest.mock("../../../assets/images/OpenAiImages/oaChickenKievI.png", () => "oaChickenKievI.png");
+jest.mock("../../../assets/images/OpenAiImages/oaEggsBenedictR.png", () => "oaEggsBenedictR.png");
+jest.mock("../../../assets/images/OpenAiImages/oaEggsBenedictI.png", () => "oaEggsBenedictI.png");
+jest.mock("../../../assets/images/OpenAiImages/oaMinestroneR.png", () => "oaMinestroneR.png");
+jest.mock("../../../assets/images/OpenAiImages/oaMinestroneI.png", () => "oaMinestroneI.png");
 
 import React from "react";
 import { describe, expect, it } from "@jest/globals";

@@ -1,6 +1,6 @@
 import React from "react";
 import SignInContent from "./SignInContent";
-import { handleSignInAttempt } from "../controllers/handleSignInAttempt";
+import { handleSignInAttempt } from "../../controllers/handleSignInAttempt";
 import "./SignInOutModal.scss";
 import "./SignInArea.scss";
 
