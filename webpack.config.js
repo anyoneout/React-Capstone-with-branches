@@ -17,10 +17,6 @@ export default {
                 test: /\.(jpg|png|mp4)/,
                 type: "asset/resource",
             },
-            {
-                test: /\.json/,
-                type: "json",
-            },
         ],
     },
     watch: true,

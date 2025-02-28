@@ -30396,7 +30396,7 @@ function About() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 d-flex mt-5 justify-content-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("video", {
-    className: "video-small rounded-pill",
+    className: "video-small",
     autoPlay: true,
     muted: true,
     loop: true
@@ -33095,17 +33095,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   display: block;
 }
 
-.try-section {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.try-section h4 {
-  margin-bottom: 0;
-}
-
 .navbar-width {
   max-width: 820px;
   width: 100%;
@@ -33169,16 +33158,13 @@ legend {
   justify-content: center;
 }
 
-/* 
-* {
-  border: 1px solid yellow;
-} */
 .video-small {
-  height: auto;
+  height: 250px;
   width: 600px;
   max-height: 200px;
   object-fit: cover;
   display: block;
+  border-radius: 1000px;
 }
 
 .try-here {
@@ -33198,7 +33184,7 @@ legend {
   margin-left: 5px;
   min-width: 60px;
   max-width: 80px;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,aAAA;EACA,iBAAA;EACA,sBAAA;EACA,mBAAA;EACA,mBAAA;AAAF;AACE;EACE,gBAAA;AACJ;;AAGA;EACE,gBAAA;EACA,WAAA;AAAF;;AAGA;EACE,uDAAA;EACA,0DAAA;AAAF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,6CAAA;EACA,mDAAA;EACA,iBAAA;AAAF;;AAGA;EACE,8BAAA;EACA,eAAA;EACA,cAAA;AAAF;;AAGA;EACE,uBAAA;EACA,+DAAA;AAAF;AAGA;EACE,kBAAA;AADF;;AAIA;EACE,iBAAA;EACA,iBAAA;EACA,YAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AADF;;AAGA;;;GAAA;AAKA;EACE,YAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,cAAA;AADF;;AAIA;EACE,+BAAA;EACA,eAAA;AADF;;AAIA;EACE,4CAAA;EACA,yBAAA;EACA,2CAAA;EACA,mBAAA;EACA,6CAAA;EACA,YAAA;EACA,kBAAA;EACA,YAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;AADF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // added !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of.\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.try-section {\n  display: flex;\n  flex-wrap: nowrap;\n  justify-content: start;\n  align-items: center;\n  margin-bottom: 2rem;\n  h4 {\n    margin-bottom: 0;\n  }\n}\n\n.navbar-width {\n  max-width: 820px;\n  width: 100%;\n}\n\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n  font-size: 0.8rem;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 40px;\n  color: #fff78a;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n\nlegend {\n  font-weight: bold;\n  font-size: 0.9rem;\n  color: white;\n  padding-bottom: 4px;\n}\n\n.api-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n/* \n* {\n  border: 1px solid yellow;\n} */\n\n.video-small {\n  height: auto;\n  width: 600px;\n  max-height: 200px;\n  object-fit: cover;\n  display: block;\n}\n\n.try-here {\n  color: rgba(226, 72, 72, 0.925);\n  font-size: 1rem;\n}\n\n.try-buttons {\n  color: rgba(255, 255, 255, 0.925) !important;\n  border: 2px solid #079ab8;\n  font-family: \"Inter\", sans-serif !important;\n  border-radius: 25px;\n  transition: background-color 0.2s ease-in-out;\n  width: 120px;\n  text-align: center;\n  padding: 2px;\n  margin-left: 5px;\n  min-width: 60px;\n  max-width: 80px;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;EACA,yBAAA;EACA,2CAAA;AACF;;AAEA;EACE,gBAAA;EACA,wBAAA;EACA,yBAAA;EACA,gCAAA;AACF;;AAEA;EACE,yBAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACF;AAAE;EAEE,yBAAA;EACA,6BAAA;EACA,2BAAA;EACA,eAAA;EACA,UAAA;EACA,SAAA;EACA,gBAAA;AACJ;AAAI;EACE,WAAA;EACA,YAAA;EACA,iBAAA;EACA,cAAA;AAEN;;AAGA;EACE,gBAAA;EACA,WAAA;AAAF;;AAGA;EACE,uDAAA;EACA,0DAAA;AAAF;;AAGA;EACE,cAAA;EACA,WAAA;EACA,gBAAA;EACA,cAAA;AAAF;;AAGA;EACE,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAAF;;AAGA;EACE,6CAAA;EACA,mDAAA;EACA,iBAAA;AAAF;;AAGA;EACE,8BAAA;EACA,eAAA;EACA,cAAA;AAAF;;AAGA;EACE,uBAAA;EACA,+DAAA;AAAF;AAGA;EACE,kBAAA;AADF;;AAIA;EACE,iBAAA;EACA,iBAAA;EACA,YAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AADF;;AAIA;EACE,aAAA;EACA,YAAA;EACA,iBAAA;EACA,iBAAA;EACA,cAAA;EACA,qBAAA;AADF;;AAIA;EACE,+BAAA;EACA,eAAA;AADF;;AAIA;EACE,4CAAA;EACA,yBAAA;EACA,2CAAA;EACA,mBAAA;EACA,6CAAA;EACA,YAAA;EACA,kBAAA;EACA,YAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;AADF","sourcesContent":["body {\n  background-color: black;\n  color: rgb(127, 208, 245);\n  font-family: \"Inter\", sans-serif !important;\n}\n\n.custom-tooltip {\n  max-width: 120px;\n  --bs-tooltip-bg: #fff78a;\n  --bs-tooltip-color: black;\n  --bs-tooltip-border-radius: 20px;\n}\n\n.image-border {\n  border: 2px solid #079ab8;\n  border-radius: 10px;\n  width: 100%;\n  max-width: 400px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0px;\n  overflow: hidden;\n  .card {\n    // added !important to avoid a bootstrap conflict with how the border was surrounding the card image. Without forcing the styling there was a space that I couldn't get rid of.\n    display: block !important;\n    width: fit-content !important;\n    min-width: unset !important;\n    max-width: 100%;\n    padding: 0;\n    margin: 0;\n    overflow: hidden;\n    img {\n      width: 100%;\n      height: auto;\n      object-fit: cover;\n      display: block;\n    }\n  }\n}\n\n.navbar-width {\n  max-width: 820px;\n  width: 100%;\n}\n\n.carousel-item {\n  border-top: 2px solid #ffffff42;\n  border-bottom: 2px solid #ffffff42;\n}\n\n.carousel-images {\n  display: block;\n  width: 45vw;\n  max-width: 350px;\n  margin: 0 auto;\n}\n\n.carousel-icons {\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.carousel-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.api-inputs {\n  background-color: #00000042;\n  border: solid 1px #ffffff69;\n  font-size: 0.8rem;\n}\n\n.black-forest-font {\n  font-family: \"Playfair\", serif;\n  font-size: 40px;\n  color: #fff78a;\n}\n\n@font-face {\n  font-family: \"Playfair\";\n  src: url(\"/assets/fonts/PlayfairDisplay-Regular.otf\") format(\"opentype\");\n}\n\nhtml {\n  overflow-y: scroll;\n}\n\nlegend {\n  font-weight: bold;\n  font-size: 0.9rem;\n  color: white;\n  padding-bottom: 4px;\n}\n\n.api-container {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.video-small {\n  height: 250px;\n  width: 600px;\n  max-height: 200px;\n  object-fit: cover;\n  display: block;\n  border-radius: 1000px;\n}\n\n.try-here {\n  color: rgba(226, 72, 72, 0.925);\n  font-size: 1rem;\n}\n\n.try-buttons {\n  color: rgba(255, 255, 255, 0.925) !important;\n  border: 2px solid #079ab8;\n  font-family: \"Inter\", sans-serif !important;\n  border-radius: 25px;\n  transition: background-color 0.2s ease-in-out;\n  width: 120px;\n  text-align: center;\n  padding: 2px;\n  margin-left: 5px;\n  min-width: 60px;\n  max-width: 80px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

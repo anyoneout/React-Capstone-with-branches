@@ -44,6 +44,6 @@ function hasNavButtons() {
   const nextButton = container.querySelector(".carousel-control-next");
 
   //ASSERT
-  expect(prevButton).not.toBeNull;
-  expect(nextButton).toBeTruthy;
+  expect(prevButton).not.toBeNull();
+  expect(nextButton).toBeTruthy();
 }

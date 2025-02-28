@@ -19,7 +19,7 @@ export function About() {
         <div className="col-8 col-md-6 col-lg-5 col-xl-3">
           <div className="card text-center" style={{ backgroundColor: "black" }}>
             <div className="col-12 d-flex mt-5 justify-content-center" >
-              <video className="video-small rounded-pill" autoPlay muted loop>
+              <video className="video-small" autoPlay muted loop>
                 <source
                   src={ingredientsVideo}
                   type="video/mp4" >
