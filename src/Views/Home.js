@@ -13,9 +13,11 @@ import oaCapreseSaladI from "../../assets/images/OpenAiImages/oaCapreseSaladI.jp
 
 
 export function Home() {
-
+  // initialize didMount state variable and set it to false
   const [didMount, setDidMount] = useState(false);
 
+
+  //handles component phases
   useEffect(componentDidMount, []);
   useEffect(componentDidUpdate, [didMount]);
   useEffect(function () {
@@ -34,6 +36,8 @@ export function Home() {
             <h1 className="display-6 ms-4" style={{ color: "rgb(238, 238, 238)" }}>
               Separate dishes into their ingredients
             </h1>
+
+            {/*    AI model button selection section */}
             <div className="d-flex justify-content-start mt-5 ms-5">
               <span className="try-here">
                 Try here!
@@ -50,7 +54,7 @@ export function Home() {
           </div>
         </div>
       </div>
-
+      {/*Example image section*/}
       <div className="row mt-5">
         <div className="col-12 col-md-6 d-flex flex-column align-items-center">
           <div className="card icon bg-black d-flex text-white align-items-center justify-content-center pt-5">
@@ -84,13 +88,13 @@ export function Home() {
   );
 
 
-
+  //component mounts
   function componentDidMount() {
 
     setDidMount(true);
     console.log("The Home page component has mounted");
     document.title = "Recipe Deconstructor - Home";
-
+    //Tooltip initialization 
     const bfBsR = document.getElementById("bfBsR");
     new bootstrap.Tooltip(bfBsR, { html: true, sanitize: false });
     const bfBsI = document.getElementById("bfBsI");
@@ -108,11 +112,11 @@ export function Home() {
     const oaCsI = document.getElementById("oaCsI");
     new bootstrap.Tooltip(oaCsI, { html: true, sanitize: false });
   }
-
+  //component updates
   function componentDidUpdate() {
     if (didMount) console.log("The component has updated");
   }
-
+  //component unmounts
   function componentDidUnmount() {
 
     function delayedUnmount() {

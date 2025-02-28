@@ -30741,10 +30741,13 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 function Home() {
+  // initialize didMount state variable and set it to false
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
     didMount = _useState2[0],
     setDidMount = _useState2[1];
+
+  //handles component phases
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
@@ -30837,10 +30840,13 @@ function Home() {
     tooltipTitle: "<b>Caesar Salad</b><br><i>ingredients</i>",
     tooltipPlacement: "right"
   })))));
+
+  //component mounts
   function componentDidMount() {
     setDidMount(true);
     console.log("The Home page component has mounted");
     document.title = "Recipe Deconstructor - Home";
+    //Tooltip initialization 
     var bfBsR = document.getElementById("bfBsR");
     new bootstrap.Tooltip(bfBsR, {
       html: true,
@@ -30882,9 +30888,11 @@ function Home() {
       sanitize: false
     });
   }
+  //component updates
   function componentDidUpdate() {
     if (didMount) console.log("The component has updated");
   }
+  //component unmounts
   function componentDidUnmount() {
     function delayedUnmount() {
       console.log("The component has unmounted");
@@ -31837,6 +31845,41 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
 
 
+
+//handles fetch request and UI updates
+function handleBfFetch() {
+  return _handleBfFetch.apply(this, arguments);
+}
+
+//Get DOM elements
+function _handleBfFetch() {
+  _handleBfFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+    var hfUserToken, elements, recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML, ingredientsFetched;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          hfUserToken = localStorage.getItem("hfToken");
+          elements = getDomElements();
+          recipeChoice = elements.recipeChoice, recipeIngredientsHTML = elements.recipeIngredientsHTML, ingredientsImgHTML = elements.ingredientsImgHTML, recipeImgHTML = elements.recipeImgHTML, secondArrow = elements.secondArrow, spinnerOneHTML = elements.spinnerOneHTML, spinnerTwoHTML = elements.spinnerTwoHTML;
+          (0,_modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_0__.bfSaveUser)();
+          iconVisibility(spinnerOneHTML, true);
+          _context.next = 7;
+          return updateRecipeImage(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, hfUserToken);
+        case 7:
+          _context.next = 9;
+          return (0,_modules_bfIngredientsList__WEBPACK_IMPORTED_MODULE_2__.bfIngredientsList)(recipeChoice, hfUserToken);
+        case 9:
+          ingredientsFetched = _context.sent;
+          _context.next = 12;
+          return updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, hfUserToken);
+        case 12:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return _handleBfFetch.apply(this, arguments);
+}
 function getDomElements() {
   return {
     recipeChoice: document.getElementById("chosenRecipe"),
@@ -31848,22 +31891,26 @@ function getDomElements() {
     spinnerTwoHTML: document.getElementById("spinnerTwo")
   };
 }
+
+//controls icon visibility by condition
 function iconVisibility(element, isVisible) {
   element.style.visibility = isVisible ? "visible" : "hidden";
 }
+
+//fetches recipe image by user choice, controls icon visibility
 function updateRecipeImage(_x, _x2, _x3, _x4, _x5, _x6) {
   return _updateRecipeImage.apply(this, arguments);
-}
+} //fetches ingredients list and image
 function _updateRecipeImage() {
-  _updateRecipeImage = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, hfUserToken) {
+  _updateRecipeImage = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, hfUserToken) {
     var dataRecipeImage;
-    return _regeneratorRuntime().wrap(function _callee$(_context) {
-      while (1) switch (_context.prev = _context.next) {
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          _context.next = 2;
+          _context2.next = 2;
           return (0,_modules_bfRecipeImage__WEBPACK_IMPORTED_MODULE_1__.bfRecipeImage)(recipeChoice, hfUserToken);
         case 2:
-          dataRecipeImage = _context.sent;
+          dataRecipeImage = _context2.sent;
           recipeImgHTML.src = dataRecipeImage;
           recipeImgHTML.classList.add("borderImage");
           iconVisibility(secondArrowHTML, true);
@@ -31871,9 +31918,9 @@ function _updateRecipeImage() {
           iconVisibility(spinnerTwoHTML, true);
         case 8:
         case "end":
-          return _context.stop();
+          return _context2.stop();
       }
-    }, _callee);
+    }, _callee2);
   }));
   return _updateRecipeImage.apply(this, arguments);
 }
@@ -31881,57 +31928,26 @@ function updateIngredients(_x7, _x8, _x9, _x10, _x11) {
   return _updateIngredients.apply(this, arguments);
 }
 function _updateIngredients() {
-  _updateIngredients = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, hfUserToken) {
+  _updateIngredients = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, hfUserToken) {
     var dataIngredientsImage;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
+    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
         case 0:
           recipeIngredientsHTML.innerHTML = ingredientsFetched;
-          _context2.next = 3;
+          _context3.next = 3;
           return (0,_modules_bfIngredientsImage__WEBPACK_IMPORTED_MODULE_3__.bfIngredientsImage)(ingredientsFetched, hfUserToken);
         case 3:
-          dataIngredientsImage = _context2.sent;
+          dataIngredientsImage = _context3.sent;
           iconVisibility(spinnerTwoHTML, false);
           ingredientsImgHTML.src = dataIngredientsImage;
           ingredientsImgHTML.classList.add("borderImage");
         case 7:
         case "end":
-          return _context2.stop();
-      }
-    }, _callee2);
-  }));
-  return _updateIngredients.apply(this, arguments);
-}
-function handleBfFetch() {
-  return _handleBfFetch.apply(this, arguments);
-}
-function _handleBfFetch() {
-  _handleBfFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-    var hfUserToken, elements, recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML, ingredientsFetched;
-    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-      while (1) switch (_context3.prev = _context3.next) {
-        case 0:
-          hfUserToken = localStorage.getItem("hfToken");
-          elements = getDomElements();
-          recipeChoice = elements.recipeChoice, recipeIngredientsHTML = elements.recipeIngredientsHTML, ingredientsImgHTML = elements.ingredientsImgHTML, recipeImgHTML = elements.recipeImgHTML, secondArrow = elements.secondArrow, spinnerOneHTML = elements.spinnerOneHTML, spinnerTwoHTML = elements.spinnerTwoHTML;
-          (0,_modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_0__.bfSaveUser)();
-          iconVisibility(spinnerOneHTML, true);
-          _context3.next = 7;
-          return updateRecipeImage(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, hfUserToken);
-        case 7:
-          _context3.next = 9;
-          return (0,_modules_bfIngredientsList__WEBPACK_IMPORTED_MODULE_2__.bfIngredientsList)(recipeChoice, hfUserToken);
-        case 9:
-          ingredientsFetched = _context3.sent;
-          _context3.next = 12;
-          return updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, hfUserToken);
-        case 12:
-        case "end":
           return _context3.stop();
       }
     }, _callee3);
   }));
-  return _handleBfFetch.apply(this, arguments);
+  return _updateIngredients.apply(this, arguments);
 }
 
 /***/ }),
@@ -31959,6 +31975,40 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
 
 
+
+//handles fetch request and UI updates
+function handleOaFetch() {
+  return _handleOaFetch.apply(this, arguments);
+}
+//Get DOM elements
+function _handleOaFetch() {
+  _handleOaFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+    var oaUserToken, elements, recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML, ingredientsFetched;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          oaUserToken = localStorage.getItem("oaiToken");
+          elements = getDomElements();
+          recipeChoice = elements.recipeChoice, recipeIngredientsHTML = elements.recipeIngredientsHTML, ingredientsImgHTML = elements.ingredientsImgHTML, recipeImgHTML = elements.recipeImgHTML, secondArrow = elements.secondArrow, spinnerOneHTML = elements.spinnerOneHTML, spinnerTwoHTML = elements.spinnerTwoHTML;
+          (0,_modules_oaSaveUser__WEBPACK_IMPORTED_MODULE_1__.oaSaveUser)();
+          iconVisibility(spinnerOneHTML, true);
+          _context.next = 7;
+          return updateRecipeImage(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, oaUserToken);
+        case 7:
+          _context.next = 9;
+          return (0,_modules_oaIngredientsList__WEBPACK_IMPORTED_MODULE_0__.oaIngredientsList)(recipeChoice, oaUserToken);
+        case 9:
+          ingredientsFetched = _context.sent;
+          _context.next = 12;
+          return updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, oaUserToken);
+        case 12:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee);
+  }));
+  return _handleOaFetch.apply(this, arguments);
+}
 function getDomElements() {
   return {
     recipeChoice: document.getElementById("chosenRecipe"),
@@ -31970,22 +32020,25 @@ function getDomElements() {
     spinnerTwoHTML: document.getElementById("spinnerTwo")
   };
 }
+//controls icon visibility by condition
 function iconVisibility(element, isVisible) {
   element.style.visibility = isVisible ? "visible" : "hidden";
 }
+
+//fetches recipe image by user choice, controls icon visibility
 function updateRecipeImage(_x, _x2, _x3, _x4, _x5, _x6) {
   return _updateRecipeImage.apply(this, arguments);
-}
+} //fetches ingredients list and image
 function _updateRecipeImage() {
-  _updateRecipeImage = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, oaUserToken) {
+  _updateRecipeImage = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrowHTML, oaUserToken) {
     var dataRecipeImage;
-    return _regeneratorRuntime().wrap(function _callee$(_context) {
-      while (1) switch (_context.prev = _context.next) {
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          _context.next = 2;
+          _context2.next = 2;
           return (0,_modules_oaRecipeImage__WEBPACK_IMPORTED_MODULE_3__.oaRecipeImage)(recipeChoice, oaUserToken);
         case 2:
-          dataRecipeImage = _context.sent;
+          dataRecipeImage = _context2.sent;
           recipeImgHTML.src = dataRecipeImage.data[0].url;
           recipeImgHTML.classList.add("borderImage");
           iconVisibility(secondArrowHTML, true);
@@ -31993,9 +32046,9 @@ function _updateRecipeImage() {
           iconVisibility(spinnerTwoHTML, true);
         case 8:
         case "end":
-          return _context.stop();
+          return _context2.stop();
       }
-    }, _callee);
+    }, _callee2);
   }));
   return _updateRecipeImage.apply(this, arguments);
 }
@@ -32003,57 +32056,26 @@ function updateIngredients(_x7, _x8, _x9, _x10, _x11) {
   return _updateIngredients.apply(this, arguments);
 }
 function _updateIngredients() {
-  _updateIngredients = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, oaUserToken) {
+  _updateIngredients = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, oaUserToken) {
     var dataIngredientsImage;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
+    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
         case 0:
           recipeIngredientsHTML.innerHTML = ingredientsFetched;
-          _context2.next = 3;
+          _context3.next = 3;
           return (0,_modules_oaIngredientsImage__WEBPACK_IMPORTED_MODULE_2__.oaIngredientsImage)(ingredientsFetched, oaUserToken);
         case 3:
-          dataIngredientsImage = _context2.sent;
+          dataIngredientsImage = _context3.sent;
           iconVisibility(spinnerTwoHTML, false);
           ingredientsImgHTML.src = dataIngredientsImage.data[0].url;
           ingredientsImgHTML.classList.add("borderImage");
         case 7:
         case "end":
-          return _context2.stop();
-      }
-    }, _callee2);
-  }));
-  return _updateIngredients.apply(this, arguments);
-}
-function handleOaFetch() {
-  return _handleOaFetch.apply(this, arguments);
-}
-function _handleOaFetch() {
-  _handleOaFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-    var oaUserToken, elements, recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML, ingredientsFetched;
-    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-      while (1) switch (_context3.prev = _context3.next) {
-        case 0:
-          oaUserToken = localStorage.getItem("oaiToken");
-          elements = getDomElements();
-          recipeChoice = elements.recipeChoice, recipeIngredientsHTML = elements.recipeIngredientsHTML, ingredientsImgHTML = elements.ingredientsImgHTML, recipeImgHTML = elements.recipeImgHTML, secondArrow = elements.secondArrow, spinnerOneHTML = elements.spinnerOneHTML, spinnerTwoHTML = elements.spinnerTwoHTML;
-          (0,_modules_oaSaveUser__WEBPACK_IMPORTED_MODULE_1__.oaSaveUser)();
-          iconVisibility(spinnerOneHTML, true);
-          _context3.next = 7;
-          return updateRecipeImage(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, oaUserToken);
-        case 7:
-          _context3.next = 9;
-          return (0,_modules_oaIngredientsList__WEBPACK_IMPORTED_MODULE_0__.oaIngredientsList)(recipeChoice, oaUserToken);
-        case 9:
-          ingredientsFetched = _context3.sent;
-          _context3.next = 12;
-          return updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, oaUserToken);
-        case 12:
-        case "end":
           return _context3.stop();
       }
     }, _callee3);
   }));
-  return _handleOaFetch.apply(this, arguments);
+  return _updateIngredients.apply(this, arguments);
 }
 
 /***/ }),
@@ -32075,6 +32097,8 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
+
+//handles user attempted sign-in
 function handleSignInAttempt(_x, _x2) {
   return _handleSignInAttempt.apply(this, arguments);
 }
@@ -32084,13 +32108,16 @@ function _handleSignInAttempt() {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
+          //prevents refresh
           event.preventDefault();
+
+          //extracts elements from form and assigns them to variables
           form = event.target;
           emailInput = form.querySelector("[name='email']");
           passwordInput = form.querySelector("[name='password']");
-          closeButton = form.querySelector("[data-bs-dismiss='modal']");
+          closeButton = form.querySelector("[data-bs-dismiss='modal']"); //assigns extracted email and password to variables
           email = emailInput.value;
-          password = passwordInput.value;
+          password = passwordInput.value; //fetch request to authenticate user sign in with DynamoDB
           _context.next = 9;
           return (0,_modules_authenticationAws__WEBPACK_IMPORTED_MODULE_0__.authenticationAws)(email, password);
         case 9:
@@ -32136,9 +32163,13 @@ function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 
 
+
+//assigned environment variables to local credential consts
 var accessKeyId = "AKIAQ4NSBJEZVDSPQPE6";
 var secretAccessKey = "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";
 var region = "us-east-1";
+
+//DynamoDB user authentication with AWS credentials
 function authenticationAws() {
   return _authenticationAws.apply(this, arguments);
 }
@@ -32164,15 +32195,15 @@ function _authenticationAws() {
               accessKeyId: accessKeyId,
               secretAccessKey: secretAccessKey
             }
-          };
+          }; //Initialized a client and converted to niceClient for ease of handling
           client = new _aws_sdk_client_dynamodb__WEBPACK_IMPORTED_MODULE_1__.DynamoDB(apiKey);
-          niceClient = _aws_sdk_lib_dynamodb__WEBPACK_IMPORTED_MODULE_0__.DynamoDBDocument.from(client);
+          niceClient = _aws_sdk_lib_dynamodb__WEBPACK_IMPORTED_MODULE_0__.DynamoDBDocument.from(client); //fetch request user parameters
           request = {
             TableName: "login",
             Key: {
               email: email
             }
-          };
+          }; //fetch request 
           _context.next = 8;
           return niceClient.get(request);
         case 8:
@@ -32183,7 +32214,8 @@ function _authenticationAws() {
           }
           return _context.abrupt("return", false);
         case 11:
-          awsPassword = response.Item.password;
+          //assigned retrieved password from DynamoDB 
+          awsPassword = response.Item.password; //Checks if user password matches DynamoDB password
           if (!(awsPassword === password)) {
             _context.next = 16;
             break;
