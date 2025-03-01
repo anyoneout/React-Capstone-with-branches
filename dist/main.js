@@ -30773,11 +30773,11 @@ function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container navbar-width"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row row-cols-lg-auto mt-5"
+    className: "row row-cols-lg-auto mt-lg-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "display-2 fw-bold mt-5 ms-4 ",
+    className: "display-2 fw-bold mt-lg-5 ms-4 ",
     style: {
       color: "#fff78a"
     }
@@ -30799,7 +30799,7 @@ function Home() {
     to: "OaPage",
     className: "btn btn-sm btn-outline-info try-buttons "
   }, "Dall-E-3")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5 row-cols-2"
+    className: "row mt-5 row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "d-flex flex-column align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
