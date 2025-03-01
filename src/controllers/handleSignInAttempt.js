@@ -3,7 +3,7 @@ import { authenticationAws } from "../modules/authenticationAws";
 
 
 //handles user attempted sign-in
-export async function handleSignInAttempt(event, onSignIn) {
+export async function handleSignInAttempt(event = new Event(), onSignIn) {
 
   //prevents refresh
   event.preventDefault();

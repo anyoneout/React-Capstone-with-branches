@@ -62,3 +62,14 @@ export function About() {
     return delayedUnmount;
   }
 }
+
+<div className="container">
+  <div className="row-cols-3">
+    <div className="col"></div>
+    <div className="col"></div>
+    <div className="col"></div>
+    <div className="col"></div>
+    <div className="col"></div>
+    <div className="col"></div>
+  </div>
+</div>

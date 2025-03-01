@@ -11,11 +11,10 @@ import bfCapreseSaladI from "../../assets/images/BlackForestImages/bfCapreseSala
 import oaCapreseSaladR from "../../assets/images/OpenAiImages/oaCapreseSaladR.jpg";
 import oaCapreseSaladI from "../../assets/images/OpenAiImages/oaCapreseSaladI.jpg";
 
-
 export function Home() {
+
   // initialize didMount state variable and set it to false
   const [didMount, setDidMount] = useState(false);
-
 
   //handles component phases
   useEffect(componentDidMount, []);
@@ -25,38 +24,32 @@ export function Home() {
   }, []);
 
   return (
-    <div className="container navbar-width mt-2">
-      <div className="row text-start mt-md-5">
-        <div className="d-flex justify-content-center">
-          <div className="col-12 mt-5">
-            <p className="display-2 fw-bold mt-5 ms-4 " style={{ color: "#fff78a" }}>
-              Recipe Deconstructor
-            </p>
-
-            <h1 className="display-6 ms-4" style={{ color: "rgb(238, 238, 238)" }}>
-              Separate dishes into their ingredients
-            </h1>
-
-            {/*    AI model button selection section */}
-            <div className="d-flex justify-content-start mt-5 ms-5">
-              <span className="try-here">
-                Try here!
-                <Link to="BfPage" className="ms-3 btn btn-sm btn-outline-info try-buttons">
-                  Flux
-                </Link>
-                <Link to="OaPage" className="btn btn-sm btn-outline-info try-buttons ">
-                  Dall-E-3
-                </Link>
-              </span>
-            </div>
-
-
-          </div>
+    <div className="container navbar-width">
+      <div className="row row-cols-lg-auto mt-5">
+        <div className="col-12 mt-5">
+          <p className="display-2 fw-bold mt-5 ms-4 " style={{ color: "#fff78a" }}>
+            Recipe Deconstructor
+          </p>
+        </div>
+        <div className="col-12 col-lg-7">
+          <h1 className="display-6 ms-4" style={{ color: "rgb(238, 238, 238)" }}>
+            Separate dishes into their ingredients
+          </h1>
+        </div>
+        <div className="col-12 col-lg-5 d-flex align-items-center mt-4 mt-lg-0 justify-content-start">
+          <span className="try-here ms-4 ms-lg-0">
+            Try here!
+            <Link to="BfPage" className="ms-3 btn btn-sm btn-outline-info try-buttons">
+              Flux
+            </Link>
+            <Link to="OaPage" className="btn btn-sm btn-outline-info try-buttons ">
+              Dall-E-3
+            </Link>
+          </span>
         </div>
       </div>
-      {/*Example image section*/}
-      <div className="row mt-5">
-        <div className="col-12 col-md-6 d-flex flex-column align-items-center">
+      <div className="row mt-5 row-cols-2">
+        <div className="d-flex flex-column align-items-center">
           <div className="card icon bg-black d-flex text-white align-items-center justify-content-center pt-5">
             <HomeFluxIcon />
           </div>
@@ -69,8 +62,7 @@ export function Home() {
             <Card src={bfCapreseSaladI} id="bfCsI" tooltipTitle={"<b>Caesar Salad</b><br><i>ingredients</i>"} tooltipPlacement="left" />
           </div>
         </div>
-
-        <div className="col-12 col-md-6 d-flex flex-column align-items-center">
+        <div className="d-flex flex-column align-items-center">
           <div className="card icon bg-black text-white d-flex align-items-center justify-content-center pt-5">
             <HomeDalleIcon />
           </div>
@@ -84,10 +76,8 @@ export function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
-
-
   //component mounts
   function componentDidMount() {
 

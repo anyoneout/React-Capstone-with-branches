@@ -29,6 +29,7 @@ export async function authenticationAws(email = "", password = "") {
       email: email,
     }
   }
+
   //fetch request 
   const response = await niceClient.get(request);
 
