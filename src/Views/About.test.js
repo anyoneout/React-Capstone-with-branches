@@ -1,5 +1,5 @@
 //added to replace the images with strings instead of modifying jest.config.js 
-jest.mock("../../assets/images/AboutMe.jpg", () => "AboutMe.jpg");
+jest.mock("../../assets/videos/ingredients.mp4", () => "ingredients.mp4");
 
 import { describe, expect, it } from "@jest/globals";
 import React from "react";

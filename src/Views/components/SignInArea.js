@@ -28,8 +28,13 @@ export default function SignInArea() {
           {buttonText}
         </button>
       </li>
-      {showModal === "signIn" && <SignInModal className="modal-width" onSignIn={handleSubmitCloseSignIn} closeButton={handleCloseSignIn} />}
-      {showModal === "signOut" && <SignOutModal onSignOut={handleSubmitCloseSignOut} closeButton={handleCloseSignOut} />}
+      {showModal === "signIn" && <SignInModal
+        className="modal-width"
+        onSignIn={handleSubmitCloseSignIn}
+        closeButton={handleCloseSignIn} />}
+      {showModal === "signOut" && <SignOutModal
+        onSignOut={handleSubmitCloseSignOut}
+        closeButton={handleCloseSignOut} />}
     </>
   );
 
