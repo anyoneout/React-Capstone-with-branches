@@ -30777,14 +30777,14 @@ function Home() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: "display-2 fw-bold mt-lg-5 ms-4 ",
+    className: "display-2 fw-bold mt-lg-5 mx-4 ",
     style: {
       color: "#fff78a"
     }
   }, "Recipe Deconstructor")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-12 col-lg-7"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
-    className: "display-6 ms-4",
+    className: "display-6 mx-4",
     style: {
       color: "rgb(238, 238, 238)"
     }
@@ -30799,9 +30799,9 @@ function Home() {
     to: "OaPage",
     className: "btn btn-sm btn-outline-info try-buttons "
   }, "Dall-E-3")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5 row"
+    className: "row mt-5 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "d-flex flex-column align-items-center"
+    className: "col-sm-6 d-flex flex-column justify-content-center align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "card icon bg-black d-flex text-white align-items-center justify-content-center pt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeFluxIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -30829,7 +30829,7 @@ function Home() {
     tooltipTitle: "<b>Caesar Salad</b><br><i>ingredients</i>",
     tooltipPlacement: "left"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "d-flex flex-column align-items-center"
+    className: "col-sm-6 d-flex flex-column justify-content-center align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "card icon bg-black text-white d-flex align-items-center justify-content-center pt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_icons__WEBPACK_IMPORTED_MODULE_1__.HomeDalleIcon, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
