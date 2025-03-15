@@ -10,9 +10,7 @@ export function OaPage() {
 
     useEffect(componentDidMount, []);
     useEffect(componentDidUpdate, [didMount]);
-    useEffect(function () {
-        return componentDidUnmount();
-    }, []);
+    useEffect(componentDidUnmount, []);
 
     return (
         <div className="container api-container navbar-width mt-3">
@@ -178,10 +176,9 @@ export function OaPage() {
     }
 
     function componentDidUnmount() {
-        function delayedUnmount() {
+        return function delayedUnmount() {
             console.log("component has unmounted")
         }
-        return delayedUnmount;
     }
 }
 

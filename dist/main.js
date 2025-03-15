@@ -30377,9 +30377,7 @@ function About() {
     setDidMount = _useState2[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    return componentDidUnmount();
-  }, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -30430,23 +30428,6 @@ function About() {
     return delayedUnmount;
   }
 }
-/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "container"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "row-cols-3"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-  className: "col"
-})));
 
 /***/ }),
 
@@ -30466,12 +30447,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../modules/icons */ "./src/modules/icons.js");
 /* harmony import */ var _controllers_handleBfFetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controllers/handleBfFetch */ "./src/controllers/handleBfFetch.js");
 /* harmony import */ var _modules_recipeArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/recipeArray */ "./src/modules/recipeArray.js");
+/* harmony import */ var _modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/bfSaveUser */ "./src/modules/bfSaveUser.js");
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -30483,30 +30466,10 @@ function BfPage() {
     setDidMount = _useState2[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    return componentDidUnmount();
-  }, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container api-container navbar-width mt-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row text-end justify-content-end align-items-end",
-    style: {
-      fontSize: "11px",
-      minHeight: "20px",
-      color: "#fff78a"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "userNameHTML"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mb-5 text-end",
-    style: {
-      fontSize: "11px",
-      minHeight: "20px",
-      color: "#fff78a"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    id: "userEmailHTML"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_4__.UserInfo, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-md-6 mb-5"
@@ -30633,13 +30596,14 @@ function BfPage() {
     document.title = "Recipe Deconstructor - Black Forest Flux";
   }
   function componentDidUpdate() {
-    if (didMount) console.log("component has updated");
+    if (didMount) {
+      console.log("component has updated");
+    }
   }
   function componentDidUnmount() {
-    function delayedUnmount() {
+    return function delayedUnmount() {
       console.log("component has unmounted");
-    }
-    return delayedUnmount;
+    };
   }
 }
 
@@ -30767,10 +30731,8 @@ function Home() {
   //handles component phases
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    return componentDidUnmount();
-  }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container navbar-width"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "row row-cols-lg-auto mt-lg-5"
@@ -30799,7 +30761,7 @@ function Home() {
     to: "OaPage",
     className: "btn btn-sm btn-outline-info try-buttons "
   }, "Dall-E-3")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "row mt-5 "
+    className: "row mt-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "col-sm-6 d-flex flex-column justify-content-center align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -30856,13 +30818,13 @@ function Home() {
     id: "oaCsI",
     tooltipTitle: "<b>Caesar Salad</b><br><i>ingredients</i>",
     tooltipPlacement: "right"
-  })))));
+  }))))));
   //component mounts
   function componentDidMount() {
     setDidMount(true);
     console.log("The Home page component has mounted");
     document.title = "Recipe Deconstructor - Home";
-    //Tooltip initialization 
+    //Tooltip initialization
     var bfBsR = document.getElementById("bfBsR");
     new bootstrap.Tooltip(bfBsR, {
       html: true,
@@ -30952,9 +30914,7 @@ function OaPage() {
     setDidMount = _useState2[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidMount, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUpdate, [didMount]);
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    return componentDidUnmount();
-  }, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(componentDidUnmount, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "container api-container navbar-width mt-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -31103,10 +31063,9 @@ function OaPage() {
     if (didMount) console.log("component has updated");
   }
   function componentDidUnmount() {
-    function delayedUnmount() {
+    return function delayedUnmount() {
       console.log("component has unmounted");
-    }
-    return delayedUnmount;
+    };
   }
 }
 
@@ -31512,7 +31471,7 @@ function HandleRefresh(props) {
     }
     setTimeout(function () {
       return setDidMount(true);
-    }, 50);
+    }, 1000);
   }
 }
 
@@ -31888,32 +31847,33 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
 
 //handles fetch request and UI updates
-function handleBfFetch() {
+function handleBfFetch(_x) {
   return _handleBfFetch.apply(this, arguments);
 }
 
 //Get DOM elements
 function _handleBfFetch() {
-  _handleBfFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+  _handleBfFetch = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
     var hfUserToken, elements, recipeChoice, recipeIngredientsHTML, ingredientsImgHTML, recipeImgHTML, secondArrow, spinnerOneHTML, spinnerTwoHTML, ingredientsFetched;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
+          event.preventDefault();
           hfUserToken = localStorage.getItem("hfToken");
           elements = getDomElements();
           recipeChoice = elements.recipeChoice, recipeIngredientsHTML = elements.recipeIngredientsHTML, ingredientsImgHTML = elements.ingredientsImgHTML, recipeImgHTML = elements.recipeImgHTML, secondArrow = elements.secondArrow, spinnerOneHTML = elements.spinnerOneHTML, spinnerTwoHTML = elements.spinnerTwoHTML;
           (0,_modules_bfSaveUser__WEBPACK_IMPORTED_MODULE_0__.bfSaveUser)();
           iconVisibility(spinnerOneHTML, true);
-          _context.next = 7;
+          _context.next = 8;
           return updateRecipeImage(recipeChoice, recipeImgHTML, spinnerOneHTML, spinnerTwoHTML, secondArrow, hfUserToken);
-        case 7:
-          _context.next = 9;
+        case 8:
+          _context.next = 10;
           return (0,_modules_bfIngredientsList__WEBPACK_IMPORTED_MODULE_2__.bfIngredientsList)(recipeChoice, hfUserToken);
-        case 9:
+        case 10:
           ingredientsFetched = _context.sent;
-          _context.next = 12;
+          _context.next = 13;
           return updateIngredients(ingredientsFetched, recipeIngredientsHTML, ingredientsImgHTML, spinnerTwoHTML, hfUserToken);
-        case 12:
+        case 13:
         case "end":
           return _context.stop();
       }
@@ -31939,7 +31899,7 @@ function iconVisibility(element, isVisible) {
 }
 
 //fetches recipe image by user choice, controls icon visibility
-function updateRecipeImage(_x, _x2, _x3, _x4, _x5, _x6) {
+function updateRecipeImage(_x2, _x3, _x4, _x5, _x6, _x7) {
   return _updateRecipeImage.apply(this, arguments);
 } //fetches ingredients list and image
 function _updateRecipeImage() {
@@ -31965,7 +31925,7 @@ function _updateRecipeImage() {
   }));
   return _updateRecipeImage.apply(this, arguments);
 }
-function updateIngredients(_x7, _x8, _x9, _x10, _x11) {
+function updateIngredients(_x8, _x9, _x10, _x11, _x12) {
   return _updateIngredients.apply(this, arguments);
 }
 function _updateIngredients() {
@@ -32217,8 +32177,8 @@ function _asyncToGenerator(n) { return function () { var t = this, e = arguments
 
 
 //assigned environment variables to local credential consts
-var accessKeyId = "AKIAQ4NSBJEZVDSPQPE6";
-var secretAccessKey = "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";
+var accessKeyId = "AKIAQ4NSBJEZ4Q4GQU6T";
+var secretAccessKey = "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";
 var region = "us-east-1";
 
 //DynamoDB user authentication with AWS credentials
@@ -32481,15 +32441,24 @@ function _bfRecipeImage() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   UserInfo: () => (/* binding */ UserInfo),
 /* harmony export */   bfSaveUser: () => (/* binding */ bfSaveUser)
 /* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 function bfSaveUser() {
   var _getInputValues = getInputValues(),
     name = _getInputValues.name,
     email = _getInputValues.email,
     hfToken = _getInputValues.hfToken;
   saveToLocalStorage(name, email, hfToken);
-  updateUI();
 }
 function getInputValues() {
   var inputName = document.getElementById("nameInput");
@@ -32506,14 +32475,51 @@ function saveToLocalStorage(name, email, hfToken) {
   localStorage.setItem("userEmail", email);
   localStorage.setItem("hfToken", hfToken);
 }
-function updateUI() {
-  var userNameHandle = document.getElementById("userNameHTML");
-  var userEmailHandle = document.getElementById("userEmailHTML");
-  var userName = localStorage.getItem("userName");
-  var userEmail = localStorage.getItem("userEmail");
+function UserInfo() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState2 = _slicedToArray(_useState, 2),
+    userName = _useState2[0],
+    setUserName = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState4 = _slicedToArray(_useState3, 2),
+    userEmail = _useState4[0],
+    setUserEmail = _useState4[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var userName = localStorage.getItem("userName");
+    var userEmail = localStorage.getItem("userEmail");
+    setUserName(userName);
+    setUserEmail(userEmail);
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row text-end justify-content-end align-items-end",
+    style: {
+      fontSize: "11px",
+      minHeight: "20px",
+      color: "#fff78a"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "userNameHTML"
+  }, userName)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "row mb-5 text-end",
+    style: {
+      fontSize: "11px",
+      minHeight: "20px",
+      color: "#fff78a"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "userEmailHTML"
+  }, userEmail)));
+}
+/* function updateUI() {
+  const userNameHandle = document.getElementById("userNameHTML");
+  const userEmailHandle = document.getElementById("userEmailHTML");
+  const userName = localStorage.getItem("userName");
+  const userEmail = localStorage.getItem("userEmail");
   userNameHandle.innerHTML = userName;
   userEmailHandle.innerHTML = userEmail;
 }
+
+ */
 
 /***/ }),
 
